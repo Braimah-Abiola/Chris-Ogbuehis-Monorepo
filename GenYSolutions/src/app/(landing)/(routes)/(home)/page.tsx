@@ -1,4 +1,5 @@
 import LandingAbout from "@/components/landing-about";
+import LandingFooter from "@/components/landing-footer";
 import LandingHero from "@/components/landing-hero";
 import LandingNav from "@/components/landing-nav";
 import LandingWork from "@/components/landing-work";
@@ -12,6 +13,7 @@ export default function Home() {
         <LandingAbout />
       </div>
       <LandingWork />
+      <LandingFooter/>
     </div>
   );
 }
