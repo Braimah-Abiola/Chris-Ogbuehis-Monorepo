@@ -1,5 +1,4 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import { MoveDown } from "lucide-react";
@@ -15,9 +14,7 @@ export default function Home() {
           Revolutionizing Industries, One Custom Innovation at a Time
         </p>
 
-        <Link href="">
-          <Button className="mt-10">Start Today</Button>
-        </Link>
+        <Button className="mt-10">Start Today</Button>
       </div>
 
       <video
