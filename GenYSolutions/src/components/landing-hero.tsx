@@ -1,13 +1,13 @@
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
-import { Button } from "@/components/ui/button";
 import { MoveDown } from "lucide-react";
+import { Button } from "./ui/button";
 
-export default function Home() {
+const LandingHero = () => {
   return (
     <MaxWidthWrapper className="flex flex-col items-center justify-center text-center h-screen">
       <div className="z-10 items-center justify-center flex flex-col">
-        <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:7xl text-white">
+        <h1 className="max-w-5xl text-5xl font-semibold md:text-6xl lg:text-7xl lg:leading-[1.2] text-white">
           Crafting Tailored AI Solutions Across Diverse Sectors
         </h1>
         <p className="mt-5 max-w-prose sm:text-lg text-zinc-400 text-center">
@@ -34,4 +34,6 @@ export default function Home() {
       </div>
     </MaxWidthWrapper>
   );
-}
+};
+
+export default LandingHero;

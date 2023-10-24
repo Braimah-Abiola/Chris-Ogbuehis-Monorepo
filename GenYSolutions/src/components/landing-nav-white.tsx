@@ -1,12 +1,15 @@
 import { navLinks } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 
-const LandingNav = () => {
+const LandingNavWhite = () => {
   return (
     <div className="w-screen flex flex-col items-center justify-center z-20 absolute py-6">
       <div className="w-full px-20 flex flex-row items-center justify-between">
         <div className="relative w-[110px] h-[45px]">
-          <Image fill src="/logo.svg" alt="Logo" />
+          <Link href="/">
+            <Image fill src="/logo_black.svg" alt="Logo" />
+          </Link>
         </div>
 
         <div className="bg-[#191619]/70 rounded-full py-3 px-10 hidden lg:block">
@@ -24,10 +27,10 @@ const LandingNav = () => {
           </ul>
         </div>
 
-        <Image width={50} height={25} src="./menu.svg" alt="Menu" />
+        <Image width={50} height={25} src="./menu_black.svg" alt="Menu" />
       </div>
     </div>
   );
 };
 
-export default LandingNav;
+export default LandingNavWhite;
