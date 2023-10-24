@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { IMAGES } from "@/constants/images";
 import { motion } from "framer-motion";
@@ -8,25 +8,30 @@ const WorkSlider = () => {
   const sliderRef = useRef(null);
   const slidesRef = useRef(null);
 
-  const [sliderWidth, setSliderWidths] = useState(0);
-  const [slidesWidth, setSlidesWidths] = useState(0);
+  const [sliderWidth, setSliderWidths] = useState<number>(0);
+  const [slidesWidth, setSlidesWidths] = useState<number>(0);
 
   const slideMarginRight = 15;
   const totalSlidesMarginRight = slideMarginRight * IMAGES.length;
 
   useEffect(() => {
     const measureSliderWidth = () => {
-      setSliderWidths(sliderRef.current.clientWidth);
+      const sliderElement = sliderRef.current as HTMLElement | null;
+      if (sliderElement) {
+        setSliderWidths(sliderElement.clientWidth);
+      }
     };
 
     const measureSlidesWidth = () => {
-      const slidesNode = slidesRef.current.childNodes;
-      const slidesArr = Array.from(slidesNode);
-      const slidesSumWidth = slidesArr.reduce(
-        (acc, node) => acc + node.clientWidth,
-        0
-      );
-      setSlidesWidths(slidesSumWidth);
+      const slidesNode = slidesRef.current as HTMLElement | null;
+      if (slidesNode) {
+        const slidesArr = Array.from(slidesNode.childNodes);
+        const slidesSumWidth = slidesArr.reduce(
+          (acc, node) => acc + ((node as HTMLElement).clientWidth || 0),
+          0
+        );
+        setSlidesWidths(slidesSumWidth);
+      }
     };
 
     measureSliderWidth();
@@ -72,4 +77,3 @@ const WorkSlider = () => {
 };
 
 export default WorkSlider;
-
