@@ -21,7 +21,7 @@ function Team() {
 
 
     {/* Personalities */}
-    <div className="flex justify-center items-center flex-wrap bg-[#151515] rounded-lg mx-auto w-[95%]">
+    <div className="flex justify-center items-center flex-wrap bg-[#151515] rounded-lg mx-auto w-[95%] p-5">
         <div className="w-1/3 p-4">
             <img src="/team/Cedric.png" alt="Cedric Egboh" className="mb-4" />
             <h3 className="text-white text-lg">Cedric Egboh</h3>

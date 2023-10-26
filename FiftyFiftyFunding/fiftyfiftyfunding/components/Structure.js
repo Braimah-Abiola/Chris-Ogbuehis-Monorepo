@@ -4,7 +4,7 @@ function Structure() {
   return (
     <div className='bg-black flex flex-row items-center justify-around'>
         <div className='text-white py-20'>
-            <h1 className='font-bold text-8xl'>STRUCTURE</h1>
+            <h1 className='font-bold text-8xl mb-10'>STRUCTURE</h1>
             <p>
             For every business we choose to invest in, a 50-50 arrangement is at the core of<br/>
             our partnership. Half of the ownership will belong to us, and the other half goes<br/>
@@ -26,7 +26,7 @@ function Structure() {
         </div>
 
         <div>
-            <Image src="/header/FiftyFifty-Logo.png" alt='logo' width={100} height={100}/>
+            <Image src="/header/FiftyFifty-Logo.png" alt='logo' width={300} height={300}/>
         </div>
     </div>
   )

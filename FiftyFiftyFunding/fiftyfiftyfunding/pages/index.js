@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import OurGoal from '../components/OurGoal';
 import Structure from '../components/Structure';
 import Team from '../components/Team';
+import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <OurGoal />
       <Team />
       <Structure />
+      <Footer />
     </div>
   );
 }
