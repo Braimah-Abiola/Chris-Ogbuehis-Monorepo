@@ -17,7 +17,7 @@ const Header = () => {
         business aspirations<br/>
         <span className='text-[#c3c3c3]'>while you retain</span> full<br/>
         operational control.</h1>
-      <p className="text-white mt-2 text-[20px]"><strong>Empowering more individuals</strong> within our community to become <strong>business owners,</strong> and <br/>concurrently, educating the community comprehensively on all facets of <strong>entrepreneurship</strong>.</p>
+      <p className="text-white mt-2 mb-20 text-[20px]"><strong>Empowering more individuals</strong> within our community to become <strong>business owners,</strong> and <br/>concurrently, educating the community comprehensively on all facets of <strong>entrepreneurship</strong>.</p>
     </div>
   );
 };

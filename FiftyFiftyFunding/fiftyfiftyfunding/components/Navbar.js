@@ -16,7 +16,7 @@ function Navbar() {
             </div>
 
             {/* Nav Items */}
-            <div className="ml-auto space-x-5 flex flex-row justify-center items-center">
+            <div className="ml-auto space-x-8 flex flex-row justify-center items-center">
                 {navItems.map((item, index) => (
                     <Link key={index} href={`/${item.replace(/\s+/g, '-').toLowerCase()}`}>
                         <p className="text-white hover:text-black transition">{item}</p>
