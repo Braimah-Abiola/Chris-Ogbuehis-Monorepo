@@ -1,4 +1,4 @@
-import React from 'react'
+import Image from 'next/image'
 
 function Team() {
   return (
@@ -6,9 +6,11 @@ function Team() {
       <section className="py-16 text-center">
       <h2 className="text-white text-8xl mb-8 font-bold"><span className='text-black'>WE ARE</span> DRIVEN.</h2>
       <p className="text-black font-semibold mb-10 text-center">
-        We love what we do.<br/>
-        We're excited to get to it every day.<br/>
-        Meet the team below.
+        {"We love what we do."}
+        <br/>
+        {"We're excited to get to it every day."}
+        <br/>
+        {"Meet the team below."}
       </p>
 
       {/* White Arrow */}
@@ -23,19 +25,19 @@ function Team() {
     {/* Personalities */}
     <div className="flex justify-center items-center flex-wrap bg-[#151515] rounded-lg mx-auto w-[95%] p-5">
         <div className="w-1/3 p-4">
-            <img src="/team/Cedric.png" alt="Cedric Egboh" className="mb-4" />
+            <Image src="/team/Cedric.png" alt="Cedric Egboh" className="mb-4" width={537} height={538}/>
             <h3 className="text-white text-lg">Cedric Egboh</h3>
             <p className="text-gray-300">ATHLETE / INVESTOR REAL ESTATE</p>
         </div>
 
         <div className="w-1/3 p-4">
-            <img src="/team/Onyi.png" alt="Onyi Odukwe" className="mb-4" />
+            <Image src="/team/Onyi.png" alt="Onyi Odukwe" className="mb-4" width={537} height={538}/>
             <h3 className="text-white text-lg">Onyi Odukwe</h3>
             <p className="text-gray-300">CEO, GLO TANNING</p>
         </div>
 
         <div className="w-1/3 p-4">
-            <img src="/team/Micah.png" alt="Micah McDonald" className="mb-4" />
+            <Image src="/team/Micah.png" alt="Micah McDonald" className="mb-4" width={537} height={538}/>
             <h3 className="text-white text-lg">Micah McDonald</h3>
             <p className="text-gray-300">PRESIDENT, DHL DRAWBACK SERVICES</p>
         </div>
