@@ -12,7 +12,7 @@ const Header = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-3xl text-blue-700 font-bold">WELCOME TO FIFTYFIFTY</h1>
+      <h1 className="text-3xl text-white font-bold">WELCOME TO FIFTYFIFTY</h1>
       <p className="text-white mt-2">Where we fund your business aspirations...</p>
     </div>
   );
