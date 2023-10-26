@@ -7,8 +7,14 @@ module.exports = {
     './src/**/*.{ts,tsx,js,jsx}',
 	],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'radial-gradient-blue': 'radial-gradient(circle 1300px, #01BFF1, #E7F9FE)',
+      })
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-gradients')
+  ],
 }
 
