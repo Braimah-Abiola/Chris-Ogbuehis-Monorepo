@@ -11,8 +11,13 @@ const Header = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-3xl text-white font-bold">WELCOME TO FIFTYFIFTY</h1>
-      <p className="text-white mt-2">Where we fund your business aspirations...</p>
+      <h1 className="text-8xl line text-white font-bold uppercase">
+        Welcome to <span className="text-[#01BFF1]">FiftyFifty,</span><br/>
+        <span className='text-[#c3c3c3]'>where we fund</span> your<br/>
+        business aspirations<br/>
+        <span className='text-[#c3c3c3]'>while you retain</span> full<br/>
+        operational control.</h1>
+      <p className="text-white mt-2 text-[20px]"><strong>Empowering more individuals</strong> within our community to become <strong>business owners,</strong> and <br/>concurrently, educating the community comprehensively on all facets of <strong>entrepreneurship</strong>.</p>
     </div>
   );
 };

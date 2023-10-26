@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   return (
     <div className={styles.bgContainer}>
-      <Navbar />
+      <Navbar/>
       <Header />
       {/* Other components will go here */}
     </div>
