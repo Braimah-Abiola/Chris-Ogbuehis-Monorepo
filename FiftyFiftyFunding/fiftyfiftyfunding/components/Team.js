@@ -24,19 +24,19 @@ function Team() {
         {/* Personalities */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-[#151515] rounded-lg mx-auto w-full md:w-[95%] p-5">
           <div className="p-4">
-              <Image src="/team/Cedric.png" alt="Cedric Egboh" className="mb-4" width={537} height={538} layout="responsive"/>
-              <h3 className="text-white text-lg mt-4">Cedric Egboh</h3>
+              <Image src="/team/CedricImage.png" alt="Cedric Egboh" className="mb-4" width={537} height={538} layout="responsive"/>
+              <h3 className="text-white text-lg mt-4">Cedric Ogbuehi</h3>
               <p className="text-gray-300">ATHLETE / INVESTOR REAL ESTATE</p>
           </div>
 
           <div className="p-4">
-              <Image src="/team/Onyi.png" alt="Onyi Odukwe" className="mb-4" width={537} height={538} layout="responsive"/>
-              <h3 className="text-white text-lg mt-4">Onyi Odukwe</h3>
+              <Image src="/team/OnyiImage.png" alt="Onyi Odukwe" className="mb-4" width={537} height={538} layout="responsive"/>
+              <h3 className="text-white text-lg mt-4">Onyi Odunukwe</h3>
               <p className="text-gray-300">CEO, GLO TANNING</p>
           </div>
 
           <div className="p-4">
-              <Image src="/team/Micah.png" alt="Micah McDonald" className="mb-4" width={537} height={538} layout="responsive"/>
+              <Image src="/team/MicahImage.png" alt="Micah McDonald" className="mb-4" width={537} height={538} layout="responsive"/>
               <h3 className="text-white text-lg mt-4">Micah McDonald</h3>
               <p className="text-gray-300">PRESIDENT, DHL DRAWBACK SERVICES</p>
           </div>
