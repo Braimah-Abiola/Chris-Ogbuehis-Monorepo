@@ -6,7 +6,7 @@ const Blog = () => {
     <div>
       <LandingNavWhite />
 
-      <div className="">
+      <div>
         <LandingBlog />
       </div>
     </div>
