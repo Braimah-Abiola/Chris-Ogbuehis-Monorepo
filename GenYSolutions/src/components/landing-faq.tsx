@@ -9,15 +9,15 @@ import { useState } from "react";
 const LandingFaq = () => {
   const [openQuestion, setOpenQuestion] = useState(null);
 
-  const handleQuestionClick = (index) => {
+  const handleQuestionClick = (index: number) => {
     setOpenQuestion(openQuestion === index ? null : index);
   };
 
-  const isQuestionOpen = (index) => {
+  const isQuestionOpen = (index:number) => {
     return openQuestion === index;
   };
 
-  const getIconSrc = (index) => {
+  const getIconSrc = (index:number) => {
     return isQuestionOpen(index)
       ? "/images/chevron_up.svg"
       : "/images/chevron_down.svg";
