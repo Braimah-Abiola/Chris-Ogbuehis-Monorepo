@@ -1,10 +1,22 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
     const navItems = ['OUR GOAL', 'HOW IT WORKS', 'MEET THE TEAM', 'STRUCTURE'];
+
+    useEffect(() => {
+        if (menuOpen) {
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        } else {
+            document.body.style.overflow = 'auto'; // Allow scrolling
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto'; // Cleanup: revert back to the default when component unmounts
+        };
+    }, [menuOpen]);
 
     return (
         <nav className="py-4 px-6 relative">
@@ -37,7 +49,7 @@ function Navbar() {
                 </div>
 
                 {/* Hamburger Menu (mobile) */}
-                <div className="md:hidden flex items-center" onClick={() => setMenuOpen(!menuOpen)}>
+                <div className="md:hidden flex items-center z-40" onClick={() => setMenuOpen(!menuOpen)}>
                     <svg className="w-6 h-6" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         {menuOpen ? 
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path> :
@@ -49,8 +61,8 @@ function Navbar() {
 
             {/* Mobile Nav Menu */}
             {menuOpen && (
-                <div className="absolute top-full left-0 w-full h-screen bg-black z-20 md:hidden">
-                    <div className="container mx-auto py-4">
+                <div className="fixed top-0 left-0 w-full h-screen bg-black z-20 md:hidden">
+                    <div className="container mx-auto py-4 flex flex-col mt-20 ml-5 gap-10">
                         {navItems.map((item, index) => {
                             const href = `#${item.replace(/\s+/g, '-').toLowerCase()}`;
                             return (

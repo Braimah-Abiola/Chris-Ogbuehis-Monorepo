@@ -52,7 +52,7 @@ function Apply() {
                         </p>
                     </div>
 
-                    <div className="cursor-pointer flex flex-col gap-5 items-center justify-center w-full md:w-[350px] h-[250px] md:h-[350px] bg-neutral-950 rounded-[25px] border border-neutral-500">
+                    <div className="cursor-pointer flex flex-col gap-5 items-center justify-center w-full md:w-[350px] h-[250px] md:h-[350px] bg-neutral-950 hover:bg-neutral-800 transition rounded-[25px] border border-neutral-500">
                         <Image src='/apply/folder.png' alt='folder-icon' width={80} height={80} className='md:w-[100px] md:h-[100px]'/>
                         <p className='text-xs md:text-base'>UPLOAD VIDEO</p>
                     </div>
