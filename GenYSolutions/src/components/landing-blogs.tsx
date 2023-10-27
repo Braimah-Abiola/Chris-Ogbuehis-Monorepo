@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const LandingBlogs = () => {
   return (
-    <MaxWidthWrapper className="flex flex-col items-center justify-center text-center py-20 md:py-40">
-      <div className="z-10 items-start justify-between flex flex-row w-full">
+    <MaxWidthWrapper className="flex flex-col items-center justify-center text-center pt-10 md:pt-40 pb-60 md:pb-40">
+      <div className="z-10 items-start justify-between flex flex-col md:flex-row w-full">
         <div className="flex flex-col">
           <h1 className=" text-start max-w-5xl text-5xl font-semibold md:text-6xl lg:text-7xl lg:leading-[1.2] text-black">
             Read what <br />
@@ -15,11 +15,11 @@ const LandingBlogs = () => {
           </h1>
         </div>
 
-        <div className="flex flex-row space-x-4 md:space-x-10">
-          <div className="flex flex-col space-y-4 md:space-y-10">
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-10 mt-20 md:mt-0">
+          <div className="flex flex-col space-y-5 md:space-y-10">
             <Link href="/blog">
-              <div className="w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
-                <div className="relative w-full md:w-[100%] h-fit md:h-[300px] object-cover">
+              <div className="w-full md:w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
+                <div className="relative w-full md:w-[100%] h-[350px] md:h-[300px]">
                   <Image fill src="/project4.png" alt="Project 1" />
                 </div>
                 <div className="px-5 text-[25px] text-left">
@@ -33,8 +33,8 @@ const LandingBlogs = () => {
             </Link>
 
             <Link href="/blog">
-              <div className="w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
-                <div className="relative w-full md:w-[100%] h-fit md:h-[300px] object-cover">
+              <div className="w-full md:w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
+                <div className="relative w-full md:w-[100%] h-[350px] md:h-[300px]">
                   <Image fill src="/project4.png" alt="Project 1" />
                 </div>
                 <div className="px-5 text-[25px] text-left">
@@ -48,10 +48,10 @@ const LandingBlogs = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col space-y-4 md:space-y-10 mt-20">
+          <div className="flex flex-col space-y-5 md:space-y-10 md:mt-20">
             <Link href="/blog">
-              <div className="w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
-                <div className="relative w-full md:w-[100%] h-fit md:h-[300px] object-cover">
+              <div className="w-full md:w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between mt-5">
+                <div className="relative w-full md:w-[100%] h-[350px] md:h-[300px]">
                   <Image fill src="/project4.png" alt="Project 1" />
                 </div>
                 <div className="px-5 text-[25px] text-left">
@@ -65,8 +65,8 @@ const LandingBlogs = () => {
             </Link>
 
             <Link href="/blog">
-              <div className="w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
-                <div className="relative w-full md:w-[100%] h-fit md:h-[300px] object-cover">
+              <div className="w-full md:w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
+                <div className="relative w-full md:w-[100%] h-[350px] md:h-[300px]">
                   <Image fill src="/project4.png" alt="Project 1" />
                 </div>
                 <div className="px-5 text-[25px] text-left">
@@ -78,7 +78,6 @@ const LandingBlogs = () => {
                 </div>
               </div>
             </Link>
-            
           </div>
         </div>
       </div>

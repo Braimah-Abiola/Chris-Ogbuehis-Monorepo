@@ -17,48 +17,71 @@ const LandingClients = () => {
         </p>
       </div>
 
-      <div className="md:hidden w-full flex flex-col">
-        <div className="flex flex-row w-full space-x-8 items-center mt-20">
-        <Image
-            width={160}
-            height={35}
+      <div className="md:hidden w-full flex flex-col px-5">
+        <div className="flex flex-row w-full justify-between items-center mt-20">
+          <Image
+            width={140}
+            height={30}
             src="/images/cbre.png"
             alt="Cbre Logo"
           />
-            <Image
-            width={160}
-            height={35}
+          <Image
+            width={140}
+            height={30}
             src="/images/akelius.png"
+            alt="Akelius Logo"
+          />
+        </div>
+        <div className="flex flex-row w-full justify-between items-center mt-0">
+          <Image
+            width={140}
+            height={30}
+            src="/images/colliers.png"
+            alt="Colliers Logo"
+          />
+          <Image
+            width={140}
+            height={30}
+            src="/images/autogridwhite.png"
+            alt="Autogrid Logo"
+          />
+        </div>
+        <div className="flex flex-row w-full justify-between items-center mt-0">
+          <Image
+            width={140}
+            height={30}
+            src="/images/firstservice.png"
+            alt="Cbre Logo"
+          />
+          <Image
+            width={140}
+            height={30}
+            src="/images/gedigitalwhite.png"
             alt="Cbre Logo"
           />
         </div>
-        <div className="flex flex-row w-full space-x-8 items-center mt-0">
-        <Image
-            width={160}
-            height={35}
-            src="/images/cbre.png"
+        <div className="flex flex-row w-full justify-between items-center mt-0">
+          <Image
+            width={140}
+            height={30}
+            src="/images/nextera.png"
             alt="Cbre Logo"
           />
-            <Image
-            width={160}
-            height={35}
-            src="/images/akelius.png"
+          <Image
+            width={140}
+            height={30}
+            src="/images/energyhub.png"
             alt="Cbre Logo"
           />
         </div>
-        <div className="flex flex-row w-full space-x-8 items-center mt-0">
-        <Image
-            width={160}
-            height={35}
-            src="/images/cbre.png"
+        <div className="flex flex-row w-full justify-between items-center mt-0">
+          <Image
+            width={140}
+            height={30}
+            src="/images/bentall.png"
             alt="Cbre Logo"
           />
-            <Image
-            width={160}
-            height={35}
-            src="/images/akelius.png"
-            alt="Cbre Logo"
-          />
+          <Image width={140} height={30} src="/images/lg.png" alt="Cbre Logo" />
         </div>
       </div>
 
