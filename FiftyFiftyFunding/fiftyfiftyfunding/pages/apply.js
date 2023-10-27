@@ -17,7 +17,7 @@ function Apply() {
             </h1>
 
             {/* Form */}
-            <div className='rounded-lg border border-[#737373] text-white p-7'>
+            <div className='rounded-lg border border-[#737373] text-white p-7 mb-40'>
 
                 {/* EXECUTIVE SUMMARY */}
                 <div className='flex flex-col gap-5 mb-16'>
@@ -42,8 +42,21 @@ function Apply() {
                 </div>
 
                 {/* BUSINESS PLAN */}
-                <div className='flex flex-col gap-5 mb-16'>
-                    
+                <div className='flex flex-row gap-60 mb-16'>
+                    <div>
+                        <h2 className='mb-8 font-semibold'>BUSINESS PLAN</h2>
+                        <p className='uppercase text-[15px]'>
+                            Create a video detailing the reasons you believe FiftyFifty should<br/>
+                            invest in your business. Feel free to elaborate on why alternative<br/>
+                            funding avenues have proven unsuccessful and articulate the<br/>
+                            significance of this opportunity for you and your family.
+                        </p>
+                    </div>
+
+                    <div class="cursor-pointer flex flex-col gap-5 items-center justify-center w-[350px] h-[350px] bg-neutral-950 rounded-[25px] border border-neutral-500">
+                        <Image src='/apply/folder.png' alt='folder-icon' width={100} height={100}/>
+                        <p>UPLOAD VIDEO</p>
+                    </div>
                 </div>
 
                 {/* BUSINESS DESCRIPTION */}
@@ -145,147 +158,129 @@ function Apply() {
 
                     <input 
                         type="text" 
-                        placeholder="Explain your sales strategy, distribution channels, and pricing" 
+                        placeholder="Detail the roles and responsibilites of team members" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
 
                     <input 
                         type="text" 
-                        placeholder="Discuss your customer acquisition and retention strategies" 
+                        placeholder="Mention any advisors or mentors" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
                 </div>
 
-                {/* MARKETING AND SALES STRATEGY */}
+                {/* FINAL PROJECTIONS */}
                 <div className='flex flex-col gap-5 mb-16'>
-                    <h2 className='mb-8 font-semibold'>MARKETING AND SALES STRATEGY (IF YOU HAVE ONE)</h2>
+                    <h2 className='mb-8 font-semibold'>FINAL PROJECTIONS</h2>
                     <input 
                         type="text" 
-                        placeholder="Outline your marketing plan, including advertising, online presence, and branding" 
+                        placeholder="Present a summary of your final projections for the next 3-5 years" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
 
                     <input 
                         type="text" 
-                        placeholder="Explain your sales strategy, distribution channels, and pricing" 
+                        placeholder="Include income statements, balance sheets, and cash flow forecasts" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
 
                     <input 
                         type="text" 
-                        placeholder="Discuss your customer acquisition and retention strategies" 
+                        placeholder="Discuss the assumptions behind your financials" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
                 </div>
 
-                {/* MARKETING AND SALES STRATEGY */}
+                {/* FUNDING REQUEST */}
                 <div className='flex flex-col gap-5 mb-16'>
-                    <h2 className='mb-8 font-semibold'>MARKETING AND SALES STRATEGY (IF YOU HAVE ONE)</h2>
+                    <h2 className='mb-8 font-semibold'>FUNDING REQUEST</h2>
                     <input 
                         type="text" 
-                        placeholder="Outline your marketing plan, including advertising, online presence, and branding" 
+                        placeholder="Specify the amount of funding you need and how you plan to use it" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
 
                     <input 
                         type="text" 
-                        placeholder="Explain your sales strategy, distribution channels, and pricing" 
+                        placeholder="Explain the expected return on investment (ROI) for the investors" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
 
                     <input 
                         type="text" 
-                        placeholder="Discuss your customer acquisition and retention strategies" 
+                        placeholder="Discuss the type of investment you are seeking (e.g. equity, debt)" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
                 </div>
 
-                {/* MARKETING AND SALES STRATEGY */}
+                {/* USE OF FUNDS */}
                 <div className='flex flex-col gap-5 mb-16'>
-                    <h2 className='mb-8 font-semibold'>MARKETING AND SALES STRATEGY (IF YOU HAVE ONE)</h2>
+                    <h2 className='mb-8 font-semibold'>USE OF FUNDS</h2>
                     <input 
                         type="text" 
-                        placeholder="Outline your marketing plan, including advertising, online presence, and branding" 
+                        placeholder="Provide a breakdown of how you will allocate the funds" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
 
                     <input 
                         type="text" 
-                        placeholder="Explain your sales strategy, distribution channels, and pricing" 
-                        className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
-                    />
-
-                    <input 
-                        type="text" 
-                        placeholder="Discuss your customer acquisition and retention strategies" 
+                        placeholder="Show how the investment will support business growth and sustainability" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
                 </div>
 
-                {/* MARKETING AND SALES STRATEGY */}
+                {/* EXIT STRATEGY */}
                 <div className='flex flex-col gap-5 mb-16'>
-                    <h2 className='mb-8 font-semibold'>MARKETING AND SALES STRATEGY (IF YOU HAVE ONE)</h2>
+                    <h2 className='mb-8 font-semibold'>EXIT STRATEGY (IF APPLICABLE)</h2>
                     <input 
                         type="text" 
-                        placeholder="Outline your marketing plan, including advertising, online presence, and branding" 
+                        placeholder="Describe potential exit options for the investor, such as acquisition or IPO" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
 
                     <input 
                         type="text" 
-                        placeholder="Explain your sales strategy, distribution channels, and pricing" 
-                        className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
-                    />
-
-                    <input 
-                        type="text" 
-                        placeholder="Discuss your customer acquisition and retention strategies" 
+                        placeholder="Explain the timeline for the exit strategy" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
                 </div>
 
-                {/* MARKETING AND SALES STRATEGY */}
+                {/* RISKS AND CHALLENGES */}
                 <div className='flex flex-col gap-5 mb-16'>
-                    <h2 className='mb-8 font-semibold'>MARKETING AND SALES STRATEGY (IF YOU HAVE ONE)</h2>
+                    <h2 className='mb-8 font-semibold'>RISKS AND CHALLENGES</h2>
                     <input 
                         type="text" 
-                        placeholder="Outline your marketing plan, including advertising, online presence, and branding" 
+                        placeholder="Identify potential risks and challenges your business may face" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
 
                     <input 
                         type="text" 
-                        placeholder="Explain your sales strategy, distribution channels, and pricing" 
-                        className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
-                    />
-
-                    <input 
-                        type="text" 
-                        placeholder="Discuss your customer acquisition and retention strategies" 
+                        placeholder="Explain your plan to mitigate these risks" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
                 </div>
 
-                {/* MARKETING AND SALES STRATEGY */}
+                {/* APPENDIX */}
                 <div className='flex flex-col gap-5 mb-16'>
-                    <h2 className='mb-8 font-semibold'>MARKETING AND SALES STRATEGY (IF YOU HAVE ONE)</h2>
+                    <h2 className='mb-8 font-semibold'>APPENDIX</h2>
                     <input 
                         type="text" 
-                        placeholder="Outline your marketing plan, including advertising, online presence, and branding" 
+                        placeholder="Include any additional information that supports your business plan(e.g. Market research, product demos, legal documents)" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
+                </div>
 
-                    <input 
-                        type="text" 
-                        placeholder="Explain your sales strategy, distribution channels, and pricing" 
-                        className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
-                    />
+                <div className='flex flex-row items-center justify-between'>
+                    <div className="border border-white text-white font-bold py-2 px-4 inline-flex items-center hover:bg-white hover:text-black cursor-pointer transition">
+                        <span className="mr-2">SUBMIT BUSINESS PLAN</span>
+                    </div>
 
-                    <input 
-                        type="text" 
-                        placeholder="Discuss your customer acquisition and retention strategies" 
-                        className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
-                    />
+                    <div>
+                        <p>
+                            Ensure that your business plan is well-written, free of errors, and professionally formatted. It's also important to tailor the plan to the specific needs<br/> and expectations of the investor you are approaching. Be prepared to answer questions and provide additional information as requested.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
