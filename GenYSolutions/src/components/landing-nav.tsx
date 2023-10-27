@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const LandingNav = () => {
   return (
-    <div className="w-screen flex flex-col items-center justify-center z-20 absolute py-6">
-      <div className="w-full px-20 flex flex-row items-center justify-between">
+    <div className="w-full md:w-screen flex flex-col items-center justify-center z-20 absolute py-6">
+      <div className="w-full px-5 md:px-20 flex flex-row items-center justify-between">
         <div className="relative w-[110px] h-[45px]">
           <Image fill src="/logo.svg" alt="Logo" />
         </div>

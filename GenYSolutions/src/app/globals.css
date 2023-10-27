@@ -104,7 +104,182 @@
   user-select: none;
 }
 
-@media screen and (max-width: 400px) {
+.servicesMain {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicesBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContainer {
+  height: 350px;
+  width: 400px;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalSlider {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
+  height: auto;
+}
+
+.cursor,
+.cursorLabel {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #b1d134;
+  color: black;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 300;
+  pointer-events: none;
+}
+
+.cursorLabel {
+  background-color: transparent;
+}
+
+.project {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 100px 50px 100px;
+  border-top: 1px solid #282d3d;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.project:last-of-type {
+  border-bottom: 1px solid #282d3d;
+}
+
+.project:hover {
+  opacity: 0.5;
+}
+
+.project:hover h2 {
+  transform: translateX(-20px);
+}
+
+.project:hover p {
+  transform: translateX(-20px);
+}
+
+.project:hover #arrow {
+  transform: translateX(20px);
+  transition: all 0.4s;
+}
+
+.project h2 {
+  color: white;
+  font-size: 64px;
+  margin: 0px;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+
+.project p {
+  font-size: 24px;
+  color: white;
+  transition: all 0.4s;
+  font-weight: 300;
+}
+
+.fade-enter {
+  opacity: 0;
+  max-height: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  max-height: 1000px; /* Adjust the value based on your content height */
+  transition: opacity 300ms, max-height 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+  max-height: 1000px; /* Adjust the value based on your content height */
+}
+
+.fade-exit-active {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 300ms, max-height 300ms;
+}
+
+.icon {
+  transition: transform 0.7s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.textContainer {
+  position: absolute;
+}
+
+.text {
+  position: relative;
+  white-space: nowrap;
+}
+
+.text p {
+  position: relative;
+  margin: 0px;
+  color: white;
+  font-size: 230px;
+  font-weight: 500;
+  padding-right: 50px;
+}
+
+.text p:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .slider {
+    padding-left: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+    transition: 0.4s ease-out transform;
+  }
+
   .slides li div {
     height: 460px;
     width: 415px;
@@ -113,5 +288,75 @@
     background-repeat: no-repeat;
     -webkit-user-select: none;
     user-select: none;
+  }
+
+  .servicesMain {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .project {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+    border-top: 1px solid #282d3d;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .project h2 {
+    text-align: start;
+    color: white;
+    font-size: 36px;
+    margin: 0px;
+    font-weight: 500;
+    transition: all 0.4s;
+  }
+
+  .project p {
+    font-size: 18px;
+    color: white;
+    transition: all 0.4s;
+    font-weight: 300;
+    text-align: start;
+  }
+
+  .project:hover {
+    opacity: 0.5;
+  }
+
+  .project:hover h2 {
+    transform: translateX(10px);
+  }
+
+  .project:hover p {
+    transform: translateX(10px);
+  }
+
+  .project:hover #arrow {
+    transform: translateX(-10px);
+    transition: all 0.4s;
+  }
+
+  .textContainer {
+    width: fit-content;
+  }
+  
+  .text {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  .text p {
+    position: relative;
+    margin: 0px;
+    color: white;
+    font-size: 130px;
+    font-weight: 500;
+    padding-right: 50px;
   }
 }
