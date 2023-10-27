@@ -20,7 +20,13 @@ const scaleAnimation = {
   },
 };
 
-const Modal = ({ modal, services }) => {
+const Modal = ({
+  modal,
+  services,
+}: {
+  modal: { active: boolean; index: number };
+  services: any[];
+}) => {
   const { active, index } = modal;
 
   const modalContainer = useRef(null);
@@ -74,8 +80,8 @@ const Modal = ({ modal, services }) => {
         variants={scaleAnimation}
         initial="initial"
         animate={active ? "enter" : "closed"}
-        className="modalContainer">
-
+        className="modalContainer"
+      >
         <div style={{ top: index * -100 + "%" }} className="modalSlider">
           {services.map((service, index) => {
             const { src, color } = service;
@@ -96,7 +102,6 @@ const Modal = ({ modal, services }) => {
             );
           })}
         </div>
-        
       </motion.div>
 
       <motion.div
