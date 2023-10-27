@@ -1,8 +1,15 @@
-"use client";
 import { ArrowUpRight } from "lucide-react";
 import React from "react";
 
-const Service = ({ index, title, setModal }) => {
+const Service = ({
+  index,
+  title,
+  setModal,
+}: {
+  index: number;
+  title: string;
+  setModal: (value: any) => void;
+}) => {
   return (
     <div
       onMouseEnter={() => {
