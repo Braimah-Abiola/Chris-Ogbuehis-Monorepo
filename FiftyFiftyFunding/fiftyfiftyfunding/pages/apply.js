@@ -9,12 +9,13 @@ function Apply() {
         <Navbar />
 
         <div className='mt-20 px-10'>
-            <h2 className="text-[#01BFF1] uppercase font-semibold">apply now</h2>
-            <h1 className="text-white text-8xl mt-5 mb-24 font-bold uppercase">
-                Lets start<br/> 
-                something<br/> 
-                together
-            </h1>
+        <h2 className="text-[#01BFF1] uppercase font-semibold text-lg md:text-xl">apply now</h2>
+        <h1 className="text-white text-3xl md:text-8xl mt-5 mb-16 md:mb-24 font-bold uppercase">
+            Lets start <br className='hidden md:block'/> 
+            something <br className='hidden md:block'/> 
+            together
+        </h1>
+
 
             {/* Form */}
             <div className='rounded-lg border border-[#737373] text-white p-7 mb-40'>
@@ -27,6 +28,7 @@ function Apply() {
                         placeholder="Briefly describe your business idea and its uniqueness" 
                         className="bg-[#1F1F1F] p-2 w-[80%] text-white outline-none focus:border-white focus:border-2"
                     />
+                    {/* className="bg-[#1F1F1F] p-2 w-full md:w-[80%] text-white outline-none focus:border-white focus:border-2" */}
 
                     <input 
                         type="text" 
@@ -42,22 +44,20 @@ function Apply() {
                 </div>
 
                 {/* BUSINESS PLAN */}
-                <div className='flex flex-row gap-60 mb-16'>
+                <div className='flex flex-col md:flex-row gap-4 md:gap-60 mb-16'>
                     <div>
                         <h2 className='mb-8 font-semibold'>BUSINESS PLAN</h2>
-                        <p className='uppercase text-[15px]'>
-                            Create a video detailing the reasons you believe FiftyFifty should<br/>
-                            invest in your business. Feel free to elaborate on why alternative<br/>
-                            funding avenues have proven unsuccessful and articulate the<br/>
-                            significance of this opportunity for you and your family.
+                        <p className='text-xs md:uppercase md:text-[15px]'>
+                            Create a video detailing the reasons you believe FiftyFifty should<br className='hidden md:block'/> invest in your business. Feel free to elaborate on why alternative<br className='hidden md:block'/> funding avenues have proven unsuccessful and articulate the<br className='hidden md:block'/> significance of this opportunity for you and your family.
                         </p>
                     </div>
 
-                    <div class="cursor-pointer flex flex-col gap-5 items-center justify-center w-[350px] h-[350px] bg-neutral-950 rounded-[25px] border border-neutral-500">
-                        <Image src='/apply/folder.png' alt='folder-icon' width={100} height={100}/>
-                        <p>UPLOAD VIDEO</p>
+                    <div className="cursor-pointer flex flex-col gap-5 items-center justify-center w-full md:w-[350px] h-[250px] md:h-[350px] bg-neutral-950 rounded-[25px] border border-neutral-500">
+                        <Image src='/apply/folder.png' alt='folder-icon' width={80} height={80} className='md:w-[100px] md:h-[100px]'/>
+                        <p className='text-xs md:text-base'>UPLOAD VIDEO</p>
                     </div>
                 </div>
+
 
                 {/* BUSINESS DESCRIPTION */}
                 <div className='flex flex-col gap-5 mb-16'>
@@ -271,13 +271,13 @@ function Apply() {
                     />
                 </div>
 
-                <div className='flex flex-row items-center justify-between'>
+                <div className='flex flex-col md:flex-row items-center justify-between py-4 md:py-0'>
                     <div className="border border-white text-white font-bold py-2 px-4 inline-flex items-center hover:bg-white hover:text-black cursor-pointer transition">
                         <span className="mr-2">SUBMIT BUSINESS PLAN</span>
                     </div>
 
                     <div>
-                        <p>
+                        <p className='text-center mt-7 md:mt-0 md:text-left'>
                             Ensure that your business plan is well-written, free of errors, and professionally formatted. It's also important to tailor the plan to the specific needs<br/> and expectations of the investor you are approaching. Be prepared to answer questions and provide additional information as requested.
                         </p>
                     </div>
