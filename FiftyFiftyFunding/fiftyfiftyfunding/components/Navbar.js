@@ -27,7 +27,12 @@ function Navbar() {
                         );
                     })}
                     <Link href='/apply'>
-                        {/* ... Your Apply Now Button ... */}
+                        <div className="border border-white text-white font-bold py-2 px-4 rounded inline-flex items-center hover:bg-white hover:text-black cursor-pointer transition">
+                            <span className="mr-2">APPLY NOW</span>
+                            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L12 13.586V6a1 1 0 112 0v7.586l4.293-4.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                            </svg>
+                        </div>
                     </Link>
                 </div>
 
@@ -50,12 +55,22 @@ function Navbar() {
                             const href = `#${item.replace(/\s+/g, '-').toLowerCase()}`;
                             return (
                                 <Link key={index} href={href}>
-                                    <p className="text-white hover:text-black transition cursor-pointer block py-1">{item}</p>
+                                    <p 
+                                        className="text-white hover:text-black transition cursor-pointer block py-1"
+                                        onClick={() => setMenuOpen(false)}
+                                    >
+                                            {item}
+                                    </p>
                                 </Link>
                             );
                         })}
                         <Link href='/apply'>
-                            {/* ... Your Apply Now Button ... */}
+                            <div className="border border-white text-white font-bold py-2 px-4 rounded inline-flex items-center hover:bg-white hover:text-black cursor-pointer transition">
+                                <span className="mr-2">APPLY NOW</span>
+                                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L12 13.586V6a1 1 0 112 0v7.586l4.293-4.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                                </svg>
+                            </div>
                         </Link>
                     </div>
                 </div>
