@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const LandingNavWhite = () => {
   return (
-    <div className="w-screen flex flex-col items-center justify-center z-20 absolute py-6">
-      <div className="w-full px-20 flex flex-row items-center justify-between">
+    <div className=" w-full md:w-screen flex flex-col items-center justify-center z-20 absolute py-6">
+      <div className="w-full px-5 md:px-20 flex flex-row items-center justify-between">
         <div className="relative w-[110px] h-[45px]">
           <Link href="/">
             <Image fill src="/logo_black.svg" alt="Logo" />
@@ -17,7 +17,7 @@ const LandingNavWhite = () => {
             {navLinks.map((nav, index) => (
               <li
                 key={nav.title}
-                className={` font-dmSans font-normal text-[18px] text-[#9B9CA1] hover:text-white transition-colors ${
+                className={` font-dmSans font-normal text-[18px] text-[#ffffff] hover:text-primary transition-colors ${
                   index === navLinks.length - 1 ? "mr-0" : "mr-[60px]"
                 }`}
               >
