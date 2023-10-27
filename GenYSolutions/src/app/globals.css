@@ -272,6 +272,19 @@
   top: 0;
 }
 
+.arrow-icon-down {
+  animation: arrow-bounce-up 1s infinite alternate;
+}
+
+@keyframes arrow-bounce-up {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
 @media screen and (max-width: 450px) {
   .slider {
     padding-left: 20px;
@@ -345,7 +358,7 @@
   .textContainer {
     width: fit-content;
   }
-  
+
   .text {
     position: relative;
     white-space: nowrap;

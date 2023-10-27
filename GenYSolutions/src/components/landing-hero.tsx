@@ -21,14 +21,14 @@ const LandingHero = () => {
         autoPlay
         loop
         muted
-        className="absolute z-0 aspect-video object-cover w-full md:w-auto min-w-full min-h-full max-w-none "
+        className="absolute top-0 z-0 aspect-video w-full md:w-auto min-w-full min-h-full max-w-none "
       >
         <source src="/hero_bg.mp4" type="video/mp4" />
       </video>
 
       <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
         <div className="flex items-center justify-center border border-white rounded-full h-16 w-10">
-          <MoveDown color="white" />
+          <MoveDown className="arrow-icon-down" color="white" />
         </div>
         <p className="text-white hidden md:block">Scroll to discover</p>
       </div>
