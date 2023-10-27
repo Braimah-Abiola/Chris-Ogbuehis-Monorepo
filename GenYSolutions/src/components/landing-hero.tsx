@@ -21,7 +21,7 @@ const LandingHero = () => {
         autoPlay
         loop
         muted
-        className="absolute top-0 z-0 aspect-video w-full md:w-auto min-w-full min-h-full max-w-none "
+        className="absolute z-0 w-full md:w-auto min-w-full min-h-full max-w-none "
       >
         <source src="/hero_bg.mp4" type="video/mp4" />
       </video>
