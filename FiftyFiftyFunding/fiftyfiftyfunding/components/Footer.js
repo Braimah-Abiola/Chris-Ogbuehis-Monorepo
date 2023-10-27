@@ -19,7 +19,7 @@ function Footer() {
                 <input 
                     type="email" 
                     placeholder="Enter your email" 
-                    className="bg-gray-700 p-2 text-white outline-none focus:border-white focus:border-2"
+                    className="bg-[#1F1F1F] p-2 text-white outline-none focus:border-white focus:border-2"
                 />
 
                 <div className="border border-white text-white font-bold py-2 px-4 inline-flex items-center hover:bg-white hover:text-black cursor-pointer transition">
