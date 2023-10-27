@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function Structure() {
   return (
-    <div className='bg-black flex flex-row items-center justify-around'>
+    <div id='structure' className='bg-black flex flex-row items-center justify-around'>
         <div className='text-white py-20'>
             <h1 className='font-bold text-8xl mb-10'>STRUCTURE</h1>
             <p>

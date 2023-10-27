@@ -3,7 +3,7 @@ import Image from 'next/image'
 function Team() {
   return (
     <div className='bg-radial-gradient-blue'>
-      <section className="py-16 text-center">
+      <section id='meet-the-team' className="py-16 text-center">
       <h2 className="text-white text-8xl mb-8 font-bold"><span className='text-black'>WE ARE</span> DRIVEN.</h2>
       <p className="text-black font-semibold mb-10 text-center">
         {"We love what we do."}

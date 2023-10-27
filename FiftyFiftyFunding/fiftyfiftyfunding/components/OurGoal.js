@@ -4,7 +4,7 @@ import Image from 'next/image'
 function OurGoal() {
   return (
     <div className='bg-black'>
-      <section className="flex items-center justify-around py-12">
+      <section id='our-goal' className="flex items-center justify-around py-12">
         {/* Our Goal */}
         <div className="w-1/2">
             <h2 className="text-[#01BFF1]">OUR GOAL</h2>
@@ -24,7 +24,7 @@ function OurGoal() {
         </section>
 
         {/* What we do */}
-        <section className='flex flex-row-reverse items-center justify-around py-12'>
+        <section id='how-it-works' className='flex flex-row-reverse items-center justify-around py-12'>
             <div className="text-right">
                 <h2 className="text-[#01BFF1]">WHAT WE DO</h2>
                 <h1 className="text-white text-6xl mt-5 mb-3 font-bold">HOW<br/> IT WORKS</h1>
