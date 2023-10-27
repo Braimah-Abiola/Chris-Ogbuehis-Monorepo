@@ -30,7 +30,7 @@ const LandingAbout = () => {
       x: "-500px",
     });
     requestAnimationFrame(animate);
-  }, []);
+  });
 
   const animate = () => {
     if (xPercent.current < -100) {

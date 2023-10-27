@@ -7,17 +7,19 @@ import { CSSTransition } from "react-transition-group";
 import { useState } from "react";
 
 const LandingFaq = () => {
-  const [openQuestion, setOpenQuestion] = useState(null);
+  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
 
   const handleQuestionClick = (index: number) => {
-    setOpenQuestion(openQuestion === index ? null : index);
+    setOpenQuestion((prevOpenQuestion) =>
+      prevOpenQuestion === index ? null : index
+    );
   };
 
-  const isQuestionOpen = (index:number) => {
+  const isQuestionOpen = (index: number) => {
     return openQuestion === index;
   };
 
-  const getIconSrc = (index:number) => {
+  const getIconSrc = (index: number) => {
     return isQuestionOpen(index)
       ? "/images/chevron_up.svg"
       : "/images/chevron_down.svg";
