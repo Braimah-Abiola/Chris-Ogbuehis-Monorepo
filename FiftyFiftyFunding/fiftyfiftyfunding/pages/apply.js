@@ -278,7 +278,7 @@ function Apply() {
 
                     <div>
                         <p className='text-center mt-7 md:mt-0 md:text-left'>
-                            Ensure that your business plan is well-written, free of errors, and professionally formatted. It's also important to tailor the plan to the specific needs<br/> and expectations of the investor you are approaching. Be prepared to answer questions and provide additional information as requested.
+                            Ensure that your business plan is well-written, free of errors, and professionally formatted. Its also important to tailor the plan to the specific needs<br/> and expectations of the investor you are approaching. Be prepared to answer questions and provide additional information as requested.
                         </p>
                     </div>
                 </div>
