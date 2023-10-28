@@ -24,7 +24,7 @@ function Navbar() {
                 {/* Logo */}
                 <div className="font-bold text-xl">
                     <Link href="/">
-                        <Image src="/header/FiftyFifty-Logo.png" alt="FiftyFifty Logo" width={50} height={50} />
+                        <Image src="/header/Group 64.png" alt="FiftyFifty Logo" width={100} height={100} />
                     </Link>
                 </div>
 
