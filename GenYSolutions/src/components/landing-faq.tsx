@@ -31,7 +31,7 @@ const LandingFaq = () => {
         <h2 className="text-start text-black font-semibold text-5xl lg:text-7xl">
           FAQs
         </h2>
-        <Image width={60} height={60} src="/images/glitter.svg" alt="Glitter" />
+        <Image className="rotateGlitter" width={60} height={60} src="/images/glitter.svg" alt="Glitter" />
       </div>
 
       <div className="flex flex-col justify-center w-full space-y-4 mt-20">
@@ -85,7 +85,7 @@ const LandingFaq = () => {
               height={20}
               src={getIconSrc(1)}
               alt="Expand"
-              className={`icon ${isQuestionOpen(0) ? "rotate" : ""}`}
+              className={`icon ${isQuestionOpen(1) ? "rotate" : ""}`}
             />
           </div>
           <CSSTransition
@@ -120,7 +120,7 @@ const LandingFaq = () => {
               height={20}
               src={getIconSrc(2)}
               alt="Expand"
-              className={`icon ${isQuestionOpen(0) ? "rotate" : ""}`}
+              className={`icon ${isQuestionOpen(2) ? "rotate" : ""}`}
             />
           </div>
           <CSSTransition
@@ -155,7 +155,7 @@ const LandingFaq = () => {
               height={20}
               src={getIconSrc(3)}
               alt="Expand"
-              className={`icon ${isQuestionOpen(0) ? "rotate" : ""}`}
+              className={`icon ${isQuestionOpen(3) ? "rotate" : ""}`}
             />
           </div>
           <CSSTransition
@@ -190,7 +190,7 @@ const LandingFaq = () => {
               height={20}
               src={getIconSrc(4)}
               alt="Expand"
-              className={`icon ${isQuestionOpen(0) ? "rotate" : ""}`}
+              className={`icon ${isQuestionOpen(4) ? "rotate" : ""}`}
             />
           </div>
           <CSSTransition
@@ -225,7 +225,7 @@ const LandingFaq = () => {
               height={20}
               src={getIconSrc(5)}
               alt="Expand"
-              className={`icon ${isQuestionOpen(0) ? "rotate" : ""}`}
+              className={`icon ${isQuestionOpen(5) ? "rotate" : ""}`}
             />
           </div>
           <CSSTransition

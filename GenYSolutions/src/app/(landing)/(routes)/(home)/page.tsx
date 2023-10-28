@@ -21,6 +21,7 @@ export default function Home() {
     setTimeout(() => {
       setIsLoading(false);
       document.body.style.cursor = "default";
+      document.body.style.overflowY = "visible";
       window.scrollTo(0, 0);
     }, 2000);
   }, []);
@@ -31,7 +32,7 @@ export default function Home() {
       </AnimatePresence>
       <LandingNav />
       <LandingHero />
-      <div className="bg-[#0D0B0E] pb-40">
+      <div className="bg-[#0D0B0E] pb-20 md:pb-40">
         <LandingAbout />
       </div>
       <LandingWork />

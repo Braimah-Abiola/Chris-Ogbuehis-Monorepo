@@ -54,8 +54,8 @@ html {
 }
 
 body {
-  margin: 0px;
   cursor: wait;
+  overflow-y: hidden;
 }
 
 /* Firefox */
@@ -87,7 +87,11 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
-  z-index: 99;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
   background-color: #b1d134;
 }
 
@@ -118,6 +122,19 @@ body {
   background-color: rgb(0, 0, 0);
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+  gap: 20vw;
+  margin-bottom: 300px;
+}
+
+.lineMask {
+  overflow: hidden;
 }
 
 /* CAROUSEL */
@@ -334,6 +351,19 @@ body {
   }
 }
 
+.rotateGlitter {
+  animation: spin 5s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 450px) {
   .slider {
     padding-left: 20px;
@@ -392,15 +422,15 @@ body {
   }
 
   .project:hover h2 {
-    transform: translateX(10px);
+    transform: translateX(0px);
   }
 
   .project:hover p {
-    transform: translateX(10px);
+    transform: translateX(0px);
   }
 
   .project:hover #arrow {
-    transform: translateX(-10px);
+    transform: translateX(0px);
     transition: all 0.4s;
   }
 
@@ -420,5 +450,11 @@ body {
     font-size: 130px;
     font-weight: 500;
     padding-right: 50px;
+  }
+
+  .marqueeText {
+    color: white;
+    font-size: 130px;
+    font-weight: 500;
   }
 }

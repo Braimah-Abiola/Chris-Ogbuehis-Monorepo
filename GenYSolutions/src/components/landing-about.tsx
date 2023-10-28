@@ -8,6 +8,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ScrollTrigger } from "gsap/all";
 import { useRef, useEffect } from "react";
+import Marquee from "react-fast-marquee";
 
 const LandingAbout = () => {
   const firstText = useRef(null);
@@ -47,7 +48,7 @@ const LandingAbout = () => {
   return (
     <div
       id="start"
-      className="-mt-1 pt-[8rem] md:pt-[15rem] pb-[12rem] md:pb-[30rem]"
+      className="-mt-1 pt-[8rem] md:pt-[15rem] pb-[0rem] md:pb-[30rem]"
     >
       <MaxWidthWrapper className="flex flex-col items-start justify-center text-center mb-20 md:mb-40">
         <div className="px-2.5 md:px-0 flex flex-col md:flex-row md:items-center justify-between w-full">
@@ -91,11 +92,17 @@ const LandingAbout = () => {
         </div>
       </MaxWidthWrapper>
 
-      <div className="textContainer object-contain mt-[5rem] md:mt-[8rem]">
+      <div className="textContainer hidden md:block mt-[5rem] md:mt-[8rem]">
         <div ref={slider} className="text">
           <p ref={firstText}>Crafting AI Solutions -</p>
           <p ref={secondText}>Crafting AI Solutions -</p>
         </div>
+      </div>
+
+      <div className="md:hidden mt-[8rem]">
+        <Marquee speed={150}>
+          <p className="marqueeText">Crafting AI Solutions -</p>
+        </Marquee>
       </div>
     </div>
   );
