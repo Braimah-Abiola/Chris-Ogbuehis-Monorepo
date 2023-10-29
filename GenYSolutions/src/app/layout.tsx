@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body className={cn("min-h-screen antialiased grainy overflow-x-hidden", dmSans.className)}>
+      <body className={cn("min-h-screen antialiased overflow-x-hidden", dmSans.className)}>
         {children}
       </body>
     </html>
