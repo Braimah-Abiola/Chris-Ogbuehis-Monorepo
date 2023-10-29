@@ -87,10 +87,6 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   z-index: 9999;
   background-color: #b1d134;
 }
@@ -137,6 +133,204 @@ body {
   overflow: hidden;
 }
 
+/* MENU */
+
+.svgCurve {
+  position: absolute;
+  top: 0;
+  left: -99px;
+  width: 100px;
+  height: 100%;
+  fill: #1a1d28;
+  stroke: none;
+}
+
+.headerButtonContainer {
+  transform: scale(0);
+  position: fixed;
+  right: 20px;
+  z-index: 20;
+}
+
+.headerButtonContainer .button {
+  position: relative;
+  margin: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #2A2F40;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.headerButtonContainer .burger {
+  width: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+.headerButtonContainer .burger::after,
+.headerButtonContainer .burger::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 40%;
+  margin: auto;
+  background-color: white;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.headerButtonContainer .burger::after {
+  top: -5px;
+}
+
+.headerButtonContainer .burger::before {
+  top: 5px;
+}
+
+.headerButtonContainer .burgerActive::after {
+  transform: rotate(45deg);
+  top: -1px;
+}
+
+.headerButtonContainer .burgerActive::before {
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a1d28;
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  color: white;
+  z-index: 10;
+}
+
+.menu .body {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.menu .body .nav {
+  display: flex;
+  flex-direction: column;
+  font-size: 78px;
+  font-weight: 500;
+  gap: 12px;
+}
+
+.menu .body .nav .header {
+  color: rgb(153, 153, 153);
+  border-bottom: 1px solid rgb(153, 153, 153);
+  text-transform: uppercase;
+  font-size: 11px;
+  margin-bottom: 40px;
+}
+
+.menu .body .nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.roundedButton {
+  border-radius: 3em;
+  border: 1px solid rgb(136, 136, 136);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 60px 15px 60px;
+}
+
+.roundedButton p {
+  position: relative;
+  z-index: 1;
+  transition: color 0.4s linear;
+}
+
+.roundedButton:hover p {
+  color: white;
+}
+
+.circle {
+  width: 100%;
+  height: 150%;
+  position: absolute;
+  border-radius: 50%;
+  top: 100%;
+}
+
+.link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.link .indicator {
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: -30px;
+}
+
+.menu-icon-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon-container:hover {
+  transform: scale(1.1);
+}
+
+.menu-icon-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-width 0.3s ease;
+}
+
+.menu-icon-container:hover::before {
+  width: 100%;
+  height: 100%;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 50%;
+}
+
+.menu-icon-container:hover {
+  background-color: transparent;
+  border-color: rgb(255, 255, 255);
+}
+
+/* MENU END */
+
 /* CAROUSEL */
 
 .slider {
@@ -173,7 +367,6 @@ body {
 .servicesMain {
   width: 100%;
   display: flex;
-  height: 100vh;
   align-items: center;
   justify-content: center;
 }
@@ -196,6 +389,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.industryModalContainer {
+  height: 350px;
+  width: 400px;
+  position: absolute;
+  background-color: white;
+  overflow: hidden;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  rotate: 18deg;
 }
 
 .modalSlider {
@@ -338,6 +544,26 @@ body {
   top: 0;
 }
 
+.text2 {
+  position: relative;
+  white-space: nowrap;
+}
+
+.text2 p {
+  position: relative;
+  margin: 0px;
+  color: black;
+  font-size: 230px;
+  font-weight: 500;
+  padding-right: 50px;
+}
+
+.text2 p:nth-of-type(2) {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
 .arrow-icon-down {
   animation: arrow-bounce-up 1s infinite alternate;
 }
@@ -456,5 +682,70 @@ body {
     color: white;
     font-size: 130px;
     font-weight: 500;
+  }
+
+  .introduction p {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .introduction svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: calc(0%);
+  }
+
+  .menu {
+    overflow: hidden;
+    width: 105vw;
+    height: 100vh;
+    background-color: #1a1d28;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    color: white;
+    z-index: 10;
+  }
+
+  .menu .body {
+    box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .menu .body .nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 42px;
+    font-weight: 500;
+    gap: 12px;
+  }
+
+  .headerButtonContainer {
+    transform: scale(0);
+    position: fixed;
+    z-index: 20;
+  }
+
+  .headerButtonContainer .button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #2A2F40;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
   }
 }
