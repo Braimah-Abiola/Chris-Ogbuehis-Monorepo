@@ -31,7 +31,13 @@ const LandingFaq = () => {
         <h2 className="text-start text-black font-semibold text-5xl lg:text-7xl">
           FAQs
         </h2>
-        <Image className="rotateGlitter" width={60} height={60} src="/images/glitter.svg" alt="Glitter" />
+        <Image
+          className="rotateGlitter"
+          width={60}
+          height={60}
+          src="/images/glitter.svg"
+          alt="Glitter"
+        />
       </div>
 
       <div className="flex flex-col justify-center w-full space-y-4 mt-20">
@@ -41,7 +47,7 @@ const LandingFaq = () => {
           }`}
           onClick={() => handleQuestionClick(0)}
         >
-          <div className="flex flex-row justify-between cursor-pointer mx-10">
+          <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
               Why Gen Y Solutions
             </h2>
@@ -59,8 +65,8 @@ const LandingFaq = () => {
             classNames="fade"
             unmountOnExit
           >
-            <div className="answer-container ml-10 mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full">
+            <div className="answer-container md:ml-5 md:mr-20">
+              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
                 Nova is an AI SaaS (Software as a Service) platform that allows
                 users to create custom AI friends and personalities to chat with
                 24/7. It provides a unique and interactive way for users to
@@ -76,7 +82,7 @@ const LandingFaq = () => {
           }`}
           onClick={() => handleQuestionClick(1)}
         >
-          <div className="flex flex-row justify-between cursor-pointer mx-10">
+          <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
               How does it work?
             </h2>
@@ -94,8 +100,8 @@ const LandingFaq = () => {
             classNames="fade"
             unmountOnExit
           >
-            <div className="answer-container ml-10 mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full">
+            <div className="answer-container md:ml-5 md:mr-20">
+              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
                 Nova is an AI SaaS (Software as a Service) platform that allows
                 users to create custom AI friends and personalities to chat with
                 24/7. It provides a unique and interactive way for users to
@@ -111,7 +117,7 @@ const LandingFaq = () => {
           }`}
           onClick={() => handleQuestionClick(2)}
         >
-          <div className="flex flex-row justify-between cursor-pointer mx-10">
+          <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
               Are the requests really unlimited?
             </h2>
@@ -129,8 +135,8 @@ const LandingFaq = () => {
             classNames="fade"
             unmountOnExit
           >
-            <div className="answer-container ml-10 mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full">
+            <div className="answer-container md:ml-5 md:mr-20">
+              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
                 Nova is an AI SaaS (Software as a Service) platform that allows
                 users to create custom AI friends and personalities to chat with
                 24/7. It provides a unique and interactive way for users to
@@ -146,7 +152,7 @@ const LandingFaq = () => {
           }`}
           onClick={() => handleQuestionClick(3)}
         >
-          <div className="flex flex-row justify-between cursor-pointer mx-10">
+          <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
               What is the turnaround time?
             </h2>
@@ -164,8 +170,8 @@ const LandingFaq = () => {
             classNames="fade"
             unmountOnExit
           >
-            <div className="answer-container ml-10 mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full">
+            <div className="answer-container md:ml-5 md:mr-20">
+              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
                 Nova is an AI SaaS (Software as a Service) platform that allows
                 users to create custom AI friends and personalities to chat with
                 24/7. It provides a unique and interactive way for users to
@@ -181,7 +187,7 @@ const LandingFaq = () => {
           }`}
           onClick={() => handleQuestionClick(4)}
         >
-          <div className="flex flex-row justify-between cursor-pointer mx-10">
+          <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
               What software do you use?
             </h2>
@@ -199,8 +205,8 @@ const LandingFaq = () => {
             classNames="fade"
             unmountOnExit
           >
-            <div className="answer-container ml-10 mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full">
+            <div className="answer-container md:ml-5 md:mr-20">
+              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
                 Nova is an AI SaaS (Software as a Service) platform that allows
                 users to create custom AI friends and personalities to chat with
                 24/7. It provides a unique and interactive way for users to
@@ -216,7 +222,7 @@ const LandingFaq = () => {
           }`}
           onClick={() => handleQuestionClick(5)}
         >
-          <div className="flex flex-row justify-between cursor-pointer mx-10">
+          <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
               Are refunds available?
             </h2>
@@ -234,8 +240,8 @@ const LandingFaq = () => {
             classNames="fade"
             unmountOnExit
           >
-            <div className="answer-container ml-10 mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full">
+            <div className="answer-container md:ml-5 md:mr-20">
+              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
                 Nova is an AI SaaS (Software as a Service) platform that allows
                 users to create custom AI friends and personalities to chat with
                 24/7. It provides a unique and interactive way for users to

@@ -48,15 +48,14 @@ const LandingAboutWhite = () => {
   return (
     <div
       id="start"
-      className="-mt-1 pt-[8rem] md:pt-[0rem] pb-[0rem] md:pb-[20rem]"
+      className="-mt-1 pt-[5rem] md:pt-[0rem] pb-[0rem] md:pb-[20rem]"
     >
-
       <WorkSlider />
 
       <MaxWidthWrapper className="flex flex-col items-start justify-center text-center">
         <div className="border border-black/10 w-full md:mt-20 px-2.5 md:px-0" />
 
-        <div className="flex flex-col md:flex-row items-start justify-between w-full mt-20 px-2.5 md:px-0">
+        <div className="flex flex-col md:flex-row items-start justify-between w-full mt-12 md:mt-20 px-2.5 md:px-0">
           <div className="flex flex-row items-center justify-center space-x-3">
             <div className="w-3 h-3 rounded-full bg-black" />
             <p className="text-black sm:text-lg">WHO ARE WE</p>
@@ -90,7 +89,7 @@ const LandingAboutWhite = () => {
 
       <div className="md:hidden mt-[8rem]">
         <Marquee speed={150}>
-          <p className="marqueeText">Crafting AI Solutions -</p>
+          <p className="marqueeTextBlack">Crafting AI Solutions -</p>
         </Marquee>
       </div>
     </div>

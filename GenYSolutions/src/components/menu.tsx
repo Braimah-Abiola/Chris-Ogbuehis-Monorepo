@@ -77,7 +77,6 @@ const Menu = () => {
                 <p>YouTube</p>
                 <p>Instagram</p>
                 <p>Facebook</p>
-                <p>Calendly</p>
               </div>
             </div>
           </div>
@@ -97,17 +96,16 @@ const Menu = () => {
                 <p>Featured Work</p>
               </div>
             </div>
-            <div className="flex flex-row items-end gap-10 fit">
+            <div className="flex flex-row items-end gap-20 fit">
               <div className="flex flex-col">
-                <p>+359 877 161 266</p>
-                <p>hey@genysolutions.co</p>
-                <p> Texas, United States</p>
+                <p className="text-white text-lg">+359 877 161 266</p>
+                <p className="text-white text-lg mt-2">hey@genysolutions.co</p>
+                <p className="text-white text-lg mt-2"> Texas, United States</p>
               </div>
               <div className="flex flex-col">
-                <p>YouTube</p>
-                <p>Instagram</p>
-                <p>Facebook</p>
-                <p>Calendly</p>
+                <p className="text-white text-lg">YouTube</p>
+                <p className="text-white text-lg mt-2">Instagram</p>
+                <p className="text-white text-lg mt-2">Facebook</p>
               </div>
             </div>
           </div>

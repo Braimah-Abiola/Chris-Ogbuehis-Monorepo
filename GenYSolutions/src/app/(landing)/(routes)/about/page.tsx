@@ -29,7 +29,7 @@ const AboutPage = () => {
 
       <LandingNavWhite />
       <LandingAboutHero />
-      <div className="my-40">
+      <div className="md:my-40">
         <LandingAboutWhite />
       </div>
       <LandingTeam/>
