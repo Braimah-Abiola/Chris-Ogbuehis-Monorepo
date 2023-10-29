@@ -1,8 +1,5 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
-
-import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
-import WorkSlider from "./work-slider";
 import Image from "next/image";
 import LandingFooter from "./landing-footer";
 
