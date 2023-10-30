@@ -92,7 +92,7 @@ const LandingFooter = () => {
                   General Equiry
                 </p>
                 <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  WhatsApp Number
+                  WhatsApp
                 </p>
                 <p className="text-zinc-400 sm:text-lg text-start mt-2">
                   International
