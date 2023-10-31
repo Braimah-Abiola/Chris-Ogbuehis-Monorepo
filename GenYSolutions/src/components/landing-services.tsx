@@ -37,13 +37,14 @@ const LandingServices = () => {
         challenge with our arms wide open
       </p>
 
-      <div className="servicesMain mt-20 md:mt-32">
+      <div className="servicesMain mt-20 md:mt-32 md:ml-60">
         <div className="servicesBody">
           {services.map((service, index) => {
             return (
               <Service
                 index={index}
                 title={service.title}
+                number={service.number}
                 setModal={setModal}
                 key={index}
               />
