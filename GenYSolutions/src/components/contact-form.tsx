@@ -1,51 +1,90 @@
 "use client";
 
-import { useState, useRef } from "react";
-import MaxWidthWrapper from "./MaxWidthWrapper";
+import { useState, useRef, ChangeEvent, FormEvent } from "react";
 import { Button } from "./ui/button";
+
+import MaxWidthWrapper from "./MaxWidthWrapper";
 import toast, { Toaster } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
-const ContactForm = () => {
-  const form = useRef();
+
+interface UserInfo {
+  projectDetails: string;
+  userName: string;
+  userEmail: string;
+  companyName: string;
+  skypeOrPhone: string;
+  privacy: boolean;
+  terms: boolean;
+}
+
+const ContactForm: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
   const [sending, setSending] = useState(false);
-  const [userInfo, SetUserInfo] = useState({projectDetails: "", userName: "", userEmail: "", companyName: "", skypeOrPhone: "", privacy: false, terms: false});
-  const handleSubmit = (e: any) => {
+  const [userInfo, setUserInfo] = useState({
+    projectDetails: "",
+    userName: "",
+    userEmail: "",
+    companyName: "",
+    skypeOrPhone: "",
+    privacy: false,
+    terms: false,
+  });
+
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!userInfo.userName.trim()) {
-      toast.error("Please enter a username");
+      toast.error("Please enter your name");
     } else if (!userInfo.userEmail.trim()) {
       toast.error("Please enter an email");
     } else if (!userInfo.projectDetails.trim()) {
       toast.error("Please tell us about your project");
-    } 
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userInfo.userEmail)) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userInfo.userEmail)) {
       toast.error(
         "Please enter a valid email address example example@gmail.com"
       );
-    } 
-    else if (!(userInfo.privacy)) {
-      toast.error(
-        "Please consent to Privacy Policy"
-      );
-    } 
-    else if (!(userInfo.terms)) {
-      toast.error(
-        "Please accept terms and conditions"
-      );
-    } 
-    else {
+    } else if (!userInfo.privacy) {
+      toast.error("Please consent to Privacy Policy");
+    } else if (!userInfo.terms) {
+      toast.error("Please accept terms and conditions");
+    } else {
       toast.loading("Please wait...");
-      setSending(true)
-      form.current.reset()
-      console.log(form.current);
-      emailjs.sendForm("service_xekqkl9","template_9poobu3",form.current,"vTNCg0_4K3Gp0v11m")
-        .then(() => {
-          toast.remove();
-          toast.success("success");
-          setSending(false)
-          SetUserInfo({...userInfo, projectDetails: "", userName: "", userEmail: "", companyName: "", skypeOrPhone: "", privacy: false, terms: false})
-        });
+      setSending(true);
+      if (form.current) {
+        emailjs
+          .sendForm(
+            "service_xekqkl9",
+            "template_9poobu3",
+            form.current,
+            "vTNCg0_4K3Gp0v11m"
+          )
+          .then(() => {
+            toast.remove();
+            toast.success("success");
+            setSending(false);
+            setUserInfo({
+              projectDetails: "",
+              userName: "",
+              userEmail: "",
+              companyName: "",
+              skypeOrPhone: "",
+              privacy: false,
+              terms: false,
+            });
+          });
+      }
     }
+  };
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setUserInfo((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  const handleCheckboxChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, checked } = e.target;
+    setUserInfo((prevState) => ({ ...prevState, [name]: checked }));
   };
 
   return (
@@ -83,7 +122,9 @@ const ContactForm = () => {
                     placeholder="Enter your name"
                     required
                     value={userInfo.userName}
-                    onChange={(e) => SetUserInfo({ ...userInfo, userName: e.target.value})}
+                    onChange={(e) =>
+                      setUserInfo({ ...userInfo, userName: e.target.value })
+                    }
                   />
                 </div>
               </div>
@@ -99,7 +140,9 @@ const ContactForm = () => {
                     placeholder="Enter your email"
                     required
                     value={userInfo.userEmail}
-                    onChange={(e) => SetUserInfo({ ...userInfo, userEmail: e.target.value})}
+                    onChange={(e) =>
+                      setUserInfo({ ...userInfo, userEmail: e.target.value })
+                    }
                   />
                 </div>
               </div>
@@ -116,7 +159,9 @@ const ContactForm = () => {
                     type="text"
                     placeholder="Enter your skype or phone number"
                     value={userInfo.skypeOrPhone}
-                    onChange={(e) => SetUserInfo({ ...userInfo, skypeOrPhone: e.target.value})}
+                    onChange={(e) =>
+                      setUserInfo({ ...userInfo, skypeOrPhone: e.target.value })
+                    }
                   />
                 </div>
               </div>
@@ -130,7 +175,9 @@ const ContactForm = () => {
                     name="company"
                     type="text"
                     placeholder="Enter Company Name"
-                    onChange={(e) => SetUserInfo({ ...userInfo, companyName: e.target.value})}
+                    onChange={(e) =>
+                      setUserInfo({ ...userInfo, companyName: e.target.value })
+                    }
                     value={userInfo.companyName}
                   />
                 </div>
@@ -150,7 +197,9 @@ const ContactForm = () => {
                   placeholder="Project purpose, target audience, competitors, inspiration, etc"
                   required
                   value={userInfo.projectDetails}
-                  onChange={(e) => SetUserInfo({ ...userInfo, projectDetails: e.target.value})}
+                  onChange={(e) =>
+                    setUserInfo({ ...userInfo, projectDetails: e.target.value })
+                  }
                 />
               </div>
             </div>
@@ -159,13 +208,19 @@ const ContactForm = () => {
               <div className="flex flex-col">
                 <div className="mt-3 md:mt-20">
                   <label className="checkbox-label">
-<<<<<<< HEAD
                     <div className="flex items-center">
-                      <input type="checkbox" className="checkbox-input" />
-=======
-                    <div>
-                      <input type="checkbox" className="checkbox-input" value={userInfo.privacy} required onChange={e => SetUserInfo({...userInfo, privacy: Boolean(e.target.value)})}/>
->>>>>>> 911aae5f8567a40d41c526aaccfaf6568b7b8e28
+                      <input
+                        type="checkbox"
+                        className="checkbox-input"
+                        checked={userInfo.privacy}
+                        required
+                        onChange={(e) =>
+                          setUserInfo({
+                            ...userInfo,
+                            privacy: Boolean(e.target.value),
+                          })
+                        }
+                      />
                     </div>
                     <span className="checkbox-text">
                       I consent to processing of my personal data and{" "}
@@ -179,13 +234,19 @@ const ContactForm = () => {
 
                 <div className="mt-3 md:mt-4">
                   <label className="checkbox-label">
-<<<<<<< HEAD
                     <div className="flex items-center">
-                      <input type="checkbox" className="checkbox-input" />
-=======
-                    <div>
-                      <input type="checkbox" className="checkbox-input" value={userInfo.terms} required onChange={e => SetUserInfo({...userInfo, terms: Boolean(e.target.value)})}/>
->>>>>>> 911aae5f8567a40d41c526aaccfaf6568b7b8e28
+                      <input
+                        type="checkbox"
+                        className="checkbox-input"
+                        checked={userInfo.terms}
+                        required
+                        onChange={(e) =>
+                          setUserInfo({
+                            ...userInfo,
+                            terms: Boolean(e.target.value),
+                          })
+                        }
+                      />
                     </div>
                     <span className="checkbox-text">
                       I accept the{" "}
@@ -196,7 +257,13 @@ const ContactForm = () => {
                   </label>
                 </div>
               </div>
-              <Button className="mt-20 md:mt-0" onClick={handleSubmit} disabled={sending}>
+              <Button
+                className="mt-20 md:mt-0"
+                onClick={(e: React.MouseEvent<HTMLButtonElement>) =>
+                  handleSubmit(e as unknown as FormEvent<HTMLFormElement>)
+                }
+                disabled={sending}
+              >
                 Submit
               </Button>
             </div>

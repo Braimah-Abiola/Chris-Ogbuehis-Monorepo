@@ -2,6 +2,7 @@ import { PROJECTS } from "@/constants/images";
 import { useRef, MouseEvent } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 
 type Project = {
   name: string;
@@ -76,6 +77,7 @@ const Double: React.FC<DoubleProps> = ({ projects, reversed }) => {
           <p>{projects[0].year}</p>
         </div>
       </div>
+
       <div ref={secondImage} className="imageContainer">
         <div className="stretchyWrapper">
           <Image src={`/projects/${projects[1].src}`} alt={"image"} fill />

@@ -367,7 +367,6 @@ body {
   border-color: rgb(39, 39, 39);
 }
 
-
 /* MENU END */
 
 /* GALLERY */
@@ -411,20 +410,20 @@ body {
 }
 
 .double .body h3 {
-  font-size: 1.2em;
+  font-size: 40px;
   margin-bottom: 5px;
   margin-top: 0px;
   font-weight: 400;
 }
 
 .double .body p {
-  font-size: 1em;
+  font-size: 20px;
   margin: 0px;
-  color: rgb(187, 187, 187);
+  color: rgb(0, 0, 0);
 }
 
 .double .body p:nth-of-type(2) {
-  color: rgb(101, 101, 101);
+  color: rgb(170, 170, 170);
 }
 
 /* GALLERY END */
