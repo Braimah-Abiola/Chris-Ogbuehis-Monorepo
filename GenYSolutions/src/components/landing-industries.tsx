@@ -11,7 +11,7 @@ import IndustryModal from "./industry-modal";
 const LandingIndustries = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
   return (
-    <MaxWidthWrapper className="bg-[#1A1D28] pb-20 md:pt-60 md:pb-60 flex flex-col items-start justify-center text-center">
+    <MaxWidthWrapper className="bg-[#1A1D28] pt-20 pb-20 md:pt-60 md:pb-60 flex flex-col items-start justify-center text-center">
       <MaskText />
       <div className="servicesMain mt-20 md:mt-20">
         <div className="servicesBody">
@@ -61,8 +61,7 @@ export function MaskText() {
           initial="initial"
           animate={isInView ? "enter" : ""}
         >
-          We <span className="text-primary">serve</span> almost
-          <br className="hidden md:block" />
+          We<span className="text-primary"> serve</span> almost <br className="hidden md:block" />
           every Industry
         </motion.h2>
       </div>
