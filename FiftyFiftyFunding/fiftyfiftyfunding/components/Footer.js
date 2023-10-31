@@ -19,7 +19,7 @@ function Footer() {
         </div>
 
         <div className='mt-8 md:mt-0'>
-            <Image src="/header/bcorp.png" alt='logo' width={100} height={100}/>
+            
         </div>
     </div>
   )
