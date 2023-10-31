@@ -1,14 +1,13 @@
 import LandingBlog from "@/components/landing-blog";
+import LandingFooter from "@/components/landing-footer";
 import LandingNavWhite from "@/components/landing-nav-white";
 
 const Blog = () => {
   return (
     <div>
       <LandingNavWhite />
-
-      <div>
-        <LandingBlog />
-      </div>
+      <LandingBlog />
+      <LandingFooter />
     </div>
   );
 };

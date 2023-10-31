@@ -1,8 +1,6 @@
 import MaxWidthWrapper from "./MaxWidthWrapper";
-
 import { Button } from "./ui/button";
 import Image from "next/image";
-import LandingFooter from "./landing-footer";
 
 const LandingBlog = () => {
   return (
@@ -149,7 +147,6 @@ const LandingBlog = () => {
           </div>
         </div>
       </MaxWidthWrapper>
-      <LandingFooter />
     </div>
   );
 };
