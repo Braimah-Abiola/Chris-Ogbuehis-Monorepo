@@ -1,9 +1,57 @@
+"use client";
+
+import { useState, useRef } from "react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Button } from "./ui/button";
-
+import toast, { Toaster } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 const ContactForm = () => {
+  const form = useRef();
+  const [sending, setSending] = useState(false);
+  const [userInfo, SetUserInfo] = useState({projectDetails: "", userName: "", userEmail: "", companyName: "", skypeOrPhone: "", privacy: false, terms: false});
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    if (!userInfo.userName.trim()) {
+      toast.error("Please enter a username");
+    } else if (!userInfo.userEmail.trim()) {
+      toast.error("Please enter an email");
+    } else if (!userInfo.projectDetails.trim()) {
+      toast.error("Please tell us about your project");
+    } 
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userInfo.userEmail)) {
+      toast.error(
+        "Please enter a valid email address example example@gmail.com"
+      );
+    } 
+    else if (!(userInfo.privacy)) {
+      toast.error(
+        "Please consent to Privacy Policy"
+      );
+    } 
+    else if (!(userInfo.terms)) {
+      toast.error(
+        "Please accept terms and conditions"
+      );
+    } 
+    else {
+      toast.loading("Please wait...");
+      setSending(true)
+      form.current.reset()
+      console.log(form.current);
+      emailjs.sendForm("service_xekqkl9","template_9poobu3",form.current,"vTNCg0_4K3Gp0v11m")
+        .then(() => {
+          toast.remove();
+          toast.success("success");
+          setSending(false)
+          SetUserInfo({...userInfo, projectDetails: "", userName: "", userEmail: "", companyName: "", skypeOrPhone: "", privacy: false, terms: false})
+        });
+    }
+  };
+
   return (
     <div>
+      {/* <ToastContainer position="top-center" /> */}
+      <Toaster />
       <MaxWidthWrapper className="flex flex-col items-start justify-center text-center py-32">
         <div className="flex flex-col md:flex-row w-full">
           <div className="w-full md:w-1/2">
@@ -16,7 +64,13 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="flex flex-col w-full mt-10 md:mt-0">
+          <form
+            ref={form}
+            className="flex flex-col w-full mt-10 md:mt-0"
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
             <div className="flex flex-col md:flex-row justify-between space-x-0 space-y-10 md:space-y-0 md:space-x-10">
               <div className="flex flex-col items-start w-full">
                 <p className="text-black text-[20px] font-medium">
@@ -27,6 +81,9 @@ const ContactForm = () => {
                     name="username"
                     type="text"
                     placeholder="Enter your name"
+                    required
+                    value={userInfo.userName}
+                    onChange={(e) => SetUserInfo({ ...userInfo, userName: e.target.value})}
                   />
                 </div>
               </div>
@@ -40,6 +97,9 @@ const ContactForm = () => {
                     name="email"
                     type="text"
                     placeholder="Enter your email"
+                    required
+                    value={userInfo.userEmail}
+                    onChange={(e) => SetUserInfo({ ...userInfo, userEmail: e.target.value})}
                   />
                 </div>
               </div>
@@ -55,6 +115,8 @@ const ContactForm = () => {
                     name="number"
                     type="text"
                     placeholder="Enter your skype or phone number"
+                    value={userInfo.skypeOrPhone}
+                    onChange={(e) => SetUserInfo({ ...userInfo, skypeOrPhone: e.target.value})}
                   />
                 </div>
               </div>
@@ -68,6 +130,8 @@ const ContactForm = () => {
                     name="company"
                     type="text"
                     placeholder="Enter Company Name"
+                    onChange={(e) => SetUserInfo({ ...userInfo, companyName: e.target.value})}
+                    value={userInfo.companyName}
                   />
                 </div>
               </div>
@@ -84,6 +148,9 @@ const ContactForm = () => {
                   className="textarea-input"
                   rows={7}
                   placeholder="Project purpose, target audience, competitors, inspiration, etc"
+                  required
+                  value={userInfo.projectDetails}
+                  onChange={(e) => SetUserInfo({ ...userInfo, projectDetails: e.target.value})}
                 />
               </div>
             </div>
@@ -93,12 +160,12 @@ const ContactForm = () => {
                 <div className="mt-3 md:mt-20">
                   <label className="checkbox-label">
                     <div>
-                      <input type="checkbox" className="checkbox-input" />
+                      <input type="checkbox" className="checkbox-input" value={userInfo.privacy} required onChange={e => SetUserInfo({...userInfo, privacy: Boolean(e.target.value)})}/>
                     </div>
                     <span className="checkbox-text">
                       I consent to processing of my personal data and{" "}
                       <span className="text-primary underline">
-                        Priacy Policy
+                        Privacy Policy
                       </span>
                       .
                     </span>
@@ -108,7 +175,7 @@ const ContactForm = () => {
                 <div className="mt-3 md:mt-4">
                   <label className="checkbox-label">
                     <div>
-                      <input type="checkbox" className="checkbox-input" />
+                      <input type="checkbox" className="checkbox-input" value={userInfo.terms} required onChange={e => SetUserInfo({...userInfo, terms: Boolean(e.target.value)})}/>
                     </div>
                     <span className="checkbox-text">
                       I accept the
@@ -119,9 +186,11 @@ const ContactForm = () => {
                   </label>
                 </div>
               </div>
-              <Button className="mt-20 md:mt-0">Submit</Button>
+              <Button className="mt-20 md:mt-0" onClick={handleSubmit} disabled={sending}>
+                Submit
+              </Button>
             </div>
-          </div>
+          </form>
         </div>
       </MaxWidthWrapper>
     </div>
