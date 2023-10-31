@@ -24,8 +24,13 @@ const LandingBlog = () => {
           </div>
         </div>
 
-        <div className="relative w-full md:w-[100%] h-[260px] md:h-[760px]">
-          <Image fill src="/project3.png" alt="Project 1" />
+        <div className="relative object-cover w-full md:w-[1600px] h-[280px] md:h-[1200px]">
+          <Image
+            className="rounded-[10px] md:rounded-[15px]"
+            fill
+            src="/c2.jpg"
+            alt="Project 1"
+          />
         </div>
 
         <div className=" w-full md:w-[640px] text-left mt-5 md:mt-20">
@@ -53,8 +58,13 @@ const LandingBlog = () => {
           </p>
         </div>
 
-        <div className="relative w-full md:w-[600px] h-[385px] md:h-[600px] mt-5 md:mt-20">
-          <Image fill src="/project4.png" alt="Project 1" />
+        <div className="relative w-full md:w-[600px] h-[280px] md:h-[400px] mt-5 md:mt-20">
+          <Image
+            className="rounded-[15px]"
+            fill
+            src="/panda.jpg"
+            alt="Project 1"
+          />
         </div>
 
         <div className=" w-full md:w-[640px] text-left mt-5 md:mt-20">
@@ -82,8 +92,13 @@ const LandingBlog = () => {
           </p>
         </div>
 
-        <div className="relative w-full md:w-[600px] h-[385px] md:h-[600px] mt-5 md:mt-20">
-          <Image fill src="/project4.png" alt="Project 1" />
+        <div className="relative w-full md:w-[600px] h-[280px] md:h-[400px] mt-5 md:mt-20">
+          <Image
+            className="rounded-[15px]"
+            fill
+            src="/wix.jpg"
+            alt="Project 1"
+          />
         </div>
         <div className="hidden md:block">
           <Button className="absolute md:bottom-0 md:right-10">
@@ -121,8 +136,8 @@ const LandingBlog = () => {
           <h2 className=" text-5xl md:text-[64px]">Keep exploring</h2>
           <div className="flex flex-col md:flex-row gap-5 md:gap-10">
             <div className="w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
-              <div className="relative w-full md:w-[100%] h-[300px] md:h-[300px] object-cover">
-                <Image fill src="/project4.png" alt="Project 1" />
+            <div className="relative w-full md:w-full object-cover h-[280px] md:h-[280px]">
+                <Image fill src="/c2.jpg" alt="Project 1" />
               </div>
               <div className="px-5 text-[25px] text-left">
                 <p>Play the real-life city exploration games in Vidin,</p>
@@ -133,8 +148,8 @@ const LandingBlog = () => {
               </div>
             </div>
             <div className="w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between">
-              <div className="relative w-full md:w-[100%] h-[300px] md:h-[300px] object-cover">
-                <Image fill src="/project4.png" alt="Project 1" />
+            <div className="relative w-full md:w-full object-cover h-[280px] md:h-[280px]">
+                <Image fill src="/powell.jpg" alt="Project 1" />
               </div>
               <div className="px-5 text-[25px] text-left">
                 <p>Play the real-life city exploration games in Vidin,</p>
