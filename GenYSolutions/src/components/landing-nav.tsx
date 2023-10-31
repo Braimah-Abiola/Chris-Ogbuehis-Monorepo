@@ -2,11 +2,12 @@
 
 import { navLinks } from "@/constants";
 import { AnimatePresence } from "framer-motion";
-import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
+
+import gsap from "gsap";
+import Image from "next/image";
 import Menu from "./menu";
 import Rounded from "./rounded-button";
 import Link from "next/link";

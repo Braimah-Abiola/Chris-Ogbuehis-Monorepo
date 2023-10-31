@@ -23,7 +23,9 @@ const Service = ({
       className="project"
     >
       <div className="flex flex-row space-x-5 md:space-x-20">
-        <h4 className="text-zinc-400">{number}</h4>
+        <h4 className="text-zinc-400 text-[14px] md:text-[16px] mt-3">
+          {number}
+        </h4>
         <div className="flex flex-col items-start">
           <h2>{title}</h2>
           <p>Design & Development</p>

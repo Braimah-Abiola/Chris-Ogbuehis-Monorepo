@@ -8,7 +8,10 @@ const LandingBlog = () => {
   return (
     <div className="pt-[10rem] md:pt-[12rem]">
       <MaxWidthWrapper className="flex flex-col items-center justify-center text-center relative">
-        <Button size="sm" className="bg-[#F4F4F4] h-10 w-fit px-5 md:px-7 font-normal">
+        <Button
+          size="sm"
+          className="bg-[#F4F4F4] h-10 w-fit px-5 md:px-7 font-normal"
+        >
           BLOG
         </Button>
         <div className="w-full md:w-[748.03px] flex flex-col mb-20">
@@ -95,13 +98,22 @@ const LandingBlog = () => {
         <div className="flex flex-col gap-10">
           <p className="text-[22px] md:text-[28px]">Share on:</p>
           <div className="flex items-center gap-10">
-            <Button size="icon" className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5">
+            <Button
+              size="icon"
+              className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5"
+            >
               <Image src="/linkdin.png" alt="linkedin" width={30} height={30} />
             </Button>
-            <Button size="icon" className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5">
+            <Button
+              size="icon"
+              className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5"
+            >
               <Image src="/behance.png" alt="linkedin" width={30} height={30} />
             </Button>
-            <Button size="icon" className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5">
+            <Button
+              size="icon"
+              className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5"
+            >
               <Image src="/dribble.png" alt="linkedin" width={30} height={30} />
             </Button>
           </div>

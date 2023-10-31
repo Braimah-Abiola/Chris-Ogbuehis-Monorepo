@@ -92,7 +92,7 @@ const ContactForm = () => {
               <div className="flex flex-col">
                 <div className="mt-3 md:mt-20">
                   <label className="checkbox-label">
-                    <div>
+                    <div className="flex items-center">
                       <input type="checkbox" className="checkbox-input" />
                     </div>
                     <span className="checkbox-text">
@@ -107,11 +107,11 @@ const ContactForm = () => {
 
                 <div className="mt-3 md:mt-4">
                   <label className="checkbox-label">
-                    <div>
+                    <div className="flex items-center">
                       <input type="checkbox" className="checkbox-input" />
                     </div>
                     <span className="checkbox-text">
-                      I accept the
+                      I accept the{" "}
                       <span className="text-primary underline">
                         Terms and Conditions
                       </span>
