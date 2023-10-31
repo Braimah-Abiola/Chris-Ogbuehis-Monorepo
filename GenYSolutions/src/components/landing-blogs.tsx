@@ -1,7 +1,6 @@
 import Image from "next/image";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 import Link from "next/link";
-import BlogToogle from "./blog-toogle";
 
 const LandingBlogs = () => {
   return (
