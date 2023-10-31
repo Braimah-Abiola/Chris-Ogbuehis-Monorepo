@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { PopupButton } from "@typeform/embed-react";
 
 function OurGoal() {
   return (
@@ -27,9 +28,11 @@ function OurGoal() {
             <p className="text-white leading-relaxed mb-8">
                 Our company, known as FiftyFifty, is all about a series of shows where aspiring entrepreneurs send In their business plan to us. Our panel will then look over each plan and we will choose two businesses to Invest In. The investment we provide will fully fund your business. We will assist you in locating a suitable site, developing the infrastructure, procuring equipment, and more. However, the day-to-day operations will be your responsibility. Please complete the provided business plan template or upload your existing business plan. Additionally, we request a video presentation explaining why we should consider investing in your venture.
             </p>
-            <div className="border border-white text-white font-bold py-2 px-4 rounded inline-flex items-center hover:bg-white hover:text-black cursor-pointer transition">
-                <span className="mr-2">APPLY NOW →</span>
-            </div>
+            <PopupButton id="netPyDqo">
+              <div className="border border-white text-white font-bold py-2 px-4 rounded inline-flex items-center hover:bg-white hover:text-black cursor-pointer transition">
+                  <span className="mr-2">APPLY NOW →</span>
+              </div>
+            </PopupButton>
         </div>
 
         <div className="my-6 md:my-0">
