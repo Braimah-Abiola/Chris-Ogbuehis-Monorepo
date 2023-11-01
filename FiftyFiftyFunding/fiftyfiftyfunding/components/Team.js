@@ -38,7 +38,7 @@ function Team() {
           <div className="p-4">
               <Image src="/team/MicahImage.png" alt="Micah McDonald" className="mb-4" width={537} height={538} layout="responsive"/>
               <h3 className="text-white text-lg mt-4">Micah McDonald</h3>
-              <p className="text-gray-300">PRESIDENT, DHL DRAWBACK SERVICES</p>
+              <p className="text-gray-300">REAL ESTATE DEVELOPER / INVESTOR</p>
           </div>
         </div>
       </section>
