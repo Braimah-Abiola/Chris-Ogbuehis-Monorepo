@@ -66,7 +66,7 @@ export const PROJECTS = [
     client: "Design Is Funny",
     description: "Funny is the design work of Daniele Buffa.",
     src: "funny.jpg",
-    year: 2020,
+    year: 2021,
   },
 ];
   
