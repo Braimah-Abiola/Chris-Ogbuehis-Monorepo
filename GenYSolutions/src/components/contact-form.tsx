@@ -5,52 +5,70 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import { Button } from "./ui/button";
 import toast, { Toaster } from "react-hot-toast";
 import emailjs from "@emailjs/browser";
+import { BiErrorCircle } from "react-icons/bi";
 const ContactForm = () => {
   const form = useRef();
+  const [error, setError] = useState(false);
   const [sending, setSending] = useState(false);
-  const [userInfo, SetUserInfo] = useState({projectDetails: "", userName: "", userEmail: "", companyName: "", skypeOrPhone: "", privacy: false, terms: false});
+  const [userInfo, SetUserInfo] = useState({
+    projectDetails: "",
+    userName: "",
+    userEmail: "",
+    companyName: "",
+    skypeOrPhone: "",
+    privacy: false,
+    terms: false,
+  });
   const handleSubmit = (e: any) => {
     e.preventDefault();
     if (!userInfo.userName.trim()) {
+      setError(true);
       toast.error("Please enter a username");
     } else if (!userInfo.userEmail.trim()) {
+      setError(true);
       toast.error("Please enter an email");
-    } else if (!userInfo.projectDetails.trim()) {
-      toast.error("Please tell us about your project");
-    } 
-    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userInfo.userEmail)) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userInfo.userEmail)) {
       toast.error(
         "Please enter a valid email address example example@gmail.com"
       );
-    } 
-    else if (!(userInfo.privacy)) {
-      toast.error(
-        "Please consent to Privacy Policy"
-      );
-    } 
-    else if (!(userInfo.terms)) {
-      toast.error(
-        "Please accept terms and conditions"
-      );
-    } 
-    else {
+    } else if (!userInfo.projectDetails.trim()) {
+      setError(true);
+      toast.error("Please tell us about your project");
+    } else if (!userInfo.privacy) {
+      toast.error("Please consent to Privacy Policy");
+    } else if (!userInfo.terms) {
+      toast.error("Please accept terms and conditions");
+    } else {
       toast.loading("Please wait...");
-      setSending(true)
-      form.current.reset()
-      console.log(form.current);
-      emailjs.sendForm("service_xekqkl9","template_9poobu3",form.current,"vTNCg0_4K3Gp0v11m")
+      setSending(true);
+      setError(false)
+      emailjs
+        .sendForm(
+          "service_xekqkl9",
+          "template_9poobu3",
+          form.current,
+          "vTNCg0_4K3Gp0v11m"
+        )
         .then(() => {
           toast.remove();
           toast.success("success");
-          setSending(false)
-          SetUserInfo({...userInfo, projectDetails: "", userName: "", userEmail: "", companyName: "", skypeOrPhone: "", privacy: false, terms: false})
+          setSending(false);
+          SetUserInfo({
+            ...userInfo,
+            projectDetails: "",
+            userName: "",
+            userEmail: "",
+            companyName: "",
+            skypeOrPhone: "",
+            privacy: false,
+            terms: false,
+          });
         });
     }
   };
 
   return (
     <div>
-      {/* <ToastContainer position="top-center" /> */}
       <Toaster />
       <MaxWidthWrapper className="flex flex-col items-start justify-center text-center py-32">
         <div className="flex flex-col md:flex-row w-full">
@@ -76,32 +94,56 @@ const ContactForm = () => {
                 <p className="text-black text-[20px] font-medium">
                   Name <span className="text-primary">*</span>
                 </p>
-                <div className="input-field mt-4">
+                <div
+                  className={`input-field mt-4 ${
+                    error && !userInfo.userName.trim() && ""
+                  }`}
+                >
                   <input
                     name="username"
                     type="text"
                     placeholder="Enter your name"
                     required
                     value={userInfo.userName}
-                    onChange={(e) => SetUserInfo({ ...userInfo, userName: e.target.value})}
+                    onChange={(e) =>
+                      SetUserInfo({ ...userInfo, userName: e.target.value })
+                    }
                   />
                 </div>
+                {error && !userInfo.userName.trim() && (
+                  <span className="text-red-700 text-[12px] flex gap-1 mt-2 items-center">
+                    <BiErrorCircle size={16} />
+                    This field is required
+                  </span>
+                )}
               </div>
 
               <div className="flex flex-col items-start w-full">
                 <p className="text-black text-[20px] font-medium">
                   Email <span className="text-primary">*</span>
                 </p>
-                <div className="input-field mt-4">
+                <div
+                  className={`input-field mt-4 ${
+                    error && !userInfo.userEmail.trim() && ""
+                  }`}
+                >
                   <input
                     name="email"
                     type="text"
                     placeholder="Enter your email"
                     required
                     value={userInfo.userEmail}
-                    onChange={(e) => SetUserInfo({ ...userInfo, userEmail: e.target.value})}
+                    onChange={(e) =>
+                      SetUserInfo({ ...userInfo, userEmail: e.target.value })
+                    }
                   />
                 </div>
+                {error && !userInfo.userEmail.trim() && (
+                 <span className="text-red-700 text-[12px] flex gap-1 mt-2 items-center">
+                 <BiErrorCircle size={16} />
+                 This field is required
+               </span>
+                )}
               </div>
             </div>
 
@@ -116,7 +158,9 @@ const ContactForm = () => {
                     type="text"
                     placeholder="Enter your skype or phone number"
                     value={userInfo.skypeOrPhone}
-                    onChange={(e) => SetUserInfo({ ...userInfo, skypeOrPhone: e.target.value})}
+                    onChange={(e) =>
+                      SetUserInfo({ ...userInfo, skypeOrPhone: e.target.value })
+                    }
                   />
                 </div>
               </div>
@@ -130,7 +174,9 @@ const ContactForm = () => {
                     name="company"
                     type="text"
                     placeholder="Enter Company Name"
-                    onChange={(e) => SetUserInfo({ ...userInfo, companyName: e.target.value})}
+                    onChange={(e) =>
+                      SetUserInfo({ ...userInfo, companyName: e.target.value })
+                    }
                     value={userInfo.companyName}
                   />
                 </div>
@@ -142,7 +188,9 @@ const ContactForm = () => {
                 Tell us about the project{" "}
                 <span className="text-primary">*</span>
               </p>
-              <div className="textarea-field mt-8">
+              <div
+                className={`textarea-field mt-8`}
+              >
                 <textarea
                   name="project_details"
                   className="textarea-input"
@@ -150,9 +198,17 @@ const ContactForm = () => {
                   placeholder="Project purpose, target audience, competitors, inspiration, etc"
                   required
                   value={userInfo.projectDetails}
-                  onChange={(e) => SetUserInfo({ ...userInfo, projectDetails: e.target.value})}
+                  onChange={(e) =>
+                    SetUserInfo({ ...userInfo, projectDetails: e.target.value })
+                  }
                 />
               </div>
+              {error && !userInfo.projectDetails.trim() && (
+                <span className="text-red-700 text-[12px] flex gap-1 mt-2 items-center">
+                <BiErrorCircle size={16} />
+                This field is required
+              </span>
+              )}
             </div>
 
             <div className="flex flex-col md:flex-row md:items-end justify-between w-full mt-10 md:mt-0">
@@ -160,7 +216,17 @@ const ContactForm = () => {
                 <div className="mt-3 md:mt-20">
                   <label className="checkbox-label">
                     <div>
-                      <input type="checkbox" className="checkbox-input" value={userInfo.privacy} required onChange={e => SetUserInfo({...userInfo, privacy: Boolean(e.target.value)})}/>
+                      <input
+                        type="checkbox"
+                        className="checkbox-input"
+                        required
+                        onChange={(e) =>
+                          SetUserInfo({
+                            ...userInfo,
+                            privacy: Boolean(e.target.value),
+                          })
+                        }
+                      />
                     </div>
                     <span className="checkbox-text">
                       I consent to processing of my personal data and{" "}
@@ -175,7 +241,17 @@ const ContactForm = () => {
                 <div className="mt-3 md:mt-4">
                   <label className="checkbox-label">
                     <div>
-                      <input type="checkbox" className="checkbox-input" value={userInfo.terms} required onChange={e => SetUserInfo({...userInfo, terms: Boolean(e.target.value)})}/>
+                      <input
+                        type="checkbox"
+                        className="checkbox-input"
+                        required
+                        onChange={(e) =>
+                          SetUserInfo({
+                            ...userInfo,
+                            terms: Boolean(e.target.value),
+                          })
+                        }
+                      />
                     </div>
                     <span className="checkbox-text">
                       I accept the
@@ -186,7 +262,11 @@ const ContactForm = () => {
                   </label>
                 </div>
               </div>
-              <Button className="mt-20 md:mt-0" onClick={handleSubmit} disabled={sending}>
+              <Button
+                className="mt-20 md:mt-0"
+                onClick={handleSubmit}
+                disabled={sending}
+              >
                 Submit
               </Button>
             </div>
