@@ -22,7 +22,7 @@ const LandingTeam = () => {
                   <Image
                     width={170}
                     height={170}
-                    src="/images/member1.png"
+                    src="/member1.png"
                     alt="Team member"
                   />
                 </div>
@@ -35,7 +35,7 @@ const LandingTeam = () => {
                   <Image
                     width={240}
                     height={240}
-                    src="/images/member2.png"
+                    src="/member2.png"
                     alt="Team member"
                   />
                 </div>
@@ -48,7 +48,7 @@ const LandingTeam = () => {
                   <Image
                     width={170}
                     height={170}
-                    src="/images/member3.png"
+                    src="/member3.png"
                     alt="Team member"
                   />
                 </div>
@@ -63,7 +63,7 @@ const LandingTeam = () => {
                   <Image
                     width={170}
                     height={170}
-                    src="/images/member4.png"
+                    src="/member4.png"
                     alt="Team member"
                   />
                 </div>
@@ -76,7 +76,7 @@ const LandingTeam = () => {
                   <Image
                     width={240}
                     height={240}
-                    src="/images/member5.png"
+                    src="/member5.png"
                     alt="Team member"
                   />
                 </div>
@@ -89,7 +89,7 @@ const LandingTeam = () => {
                   <Image
                     width={170}
                     height={170}
-                    src="/images/member6.png"
+                    src="/member6.png"
                     alt="Team member"
                   />
                 </div>

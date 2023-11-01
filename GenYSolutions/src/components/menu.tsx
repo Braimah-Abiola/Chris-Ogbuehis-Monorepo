@@ -2,11 +2,11 @@ import { menuSlide } from "@/anim";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { ArrowUp } from "lucide-react";
 
 import Curve from "./curve";
 import MenuLink from "./menu-link";
 import Image from "next/image";
-import { ArrowUp } from "lucide-react";
 
 const Menu = () => {
   const navItems = [
@@ -89,7 +89,7 @@ const Menu = () => {
                 className="rounded-[15px]"
                 width={400}
                 height={65}
-                src="/projects/c2.jpg"
+                src="/c2.jpg"
                 alt="Featured work"
               />
               <div className="flex flex-row space-x-2 mt-5">

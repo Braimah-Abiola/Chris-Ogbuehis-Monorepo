@@ -7,7 +7,6 @@ interface MenuLinkProps {
     title: string;
     href: string;
     index: number;
-    // Add additional properties if present in the data object
   };
   isActive: boolean;
   setSelectedIndicator: (href: string) => void;

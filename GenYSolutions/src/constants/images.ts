@@ -69,4 +69,3 @@ export const PROJECTS = [
     year: 2021,
   },
 ];
-  

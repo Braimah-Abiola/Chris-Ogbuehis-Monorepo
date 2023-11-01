@@ -55,6 +55,7 @@ export function MaskText() {
       },
     }),
   };
+  
   return (
     <div ref={body}>
       <div className="lineMask z-20">
