@@ -86,9 +86,10 @@ const Menu = () => {
           <div className="flex flex-col justify-between h-full items-end">
             <div className="flex flex-col items-end">
               <Image
+                className="rounded-[15px]"
                 width={400}
                 height={65}
-                src="/project2.png"
+                src="/projects/c2.jpg"
                 alt="Featured work"
               />
               <div className="flex flex-row space-x-2 mt-5">

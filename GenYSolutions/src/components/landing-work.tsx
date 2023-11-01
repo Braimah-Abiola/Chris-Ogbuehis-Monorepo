@@ -3,11 +3,12 @@ import MaxWidthWrapper from "./MaxWidthWrapper";
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import ProjectsGallery from "./projects-gallery";
 
 const LandingWork = () => {
   return (
     <div>
-      <MaxWidthWrapper className="py-40 md:py-60 flex flex-col items-start justify-center text-center">
+      <MaxWidthWrapper className="pt-32 pb-20 md:pt-60 md:pb-10 flex flex-col items-start justify-center text-center">
         <div className="flex flex-col md:flex-row w-full items-start md:space-x-40">
           <div className="flex flex-col items-start">
             <h2 className="text-start font-semibold text-5xl lg:text-7xl">
@@ -39,98 +40,126 @@ const LandingWork = () => {
             </div>
           </div>
         </div>
+      </MaxWidthWrapper>
 
-        <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 w-full md:justify-between items-center mt-20 md:mt-32 px-0 md:px-0">
-          <div className="flex flex-col w-full">
-            <div className="relative w-full md:w-[840px] h-[385px] md:h-[680px]">
-              <Image fill src="/project1.png" alt="Project 1" />
-            </div>
-            <h4 className=" text-3xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-              Custom Production
-            </h4>
-            <div className="flex flex-row space-x-4 mt-2">
-              <p className="text-black sm:text-lg">UX/UI Design</p>
-              <div className="flex flex-row items-center justify-center space-x-3">
-                <div className="w-3 h-3 rounded-full bg-black" />
-                <p className="text-black sm:text-lg">UX/UI Design</p>
+      <div className="w-full hidden md:block">
+        <ProjectsGallery />
+      </div>
+
+      <MaxWidthWrapper className="flex flex-col items-start justify-center text-center">
+        <div className="md:hidden w-full">
+          <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 w-full md:justify-between items-center">
+            <div className="flex flex-col w-full">
+              <div className="relative w-full h-[330px] object-cover">
+                <Image
+                  className="rounded-[15px]"
+                  fill
+                  src="/projects/maven.jpg"
+                  alt="Project 1"
+                />
               </div>
+              <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+                MAVEN 11
+              </h4>
+              <div className="flex flex-col space-y-4">
+                <p className="text-black text-lg text-start">
+                  New web design for the blockchain investment fund Maven 11.
+                </p>
+                <p className="text-black/40 text-md text-start">2022</p>
+              </div>
+              <p></p>
+            </div>
+
+            <div className="flex flex-col w-full">
+              <div className="relative w-full h-[330px] object-cover">
+                <Image
+                  className="rounded-[15px]"
+                  fill
+                  src="/projects/wix.jpg"
+                  alt="Project 2"
+                />
+              </div>
+              <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+                Wix Playground Homepage
+              </h4>
+              <div className="flex flex-col space-y-4">
+                <p className="text-black text-lg text-start">
+                  Wix Playground is powered by the Wix.com design team.
+                </p>
+                <p className="text-black/40 text-md text-start">2022</p>
+              </div>
+              <p></p>
+            </div>
+          </div>
+
+          <div className="flex flex-col w-full mt-10">
+            <div className="relative w-full h-[330px] object-cover">
+              <Image
+                className="rounded-[15px] border border-black/20"
+                fill
+                src="/projects/powell.jpg"
+                alt="Project 3"
+              />
+            </div>
+            <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+              POWELL—STUDIO
+            </h4>
+            <div className="flex flex-col space-y-4">
+              <p className="text-black text-lg text-start">
+                The online presence for Powell—Studio.
+              </p>
+              <p className="text-black/40 text-md text-start">2023</p>
             </div>
             <p></p>
           </div>
 
-          <div className="flex flex-col w-full">
-            <div className="relative w-full md:w-[840px] h-[385px] md:h-[680px]">
-              <Image fill src="/project2.png" alt="Project 1" />
-            </div>
-            <h4 className=" text-3xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-              Custom Production
-            </h4>
-            <div className="flex flex-row space-x-4 mt-2">
-              <p className="text-black sm:text-lg">UX/UI Design</p>
-              <div className="flex flex-row items-center justify-center space-x-3">
-                <div className="w-3 h-3 rounded-full bg-black" />
-                <p className="text-black sm:text-lg">UX/UI Design</p>
+          <div className="flex flex-col w-full space-y-10 justify-between items-start mt-10">
+            <div className="flex flex-col w-full">
+              <div className="relative w-full h-[330px] object-cover">
+                <Image
+                  className="rounded-[15px]"
+                  fill
+                  src="/projects/panda.jpg"
+                  alt="Project 4"
+                />
               </div>
-            </div>
-            <p></p>
-          </div>
-        </div>
-
-        <div className="flex flex-col w-full mt-10 md:mt-24">
-          <div className="relative w-full md:w-[100%] h-[270px] md:h-[760px]">
-            <Image fill src="/project3.png" alt="Project 1" />
-          </div>
-          <h4 className=" text-3xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-            Custom Production
-          </h4>
-          <div className="flex flex-row space-x-4 mt-2">
-            <p className="text-black sm:text-lg">UX/UI Design</p>
-            <div className="flex flex-row items-center justify-center space-x-3">
-              <div className="w-3 h-3 rounded-full bg-black" />
-              <p className="text-black sm:text-lg">UX/UI Design</p>
-            </div>
-          </div>
-          <p></p>
-        </div>
-
-        <div className="flex flex-col md:flex-row w-full space-y-10 md:space-y-0 justify-between items-start mt-10 md:mt-32">
-          <div className="flex flex-col w-full">
-            <div className="relative w-full md:w-[840px] h-[385px] md:h-[680px]">
-              <Image fill src="/project4.png" alt="Project 1" />
-            </div>
-            <h4 className=" text-3xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-              Custom Production
-            </h4>
-            <div className="flex flex-row space-x-4 mt-2">
-              <p className="text-black sm:text-lg">UX/UI Design</p>
-              <div className="flex flex-row items-center justify-center space-x-3">
-                <div className="w-3 h-3 rounded-full bg-black" />
-                <p className="text-black sm:text-lg">UX/UI Design</p>
+              <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+                ROCKETPANDA
+              </h4>
+              <div className="flex flex-col space-y-4">
+                <p className="text-black text-lg text-start">
+                  An Italian animation studio.
+                </p>
+                <p className="text-black/40 text-md text-start">2022</p>
               </div>
+              <p></p>
             </div>
-            <p></p>
-          </div>
 
-          <div className="flex flex-col w-full">
-            <div className="relative w-full md:w-[840px] h-[385px] md:h-[680px]">
-              <Image fill src="/project5.png" alt="Project 1" />
-            </div>
-            <h4 className=" text-3xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-              Custom Production
-            </h4>
-            <div className="flex flex-row space-x-4 mt-2">
-              <p className="text-black sm:text-lg">UX/UI Design</p>
-              <div className="flex flex-row items-center justify-center space-x-3">
-                <div className="w-3 h-3 rounded-full bg-black" />
-                <p className="text-black sm:text-lg">UX/UI Design</p>
+            <div className="flex flex-col w-full">
+              <div className="relative w-full h-[330px] object-cover">
+                <Image
+                  className="rounded-[15px]"
+                  fill
+                  src="/projects/c2.jpg"
+                  alt="Project 5"
+                />
               </div>
+              <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+                C2 Montreal
+              </h4>
+              <div className="flex flex-col space-y-4">
+                <p className="text-black text-lg text-start">
+                  C2 Montreal is Canada&apos;s premier creative-business event.
+                </p>
+                <p className="text-black/40 text-md text-start">2021</p>
+              </div>
+              <p></p>
             </div>
-            <p></p>
           </div>
         </div>
       </MaxWidthWrapper>
       <div className="hidden md:block">
-        <div className="flex w-full items-center justify-center mb-28 md:mb-40">
+        <div className="flex w-full items-center justify-center mb-28 md:mb-40 mt-40">
           <div className="cursor-pointer circular-button-black">
             <Image
               width={185}
@@ -143,7 +172,7 @@ const LandingWork = () => {
         </div>
       </div>
 
-      <div className="md:hidden">
+      <div className="md:hidden mt-20">
         <div className="flex w-full items-center justify-center mb-28 md:mb-40">
           <div className="cursor-pointer circular-button-black">
             <Image

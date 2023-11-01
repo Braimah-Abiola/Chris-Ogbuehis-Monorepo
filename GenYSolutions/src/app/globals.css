@@ -220,7 +220,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .menu .body .nav {
@@ -328,7 +328,105 @@ body {
   border-color: rgb(255, 255, 255);
 }
 
+.menu-icon-container-white {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  padding: 4px;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon-container-white:hover {
+  transform: scale(1.1);
+}
+
+.menu-icon-container-white::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  transition: border-width 0.3s ease;
+}
+
+.menu-icon-container-white:hover::before {
+  width: 100%;
+  height: 100%;
+  border-width: 2px;
+  border-color: rgb(39, 39, 39);
+  border-radius: 50%;
+}
+
+.menu-icon-container-white:hover {
+  background-color: transparent;
+  border-color: rgb(39, 39, 39);
+}
+
 /* MENU END */
+
+/* GALLERY */
+
+.double {
+  display: flex;
+  margin-top: 10vh;
+  height: 45vw;
+}
+
+.double .imageContainer:nth-of-type(1) {
+  width: 66.66%;
+}
+
+.double .imageContainer:nth-of-type(2) {
+  width: 33.33%;
+}
+
+.double .imageContainer .stretchyWrapper {
+  padding-bottom: 66%;
+  position: relative;
+}
+
+.double .imageContainer .stretchyWrapper img {
+  object-fit: cover;
+}
+
+.double:nth-child(even) .imageContainer:nth-of-type(1) {
+  width: 33.33%;
+}
+
+.double:nth-child(even) .imageContainer:nth-of-type(2) {
+  width: 66.66%;
+}
+
+.double .body {
+  font-size: 16px;
+  padding: 10px;
+  align-items: start;
+  text-align: start;
+}
+
+.double .body h3 {
+  font-size: 40px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-weight: 400;
+}
+
+.double .body p {
+  font-size: 20px;
+  margin: 0px;
+  color: rgb(0, 0, 0);
+}
+
+.double .body p:nth-of-type(2) {
+  color: rgb(170, 170, 170);
+}
+
+/* GALLERY END */
 
 .circular-button-black {
   position: relative;
@@ -483,6 +581,7 @@ body {
   cursor: pointer;
   display: flex;
   flex-direction: row;
+  justify-items: center;
   align-items: center;
 }
 
@@ -814,8 +913,8 @@ body {
   }
 
   .project p {
-    font-size: 18px;
-    color: white;
+    font-size: 14px;
+    color: rgb(192, 192, 192);
     transition: all 0.4s;
     font-weight: 300;
     text-align: start;
