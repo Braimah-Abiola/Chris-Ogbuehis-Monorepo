@@ -65,7 +65,7 @@ const LandingNav = () => {
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.title}
-                  className={` font-dmSans font-normal text-[18px] text-[#9B9CA1] hover:text-white transition-colors ${
+                  className={`font-dmSans font-normal text-[18px] text-[#9B9CA1] hover:text-white transition-colors ${
                     index === navLinks.length - 1 ? "mr-0" : "mr-[60px]"
                   }`}
                 >

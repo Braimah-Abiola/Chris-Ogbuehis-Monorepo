@@ -11,13 +11,11 @@ import LandingServices from "@/components/landing-services";
 import LandingWork from "@/components/landing-work";
 import Preloader from "@/components/preloader";
 
-
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
-
 
   useEffect(() => {
     setTimeout(() => {

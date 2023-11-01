@@ -22,13 +22,13 @@ const LandingClients = () => {
           <Image
             width={140}
             height={30}
-            src="/images/cbre.png"
+            src="/cbre.png"
             alt="Cbre Logo"
           />
           <Image
             width={140}
             height={30}
-            src="/images/akelius.png"
+            src="/akelius.png"
             alt="Akelius Logo"
           />
         </div>
@@ -36,13 +36,13 @@ const LandingClients = () => {
           <Image
             width={140}
             height={30}
-            src="/images/colliers.png"
+            src="/colliers.png"
             alt="Colliers Logo"
           />
           <Image
             width={140}
             height={30}
-            src="/images/autogridwhite.png"
+            src="/autogridwhite.png"
             alt="Autogrid Logo"
           />
         </div>
@@ -50,13 +50,13 @@ const LandingClients = () => {
           <Image
             width={140}
             height={30}
-            src="/images/firstservice.png"
+            src="/firstservice.png"
             alt="Cbre Logo"
           />
           <Image
             width={140}
             height={30}
-            src="/images/gedigitalwhite.png"
+            src="/gedigitalwhite.png"
             alt="Cbre Logo"
           />
         </div>
@@ -64,13 +64,13 @@ const LandingClients = () => {
           <Image
             width={140}
             height={30}
-            src="/images/nextera.png"
+            src="/nextera.png"
             alt="Cbre Logo"
           />
           <Image
             width={140}
             height={30}
-            src="/images/energyhub.png"
+            src="/energyhub.png"
             alt="Cbre Logo"
           />
         </div>
@@ -78,10 +78,10 @@ const LandingClients = () => {
           <Image
             width={140}
             height={30}
-            src="/images/bentall.png"
+            src="/bentall.png"
             alt="Cbre Logo"
           />
-          <Image width={140} height={30} src="/images/lg.png" alt="Cbre Logo" />
+          <Image width={140} height={30} src="/lg.png" alt="Cbre Logo" />
         </div>
       </div>
 
@@ -90,31 +90,31 @@ const LandingClients = () => {
           <Image
             width={180}
             height={45}
-            src="/images/cbre.png"
+            src="/cbre.png"
             alt="Cbre Logo"
           />
           <Image
             width={180}
             height={45}
-            src="/images/colliers.png"
+            src="/colliers.png"
             alt="Colliers Logo"
           />
           <Image
             width={180}
             height={45}
-            src="/images/firstservice.png"
+            src="/firstservice.png"
             alt="Cbre Logo"
           />
           <Image
             width={180}
             height={45}
-            src="/images/nextera.png"
+            src="/nextera.png"
             alt="Cbre Logo"
           />
           <Image
             width={180}
             height={45}
-            src="/images/bentall.png"
+            src="/bentall.png"
             alt="BentallGreenOak Logo"
           />
         </div>
@@ -122,31 +122,31 @@ const LandingClients = () => {
           <Image
             width={180}
             height={45}
-            src="/images/akelius.png"
+            src="/akelius.png"
             alt="Cbre Logo"
           />
           <Image
             width={180}
             height={45}
-            src="/images/autogridwhite.png"
+            src="/autogridwhite.png"
             alt="Colliers Logo"
           />
           <Image
             width={180}
             height={45}
-            src="/images/gedigitalwhite.png"
+            src="/gedigitalwhite.png"
             alt="Cbre Logo"
           />
           <Image
             width={180}
             height={45}
-            src="/images/energyhub.png"
+            src="/energyhub.png"
             alt="Cbre Logo"
           />
           <Image
             width={180}
             height={45}
-            src="/images/lg.png"
+            src="/lg.png"
             alt="BentallGreenOak Logo"
           />
         </div>

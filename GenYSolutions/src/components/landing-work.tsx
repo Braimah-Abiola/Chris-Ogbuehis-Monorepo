@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import Image from "next/image";
 import ProjectsGallery from "./projects-gallery";
+import Link from "next/link";
 
 const LandingWork = () => {
   return (
@@ -49,113 +50,122 @@ const LandingWork = () => {
       <MaxWidthWrapper className="flex flex-col items-start justify-center text-center">
         <div className="md:hidden w-full">
           <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 w-full md:justify-between items-center">
-            <div className="flex flex-col w-full">
-              <div className="relative w-full h-[330px] object-cover">
-                <Image
-                  className="rounded-[15px]"
-                  fill
-                  src="/projects/maven.jpg"
-                  alt="Project 1"
-                />
+            <Link href="project-details">
+              <div className="flex flex-col w-full">
+                <div className="relative w-full h-[330px] object-cover">
+                  <Image
+                    className="rounded-[15px]"
+                    fill
+                    src="/projects/maven.jpg"
+                    alt="Project 1"
+                  />
+                </div>
+                <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+                  MAVEN 11
+                </h4>
+                <div className="flex flex-col space-y-4">
+                  <p className="text-black text-lg text-start">
+                    New web design for the blockchain investment fund Maven 11.
+                  </p>
+                  <p className="text-black/40 text-md text-start">2022</p>
+                </div>
+                <p></p>
               </div>
-              <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-                MAVEN 11
-              </h4>
-              <div className="flex flex-col space-y-4">
-                <p className="text-black text-lg text-start">
-                  New web design for the blockchain investment fund Maven 11.
-                </p>
-                <p className="text-black/40 text-md text-start">2022</p>
-              </div>
-              <p></p>
-            </div>
+            </Link>
 
-            <div className="flex flex-col w-full">
-              <div className="relative w-full h-[330px] object-cover">
-                <Image
-                  className="rounded-[15px]"
-                  fill
-                  src="/projects/wix.jpg"
-                  alt="Project 2"
-                />
+            <Link href="project-details">
+              <div className="flex flex-col w-full">
+                <div className="relative w-full h-[330px] object-cover">
+                  <Image
+                    className="rounded-[15px]"
+                    fill
+                    src="/projects/wix.jpg"
+                    alt="Project 2"
+                  />
+                </div>
+                <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+                  Wix Playground Homepage
+                </h4>
+                <div className="flex flex-col space-y-4">
+                  <p className="text-black text-lg text-start">
+                    Wix Playground is powered by the Wix.com design team.
+                  </p>
+                  <p className="text-black/40 text-md text-start">2022</p>
+                </div>
+                <p></p>
               </div>
-              <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-                Wix Playground Homepage
-              </h4>
-              <div className="flex flex-col space-y-4">
-                <p className="text-black text-lg text-start">
-                  Wix Playground is powered by the Wix.com design team.
-                </p>
-                <p className="text-black/40 text-md text-start">2022</p>
-              </div>
-              <p></p>
-            </div>
+            </Link>
           </div>
 
-          <div className="flex flex-col w-full mt-10">
-            <div className="relative w-full h-[330px] object-cover">
-              <Image
-                className="rounded-[15px] border border-black/20"
-                fill
-                src="/projects/powell.jpg"
-                alt="Project 3"
-              />
-            </div>
-            <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-              POWELL—STUDIO
-            </h4>
-            <div className="flex flex-col space-y-4">
-              <p className="text-black text-lg text-start">
-                The online presence for Powell—Studio.
-              </p>
-              <p className="text-black/40 text-md text-start">2023</p>
-            </div>
-            <p></p>
-          </div>
-
-          <div className="flex flex-col w-full space-y-10 justify-between items-start mt-10">
-            <div className="flex flex-col w-full">
+          <Link href="project-details">
+            <div className="flex flex-col w-full mt-10">
               <div className="relative w-full h-[330px] object-cover">
                 <Image
-                  className="rounded-[15px]"
+                  className="rounded-[15px] border border-black/20"
                   fill
-                  src="/projects/panda.jpg"
-                  alt="Project 4"
+                  src="/projects/powell.jpg"
+                  alt="Project 3"
                 />
               </div>
               <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-                ROCKETPANDA
+                POWELL—STUDIO
               </h4>
               <div className="flex flex-col space-y-4">
                 <p className="text-black text-lg text-start">
-                  An Italian animation studio.
+                  The online presence for Powell—Studio.
                 </p>
-                <p className="text-black/40 text-md text-start">2022</p>
+                <p className="text-black/40 text-md text-start">2023</p>
               </div>
               <p></p>
             </div>
+          </Link>
 
-            <div className="flex flex-col w-full">
-              <div className="relative w-full h-[330px] object-cover">
-                <Image
-                  className="rounded-[15px]"
-                  fill
-                  src="/projects/c2.jpg"
-                  alt="Project 5"
-                />
+          <Link href="project-details">
+            <div className="flex flex-col w-full space-y-10 justify-between items-start mt-10">
+              <div className="flex flex-col w-full">
+                <div className="relative w-full h-[330px] object-cover">
+                  <Image
+                    className="rounded-[15px]"
+                    fill
+                    src="/projects/panda.jpg"
+                    alt="Project 4"
+                  />
+                </div>
+                <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+                  ROCKETPANDA
+                </h4>
+                <div className="flex flex-col space-y-4">
+                  <p className="text-black text-lg text-start">
+                    An Italian animation studio.
+                  </p>
+                  <p className="text-black/40 text-md text-start">2022</p>
+                </div>
+                <p></p>
               </div>
-              <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
-                C2 Montreal
-              </h4>
-              <div className="flex flex-col space-y-4">
-                <p className="text-black text-lg text-start">
-                  C2 Montreal is Canada&apos;s premier creative-business event.
-                </p>
-                <p className="text-black/40 text-md text-start">2021</p>
+
+              <div className="flex flex-col w-full">
+                <div className="relative w-full h-[330px] object-cover">
+                  <Image
+                    className="rounded-[15px]"
+                    fill
+                    src="/projects/c2.jpg"
+                    alt="Project 5"
+                  />
+                </div>
+                <h4 className=" text-xl lg:text-4xl font-medium text-start mt-6 md:mt-10">
+                  C2 Montreal
+                </h4>
+                <div className="flex flex-col space-y-4">
+                  <p className="text-black text-lg text-start">
+                    C2 Montreal is Canada&apos;s premier creative-business
+                    event.
+                  </p>
+                  <p className="text-black/40 text-md text-start">2021</p>
+                </div>
+                <p></p>
               </div>
-              <p></p>
             </div>
-          </div>
+          </Link>
         </div>
       </MaxWidthWrapper>
       <div className="hidden md:block">
@@ -164,7 +174,7 @@ const LandingWork = () => {
             <Image
               width={185}
               height={185}
-              src="/images/allprojects.png"
+              src="/allprojects.png"
               alt="View all projects"
             />
             <ArrowUpRight id="arrow" width={34} height={34} color="black" />
@@ -179,7 +189,7 @@ const LandingWork = () => {
               className="md:hidden"
               width={165}
               height={165}
-              src="/images/allprojects.png"
+              src="/allprojects.png"
               alt="View all projects"
             />
             <ArrowUpRight id="arrow" width={34} height={34} color="black" />

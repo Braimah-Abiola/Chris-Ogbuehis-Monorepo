@@ -2,11 +2,11 @@ import { menuSlide } from "@/anim";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { ArrowUp } from "lucide-react";
 
 import Curve from "./curve";
 import MenuLink from "./menu-link";
 import Image from "next/image";
-import { ArrowUp } from "lucide-react";
 
 const Menu = () => {
   const navItems = [

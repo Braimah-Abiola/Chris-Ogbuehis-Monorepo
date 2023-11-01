@@ -67,6 +67,7 @@ const Double: React.FC<DoubleProps> = ({ projects, reversed }) => {
       className="double"
     >
       <div ref={firstImage} className="imageContainer">
+        <Link href="project">
         <div className="stretchyWrapper">
           <Image src={`/projects/${projects[0].src}`} alt={"image"} fill />
         </div>
@@ -76,6 +77,7 @@ const Double: React.FC<DoubleProps> = ({ projects, reversed }) => {
           <p>{projects[0].description}</p>
           <p>{projects[0].year}</p>
         </div>
+        </Link>
       </div>
 
       <div ref={secondImage} className="imageContainer">
