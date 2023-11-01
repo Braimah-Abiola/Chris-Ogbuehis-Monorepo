@@ -89,7 +89,7 @@ const Menu = () => {
                 className="rounded-[15px]"
                 width={400}
                 height={65}
-                src="/projects/c2.jpg"
+                src="/c2.jpg"
                 alt="Featured work"
               />
               <div className="flex flex-row space-x-2 mt-5">
