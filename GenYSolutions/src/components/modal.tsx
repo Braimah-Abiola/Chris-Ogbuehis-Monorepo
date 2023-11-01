@@ -93,7 +93,7 @@ const Modal = ({
                 key={`modal_${index}`}
               >
                 <Image
-                  src={`/images/${src}`}
+                  src={`/${src}`}
                   width={300}
                   height={0}
                   alt="image"

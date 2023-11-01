@@ -68,21 +68,21 @@ const Double: React.FC<DoubleProps> = ({ projects, reversed }) => {
     >
       <div ref={firstImage} className="imageContainer">
         <Link href="project">
-        <div className="stretchyWrapper">
-          <Image src={`/projects/${projects[0].src}`} alt={"image"} fill />
-        </div>
+          <div className="stretchyWrapper">
+            <Image src={`/${projects[0].src}`} alt={"image"} fill />
+          </div>
 
-        <div className="body">
-          <h3>{projects[0].name}</h3>
-          <p>{projects[0].description}</p>
-          <p>{projects[0].year}</p>
-        </div>
+          <div className="body">
+            <h3>{projects[0].name}</h3>
+            <p>{projects[0].description}</p>
+            <p>{projects[0].year}</p>
+          </div>
         </Link>
       </div>
 
       <div ref={secondImage} className="imageContainer">
         <div className="stretchyWrapper">
-          <Image src={`/projects/${projects[1].src}`} alt={"image"} fill />
+          <Image src={`/${projects[1].src}`} alt={"image"} fill />
         </div>
 
         <div className="body">
