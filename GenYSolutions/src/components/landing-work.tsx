@@ -1,10 +1,10 @@
-import MaxWidthWrapper from "./MaxWidthWrapper";
-
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
+
+import MaxWidthWrapper from "./MaxWidthWrapper";
 import Image from "next/image";
-import ProjectsGallery from "./projects-gallery";
 import Link from "next/link";
+import ProjectsGallery from "./projects-gallery";
 
 const LandingWork = () => {
   return (
@@ -50,13 +50,13 @@ const LandingWork = () => {
       <MaxWidthWrapper className="flex flex-col items-start justify-center text-center">
         <div className="md:hidden w-full">
           <div className="flex flex-col md:flex-row space-y-10 md:space-y-0 w-full md:justify-between items-center">
-            <Link href="project-details">
+            <Link href="project">
               <div className="flex flex-col w-full">
                 <div className="relative w-full h-[330px] object-cover">
                   <Image
                     className="rounded-[15px]"
                     fill
-                    src="/projects/maven.jpg"
+                    src="/maven.jpg"
                     alt="Project 1"
                   />
                 </div>
@@ -73,13 +73,13 @@ const LandingWork = () => {
               </div>
             </Link>
 
-            <Link href="project-details">
+            <Link href="project">
               <div className="flex flex-col w-full">
                 <div className="relative w-full h-[330px] object-cover">
                   <Image
                     className="rounded-[15px]"
                     fill
-                    src="/projects/wix.jpg"
+                    src="/wix.jpg"
                     alt="Project 2"
                   />
                 </div>
@@ -97,13 +97,13 @@ const LandingWork = () => {
             </Link>
           </div>
 
-          <Link href="project-details">
+          <Link href="project">
             <div className="flex flex-col w-full mt-10">
               <div className="relative w-full h-[330px] object-cover">
                 <Image
                   className="rounded-[15px] border border-black/20"
                   fill
-                  src="/projects/powell.jpg"
+                  src="/powell.jpg"
                   alt="Project 3"
                 />
               </div>
@@ -120,14 +120,14 @@ const LandingWork = () => {
             </div>
           </Link>
 
-          <Link href="project-details">
+          <Link href="project">
             <div className="flex flex-col w-full space-y-10 justify-between items-start mt-10">
               <div className="flex flex-col w-full">
                 <div className="relative w-full h-[330px] object-cover">
                   <Image
                     className="rounded-[15px]"
                     fill
-                    src="/projects/panda.jpg"
+                    src="/panda.jpg"
                     alt="Project 4"
                   />
                 </div>
@@ -148,7 +148,7 @@ const LandingWork = () => {
                   <Image
                     className="rounded-[15px]"
                     fill
-                    src="/projects/c2.jpg"
+                    src="/c2.jpg"
                     alt="Project 5"
                   />
                 </div>

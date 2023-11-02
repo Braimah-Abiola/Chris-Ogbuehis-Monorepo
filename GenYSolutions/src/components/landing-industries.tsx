@@ -12,7 +12,13 @@ const LandingIndustries = () => {
   const [modal, setModal] = useState({ active: false, index: 0 });
   return (
     <MaxWidthWrapper className="bg-[#1A1D28] pt-20 pb-20 md:pt-60 md:pb-60 flex flex-col items-start justify-center text-center">
-      <MaskText />
+      <div className=" flex flex-col md:flex-row space-x-32 items-center">
+        <MaskText />
+        <p className="text-white text-lg text-start">
+          Hey there this is the description of the product.
+          <br className="hidden md:block" /> This is the description.
+        </p>
+      </div>
       <div className="servicesMain mt-20 md:mt-20">
         <div className="servicesBody">
           {industries.map((industry, index) => {
@@ -61,7 +67,8 @@ export function MaskText() {
           initial="initial"
           animate={isInView ? "enter" : ""}
         >
-          We<span className="text-primary"> serve</span> almost <br className="hidden md:block" />
+          We<span className="text-primary"> serve</span> almost{" "}
+          <br className="hidden md:block" />
           every Industry
         </motion.h2>
       </div>

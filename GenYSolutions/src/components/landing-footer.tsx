@@ -9,10 +9,11 @@ import {
 } from "lucide-react";
 import { Button } from "./ui/button";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import Link from "next/link";
 
 const LandingFooter = () => {
   return (
-    <footer className="flex flex-col w-full bg-[#0D0B0E] py-20 px-2.5 md:px-0">
+    <footer className="flex flex-col w-full bg-[#0D0B0E] pt-20 pb-20 md:pt-32 md:pb-20 px-2.5 md:px-0">
       <MaxWidthWrapper>
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col">
@@ -33,19 +34,31 @@ const LandingFooter = () => {
             <div className="flex flex-row space-x-20">
               <div className="flex flex-col">
                 <h4 className="text-white sm:text-lg text-start">Pages</h4>
-                <p className="text-zinc-400 sm:text-lg text-start mt-4">Home</p>
-                <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  About
-                </p>
-                <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  Services
-                </p>
-                <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  Industries
-                </p>
-                <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  Contact
-                </p>
+                <Link href="/">
+                  <p className="text-zinc-400 sm:text-lg text-start mt-4">
+                    Home
+                  </p>
+                </Link>
+                <Link href="/about">
+                  <p className="text-zinc-400 sm:text-lg text-start mt-2">
+                    About
+                  </p>
+                </Link>
+                <Link href="/services">
+                  <p className="text-zinc-400 sm:text-lg text-start mt-2">
+                    Services
+                  </p>
+                </Link>
+                <Link href="/industries">
+                  <p className="text-zinc-400 sm:text-lg text-start mt-2">
+                    Industries
+                  </p>
+                </Link>
+                <Link href="/contact">
+                  <p className="text-zinc-400 sm:text-lg text-start mt-2">
+                    Contact
+                  </p>
+                </Link>
               </div>
 
               <div className="flex flex-col">
@@ -114,8 +127,6 @@ const LandingFooter = () => {
                 </p>
               </div>
             </div>
-
-
           </div>
         </div>
 
@@ -123,17 +134,29 @@ const LandingFooter = () => {
           <div className="flex flex-row justify-between mt-20 space-y-12 md:space-y-0">
             <div className="flex flex-col">
               <h4 className="text-white sm:text-lg text-start">Pages</h4>
-              <p className="text-zinc-400 sm:text-lg text-start mt-4">Home</p>
-              <p className="text-zinc-400 sm:text-lg text-start mt-2">About</p>
-              <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                Services
-              </p>
-              <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                Industries
-              </p>
+              <Link href="/">
+                <p className="text-zinc-400 sm:text-lg text-start mt-4">Home</p>
+              </Link>
+              <Link href="/about">
+                <p className="text-zinc-400 sm:text-lg text-start mt-2">
+                  About
+                </p>
+              </Link>
+              <Link href="/services">
+                <p className="text-zinc-400 sm:text-lg text-start mt-2">
+                  Services
+                </p>
+              </Link>
+              <Link href="/industries">
+                <p className="text-zinc-400 sm:text-lg text-start mt-2">
+                  Industries
+                </p>
+              </Link>
+              <Link href="/contact">
               <p className="text-zinc-400 sm:text-lg text-start mt-2">
                 Contact
               </p>
+              </Link>
             </div>
 
             <div className="flex flex-col">

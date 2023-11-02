@@ -1,6 +1,5 @@
 "use client";
 
-import LandingNav from "@/components/landing-nav";
 import LandingNavWhite from "@/components/landing-nav-white";
 import Preloader from "@/components/preloader";
 import ProjectDeorg from "@/components/project-deorg";
