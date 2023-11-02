@@ -10,7 +10,7 @@ function Structure() {
             our partnership. Half of the ownership will belong to us, and the other half goes <br className='hidden md:block'/>
             directly to the owner. <br className='hidden md:block'/>
 
-            <br/>Importantly, the owner is not required to make any long term financial<br className='hidden md:block'/>
+            <br/>Importantly, the owner is not required to make any long term financial <br className='hidden md:block'/>
             contributions; their commitment lies in the form of sweat equity, as they will <br className='hidden md:block'/>
             actively operate the business. <br/> 
 
