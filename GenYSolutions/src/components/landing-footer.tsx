@@ -20,7 +20,7 @@ const LandingFooter = () => {
             <h2 className=" text-5xl lg:text-7xl text-white font-semibold">
               Let&apos;s get to work.
             </h2>
-            <p className="mt-5 sm:text-lg text-zinc-400">
+            <p className="mt-5 sm:text-xl text-zinc-400">
               Quick and easy – under a minute.
             </p>
           </div>
