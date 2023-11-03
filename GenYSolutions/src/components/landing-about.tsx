@@ -9,6 +9,7 @@ import { Button } from "./ui/button";
 import { ScrollTrigger } from "gsap/all";
 import { useRef, useEffect } from "react";
 import Marquee from "react-fast-marquee";
+import Link from "next/link";
 
 const LandingAbout = () => {
   const firstText = useRef(null);
@@ -56,9 +57,13 @@ const LandingAbout = () => {
             About <br className="hidden md:block" />
             <span className=" text-primary">Gen Y Solutions</span>
           </h2>
-          <Button className="mt-10 md:mt-0">
-            Learn more <ArrowUpRight className="ml-3" color="black" />
-          </Button>
+          <div className="flex items-start">
+            <Link href="/about">
+              <Button className="mt-10 md:mt-0">
+                Learn more <ArrowUpRight className="ml-3" color="black" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </MaxWidthWrapper>
 

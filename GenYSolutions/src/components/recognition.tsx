@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 const Recognition = () => {
   return (
     <div>
-      <MaxWidthWrapper className="flex flex-col items-start justify-center text-center pt-[15rem] pb-[15rem]">
+      <MaxWidthWrapper className="flex flex-col items-start justify-center text-center md:pt-[10rem] pb-[10rem] md:pb-[15rem]">
         <div className="w-full flex flex-col md:flex-row ">
           <div className="flex flex-row items-start justify-start space-x-3 w-[280px]">
             <div className="w-3 h-3 mt-[5px] rounded-full bg-black" />
@@ -14,12 +14,12 @@ const Recognition = () => {
           </div>
           <div className="md:ml-60 flex flex-col w-full mt-5 md:mt-0">
             <div className="flex flex-row w-full items-center md:items-start justify-between">
-              <h2 className="text-5xl lg:text-6xl font-medium">
+              <h2 className="text-5xl text-start lg:text-6xl font-medium">
                 Recognitions & Awards
               </h2>
             </div>
             <div className="mt-20 border-t w-full py-8">
-              <div className="flex flex-row justify-between w-full items-center">
+              <div className="flex flex-col md:flex-row justify-between w-full items-start md:items-center space-y-4 md:space-y-0">
                 <h4 className="text-xl">Custom Production</h4>
                 <p>Graphics Design</p>
                 <p>Behance</p>
@@ -29,7 +29,7 @@ const Recognition = () => {
               </div>
             </div>
             <div className="border-t w-full py-8">
-              <div className="flex flex-row justify-between w-full items-center">
+              <div className="flex flex-col md:flex-row justify-between w-full items-start md:items-center space-y-4 md:space-y-0">
                 <h4 className="text-xl">Custom Production Georgia</h4>
                 <p>Graphics Design</p>
                 <p>Behance</p>
@@ -38,6 +38,7 @@ const Recognition = () => {
                 </Button>
               </div>
             </div>
+            <div className="border-t" />
           </div>
         </div>
       </MaxWidthWrapper>

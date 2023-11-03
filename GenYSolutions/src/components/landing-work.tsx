@@ -183,18 +183,20 @@ const LandingWork = () => {
       </div>
 
       <div className="md:hidden mt-20">
-        <div className="flex w-full items-center justify-center mb-28 md:mb-40">
-          <div className="cursor-pointer circular-button-black">
-            <Image
-              className="md:hidden"
-              width={165}
-              height={165}
-              src="/allprojects.png"
-              alt="View all projects"
-            />
-            <ArrowUpRight id="arrow" width={34} height={34} color="black" />
+        <Link href="/works">
+          <div className="flex w-full items-center justify-center mb-28 md:mb-40">
+            <div className="cursor-pointer circular-button-black">
+              <Image
+                className="md:hidden"
+                width={165}
+                height={165}
+                src="/allprojects.png"
+                alt="View all projects"
+              />
+              <ArrowUpRight id="arrow" width={34} height={34} color="black" />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );
