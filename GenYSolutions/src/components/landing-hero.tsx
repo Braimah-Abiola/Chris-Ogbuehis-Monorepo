@@ -4,6 +4,7 @@ import { MoveDown } from "lucide-react";
 import { Button } from "./ui/button";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 const LandingHero = () => {
   return (
@@ -14,7 +15,9 @@ const LandingHero = () => {
           Revolutionizing Industries, One Custom Innovation at a Time.
         </p>
 
-        <Button className="mt-10">Start Today</Button>
+        <Link href="/contact">
+          <Button className="mt-10">Start Today</Button>
+        </Link>
       </div>
 
       <video
@@ -27,10 +30,14 @@ const LandingHero = () => {
       </video>
 
       <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
-        <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
-          <MoveDown className="arrow-icon-down" color="white" />
-        </div>
-        <p className="text-white hidden md:block">Scroll to discover</p>
+        <Link href="#start">
+          <div className="flex flex-row items-center md:space-x-4">
+            <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
+              <MoveDown className="arrow-icon-down" color="white" />
+            </div>
+            <p className="text-white hidden md:block">Scroll to discover</p>
+          </div>
+        </Link>
       </div>
     </MaxWidthWrapper>
   );
@@ -55,7 +62,7 @@ export function MaskText() {
       },
     }),
   };
-  
+
   return (
     <div ref={body}>
       <div className="lineMask z-20">

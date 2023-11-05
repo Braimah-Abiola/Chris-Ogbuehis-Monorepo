@@ -9,6 +9,7 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import LandingTeam from "@/components/landing-team";
 import LandingFooter from "@/components/landing-footer";
+import Recognition from "@/components/recognition";
 
 const AboutPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,8 +33,9 @@ const AboutPage = () => {
       <div className="md:my-40">
         <LandingAboutWhite />
       </div>
-      <LandingTeam/>
-      <LandingFooter/>
+      <LandingTeam />
+      <Recognition />
+      <LandingFooter />
     </div>
   );
 };

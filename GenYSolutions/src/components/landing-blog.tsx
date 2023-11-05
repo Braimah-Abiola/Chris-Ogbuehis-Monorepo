@@ -110,24 +110,24 @@ const LandingBlog = () => {
       <MaxWidthWrapper className="pt-14 flex flex-col items-center justify-center text-center mb-40 gap-32 relative border-t mt-20 md:mt-20">
         <div className="flex flex-col gap-10">
           <p className="text-[22px] md:text-[28px]">Share on:</p>
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-6 md:gap-10">
             <Button
               size="icon"
               className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5"
             >
-              <Image src="/linkdin.png" alt="linkedin" width={30} height={30} />
+              <Image src="/linkedin.svg" alt="LinkedIn" width={30} height={30} />
             </Button>
             <Button
               size="icon"
               className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5"
             >
-              <Image src="/behance.png" alt="linkedin" width={30} height={30} />
+              <Image src="/behance.svg" alt="Behance" width={30} height={30} />
             </Button>
             <Button
               size="icon"
               className="bg-[#F4F4F4] w-16 h-16 rounded-[50%] p-5"
             >
-              <Image src="/dribble.png" alt="linkedin" width={30} height={30} />
+              <Image src="/dribbble.svg" alt="Dribbble" width={30} height={30} />
             </Button>
           </div>
         </div>

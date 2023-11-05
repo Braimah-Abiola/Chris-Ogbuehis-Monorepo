@@ -30,9 +30,11 @@ const MenuLink = ({ data, isActive, setSelectedIndicator }: MenuLinkProps) => {
       <motion.div
         variants={scale}
         animate={isActive ? "open" : "closed"}
-        className="indicator"
+        className=""
       ></motion.div>
-      <Link href={href}><span className=" font-medium">{title}</span></Link>
+      <Link href={href}>
+        <span className=" font-medium">{title}</span>
+      </Link>
     </motion.div>
   );
 };
