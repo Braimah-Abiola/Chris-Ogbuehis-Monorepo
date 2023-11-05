@@ -2,7 +2,6 @@
 
 import LandingFooter from "@/components/landing-footer";
 import LandingNav from "@/components/landing-nav";
-import LandingNavWhite from "@/components/landing-nav-white";
 import LandingServicesHero from "@/components/landing-services-hero";
 import Preloader from "@/components/preloader";
 import ServicesList from "@/components/services-list";

@@ -4,18 +4,18 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import LandingNav from "@/components/landing-nav";
 import Preloader from "@/components/preloader";
 
-import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
+import AIFaq from "@/components/ai-faq";
+import LandingBlogs from "@/components/landing-blogs";
+import LandingFooter from "@/components/landing-footer";
+import LandingWork from "@/components/landing-work";
 import { AnimatePresence } from "framer-motion";
 import { MoveDown } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import Image from "next/image";
-import LandingWork from "@/components/landing-work";
-import LandingFooter from "@/components/landing-footer";
-import LandingBlogs from "@/components/landing-blogs";
-import AIFaq from "@/components/ai-faq";
 
 const SoftwareDevelopmentPage = () => {
   const [isLoading, setIsLoading] = useState(true);
