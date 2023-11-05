@@ -81,7 +81,7 @@ const ArtificialIntelligencePage = () => {
                 Artificial Intelligence
               </motion.h1>
             </div>
-          </div>{" "}
+          </div>
           <p className=" mt-2 md:mt-5 max-w-prose text-lg text-zinc-200 text-center">
             We aim for ingenuity that leads to emotional fulfillment in every
             project.
@@ -370,3 +370,5 @@ const ArtificialIntelligencePage = () => {
     </div>
   );
 };
+
+export default ArtificialIntelligencePage;
