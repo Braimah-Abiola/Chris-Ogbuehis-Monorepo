@@ -32,7 +32,7 @@ const Menu = () => {
     },
     {
       title: "Blog /",
-      href: "/blog",
+      href: "/blogs",
     },
   ];
 
