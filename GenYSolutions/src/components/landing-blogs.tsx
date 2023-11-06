@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const LandingBlogs = () => {
   return (
-    <MaxWidthWrapper className="flex flex-col items-center justify-center text-center pt-10 md:pt-40 pb-60 md:pb-40">
+    <MaxWidthWrapper className="flex flex-col items-center justify-center text-center pt-10 md:pt-40 pb-40 md:pb-40">
       <div className="z-10 items-start justify-between flex flex-col md:flex-row w-full">
         <div className="flex flex-col">
           <h1 className=" text-start max-w-5xl text-5xl font-semibold md:text-6xl lg:text-7xl lg:leading-[1.2] text-black">
@@ -50,7 +50,7 @@ const LandingBlogs = () => {
             </Link>
           </div>
 
-          <div className="flex flex-col space-y-5 md:space-y-10 md:mt-20">
+          <div className="flex flex-col space-y-5 md:space-y-10 mt-5 md:mt-20">
             <Link href="/blog">
               <div className="w-full md:w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between hover:border-black/40 hover:text-black transition-all">
                 <div className="relative w-full md:w-full object-cover h-[280px] md:h-[280px]">

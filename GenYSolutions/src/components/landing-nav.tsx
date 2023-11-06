@@ -85,7 +85,7 @@ const LandingNav = () => {
               className="menu-icon"
               width={50}
               height={25}
-              src="./menu.svg"
+              src="/menu.svg"
               alt="Menu"
             />
           </div>

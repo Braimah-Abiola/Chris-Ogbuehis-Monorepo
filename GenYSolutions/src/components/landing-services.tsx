@@ -42,6 +42,7 @@ const LandingServices = () => {
           {services.map((service, index) => {
             return (
               <Service
+                href={service.href}
                 index={index}
                 title={service.title}
                 number={service.number}

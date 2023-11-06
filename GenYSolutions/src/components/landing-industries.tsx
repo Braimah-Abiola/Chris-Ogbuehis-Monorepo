@@ -20,10 +20,11 @@ const LandingIndustries = () => {
         </p>
       </div>
       <div className="servicesMain mt-20 md:mt-20">
-        <div className="servicesBody">
+        <div className="industriesBody">
           {industries.map((industry, index) => {
             return (
               <Industry
+                href={industry.href}
                 index={index}
                 title={industry.title}
                 number={industry.number}

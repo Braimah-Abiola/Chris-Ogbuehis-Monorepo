@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const LandingFooter = () => {
   return (
-    <footer className="flex flex-col w-full bg-[#0D0B0E] pt-20 pb-20 md:pt-32 md:pb-20 px-2.5 md:px-0">
+    <footer className="flex flex-col w-full bg-[#0D0B0E] pt-20 pb-20 md:pt-32 md:pb-16 px-2.5 md:px-0">
       <MaxWidthWrapper>
         <div className="flex flex-col md:flex-row justify-between">
           <div className="flex flex-col">
@@ -59,36 +59,51 @@ const LandingFooter = () => {
 
               <div className="flex flex-col">
                 <h4 className="text-white sm:text-lg text-start">Services</h4>
-                <p className="text-zinc-400 sm:text-lg text-start mt-4">
-                  Software Development
-                </p>
-                <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  Artificial Intelligence
-                </p>
-                <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  Custom Chatbots
-                </p>
-                <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  Industries
-                </p>
-                <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                  AI Tools
-                </p>
+                <Link href="/services/software-development">
+                  <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-4">
+                    Software Development
+                  </p>
+                </Link>
+                <Link href="/services/artificial-intelligence">
+                  <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                    Artificial Intelligence
+                  </p>
+                </Link>
+                <Link href="/services/custom-chatbots">
+                  <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                    Custom Chatbots
+                  </p>
+                </Link>
+                <Link href="/services/ai-driven-analytics">
+                  <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                    AI-Driven Analytics
+                  </p>
+                </Link>
+                <Link href="/services/custom-ai-solutions">
+                  <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                    Custom AI Solutions
+                  </p>
+                </Link>
               </div>
             </div>
 
             <div className="flex flex-col mt-10">
               <h4 className="text-white sm:text-lg text-start">Other</h4>
-              <p className="text-zinc-400 sm:text-lg text-start mt-4">
-                Our Clients
-              </p>
-              <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                Testimonials
-              </p>
-              <p className="text-zinc-400 sm:text-lg text-start mt-2">Blog</p>
-              <p className="text-zinc-400 sm:text-lg text-start mt-2">
-                Partnerships
-              </p>
+              <Link href="/our-clients">
+                <p className="text-zinc-400 sm:text-lg text-start mt-4">
+                  Our Clients
+                </p>
+              </Link>
+              <Link href="/blogs">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                  Blog
+                </p>
+              </Link>
+              <Link href="/partnerships">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                  Partnerships
+                </p>
+              </Link>
             </div>
 
             <div className="flex flex-row space-x-12 mt-10">
@@ -167,37 +182,50 @@ const LandingFooter = () => {
 
             <div className="flex flex-col">
               <h4 className="text-white sm:text-lg text-start">Services</h4>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-4">
-                Software Development
-              </p>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                Artificial Intelligence
-              </p>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                Custom Chatbots
-              </p>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                Industries
-              </p>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                AI Tools
-              </p>
+              <Link href="/services/software-development">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-4">
+                  Software Development
+                </p>
+              </Link>
+              <Link href="/services/artificial-intelligence">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                  Artificial Intelligence
+                </p>
+              </Link>
+              <Link href="/services/custom-chatbots">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                  Custom Chatbots
+                </p>
+              </Link>
+              <Link href="/services/ai-driven-analytics">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                  AI-Driven Analytics
+                </p>
+              </Link>
+              <Link href="/services/custom-ai-solutions">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                  Custom AI Solutions
+                </p>
+              </Link>
             </div>
 
             <div className="flex flex-col">
               <h4 className="text-white sm:text-lg text-start">Other</h4>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-4">
-                Our Clients
-              </p>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                Testimonials
-              </p>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                Blog
-              </p>
-              <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                Partnerships
-              </p>
+              <Link href="/our-clients">
+                <p className="text-zinc-400 hover:text-white sm:text-lg text-start mt-4">
+                  Our Clients
+                </p>
+              </Link>
+              <Link href="/blogs">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                  Blog
+                </p>
+              </Link>
+              <Link href="/partnerships">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
+                  Partnerships
+                </p>
+              </Link>
             </div>
 
             <div className="flex flex-row space-x-12 md:space-x-40">

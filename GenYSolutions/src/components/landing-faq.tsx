@@ -20,7 +20,7 @@ const LandingFaq = () => {
   };
 
   const getIconSrc = (index: number) => {
-    return isQuestionOpen(index) ? "chevron_up.svg" : "chevron_down.svg";
+    return isQuestionOpen(index) ? "/chevron_up.svg" : "/chevron_down.svg";
   };
 
   return (
@@ -33,7 +33,7 @@ const LandingFaq = () => {
           className="rotateGlitter"
           width={60}
           height={60}
-          src="glitter.svg"
+          src="/glitter.svg"
           alt="Glitter"
         />
       </div>

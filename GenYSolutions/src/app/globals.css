@@ -648,7 +648,16 @@ body {
   justify-content: center;
 }
 
+.industriesBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .servicesBody {
+  margin-right: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1046,6 +1055,15 @@ body {
     border-radius: 50%;
     background-color: #b1d134;
     display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .servicesBody {
+    margin-right: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
