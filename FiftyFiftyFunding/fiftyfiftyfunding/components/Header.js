@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react';
 
-const Header = () => {
+const Header = ({ data }) => {
   return (
     <div className="p-6 md:p-10 lg:p-16 mt-12 relative">
       <Head>
@@ -18,11 +18,12 @@ const Header = () => {
         <span className='text-[#c3c3c3]'>while you retain</span> full <br className="hidden md:block"/>
         operational control.
       </h1>
+
+      {/* Subtext */}
       <p className="text-white mt-2 md:mt-5 mb-10 md:mb-20 text-[16px] md:text-[18px] lg:text-[20px]">
-        <strong>Empowering more individuals</strong> within our community to become <strong>business owners,</strong> 
-        and <br className="hidden md:block"/>concurrently, educating the community comprehensively on all facets of 
-        <strong>entrepreneurship</strong>.
+        {data.HeaderComponent.TextBlock}
       </p>
+
     </div>
   );
 };
