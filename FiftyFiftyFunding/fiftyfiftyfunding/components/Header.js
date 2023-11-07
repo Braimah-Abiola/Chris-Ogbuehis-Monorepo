@@ -29,3 +29,7 @@ const Header = ({ data }) => {
 };
 
 export default Header;
+
+export async function getServerSideProps() {
+  
+}
