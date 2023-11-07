@@ -72,7 +72,7 @@ export const industries = [
   {
     href: "/industries/banking",
     number: "(01)",
-    title: " Banking",
+    title: "Banking",
     src: "c2.jpg",
     color: "#000000",
   },
@@ -121,7 +121,7 @@ export const industries = [
   {
     href: "/industries/real-estate",
     number: "(08)",
-    title: " Real Estate",
+    title: "Real Estate",
     src: "c2.jpg",
     color: "#f6ff77",
   },
@@ -135,7 +135,7 @@ export const industries = [
   {
     href: "/industries/transportation-and-logistics",
     number: "(10)",
-    title: " Transportation and Logistics",
+    title: "Transportation and Logistics",
     src: "maven.jpg",
     color: "#b277ff",
   },
