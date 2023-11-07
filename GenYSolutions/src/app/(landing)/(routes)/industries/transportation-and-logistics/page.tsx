@@ -32,7 +32,7 @@ const Transportation = () => {
           <p className=" mt-2 md:mt-5 max-w-prose text-lg text-zinc-200 text-center">
             Our route optimization algorithms, automated warehousing solutions,
             and real-time tracking chatbots are streamlining the logistics and
-            transportation sectors.
+            transportation sectors
           </p>
         </div>
 
