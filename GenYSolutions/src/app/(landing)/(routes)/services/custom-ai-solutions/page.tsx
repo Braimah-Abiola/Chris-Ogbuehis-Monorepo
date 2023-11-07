@@ -4,18 +4,19 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import LandingNav from "@/components/landing-nav";
 import Preloader from "@/components/preloader";
 
-import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
+import CustomFaq from "@/components/custom-faq";
+import LandingBlogs from "@/components/landing-blogs";
+import LandingFooter from "@/components/landing-footer";
+import LandingWork from "@/components/landing-work";
 import { AnimatePresence } from "framer-motion";
 import { MoveDown } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { CSSTransition } from "react-transition-group";
-import Image from "next/image";
-import LandingWork from "@/components/landing-work";
-import LandingFooter from "@/components/landing-footer";
-import LandingBlogs from "@/components/landing-blogs";
-import AIFaq from "@/components/ai-faq";
 
 const CustomAISolutions = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -96,32 +97,37 @@ const CustomAISolutions = () => {
           <source src="/services_bg.mp4" type="video/mp4" />
         </video>
 
-        <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
-          <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
-            <MoveDown className="arrow-icon-down" color="white" />
+        <Link href="#service">
+          <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
+            <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
+              <MoveDown className="arrow-icon-down" color="white" />
+            </div>
+            <p className="text-white hidden md:block">Scroll to Discover</p>
           </div>
-          <p className="text-white hidden md:block">Scroll to discover</p>
-        </div>
+        </Link>
       </MaxWidthWrapper>
 
       <div className="bg-white py-32 md:py-60 w-full flex flex-col items-center px-2.5 md:px-0">
-        <h2 className="text-black text-4xl lg:text-6xl w-full md:w-[58%] text-center">
-          People expect more of brands than ever before. They expect brands to
-          go beyond. WAC inspires brands and people to impact the world.
+        <h2
+          id="service"
+          className="text-black text-4xl lg:text-6xl w-full md:w-[58%] text-center font-medium mt-10"
+        >
+          Gen Y Solutions Offer Tailored AI Solutions for Your Unique Business &
+          Corporate Needs
         </h2>
         <div className="flex justify-center w-full mt-10 md:mt-20">
           <video
             autoPlay
             loop
             muted
-            className="w-full md:w-[80%] h-[400px] md:h-[900px] object-cover"
+            className="w-full md:w-[80%] h-[400px] md:h-[900px] object-cover rounded-[30px]"
             src="/service_video.mp4"
           />
         </div>
       </div>
       <MaxWidthWrapper className="bg-white py-10 md:py-20 flex flex-col items-start justify-center text-center">
         <div className="flex flex-row w-full items-center justify-between">
-          <h2 className="text-start text-black font-semibold text-5xl lg:text-7xl">
+          <h2 className="text-start text-black font-medium text-5xl lg:text-7xl">
             Our Process
           </h2>
           <Image
@@ -138,7 +144,7 @@ const CustomAISolutions = () => {
               autoPlay
               loop
               muted
-              className="w-full md:w-[500px] h-[400px] md:h-[350px] object-cover"
+              className="w-full md:w-[500px] h-[400px] md:h-[350px] object-cover rounded-[25px]"
               src="/service_video.mp4"
             />
           </div>
@@ -151,7 +157,7 @@ const CustomAISolutions = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  01. Why Gen Y Solutions
+                  01. Initial Consultation and Needs Assessment
                 </h2>
                 <Image
                   width={20}
@@ -168,12 +174,12 @@ const CustomAISolutions = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We initiate the process with a thorough consultation to
+                    understand your specific business needs and goals. Our team
+                    works closely with you to identify the challenges and
+                    opportunities that can be addressed with custom AI
+                    solutions.
                   </p>
                 </div>
               </CSSTransition>
@@ -187,7 +193,7 @@ const CustomAISolutions = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  02. How does it work?
+                  02. Bespoke AI Solution Design
                 </h2>
                 <Image
                   width={20}
@@ -204,12 +210,11 @@ const CustomAISolutions = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    Our AI experts design a bespoke solution tailored to your
+                    requirements. This includes selecting the most suitable AI
+                    algorithms, data sources, and technology stack to ensure the
+                    solution aligns perfectly with your objectives.
                   </p>
                 </div>
               </CSSTransition>
@@ -223,7 +228,7 @@ const CustomAISolutions = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  03. Are the requests really unlimited?
+                  03. Proof of Concept (PoC) Development
                 </h2>
                 <Image
                   width={20}
@@ -240,12 +245,11 @@ const CustomAISolutions = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    To test the feasibility and potential benefits of the
+                    proposed AI solution, we develop a PoC. This step allows you
+                    to visualize how the solution will work in practice and make
+                    informed decisions about its implementation.
                   </p>
                 </div>
               </CSSTransition>
@@ -259,7 +263,7 @@ const CustomAISolutions = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  04. What is the turnaround time?
+                  04. AI Integration and Full-Scale Development
                 </h2>
                 <Image
                   width={20}
@@ -276,12 +280,11 @@ const CustomAISolutions = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    Once the PoC is approved, we move forward with full-scale
+                    development, creating the custom AI solution. We ensure
+                    seamless integration into your existing systems, providing a
+                    unified technology stack.
                   </p>
                 </div>
               </CSSTransition>
@@ -295,7 +298,7 @@ const CustomAISolutions = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  05. What software do you use?
+                  05. Thorough Testing and Quality Assurance
                 </h2>
                 <Image
                   width={20}
@@ -312,12 +315,11 @@ const CustomAISolutions = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    AI solution undergoes rigorous testing and quality assurance
+                    to verify its accuracy, security, and efficiency. We leave
+                    no room for error to ensure that the system meets the
+                    highest industry standards.
                   </p>
                 </div>
               </CSSTransition>
@@ -331,7 +333,7 @@ const CustomAISolutions = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  06. Are refunds available?
+                  06. Deployment and Ongoing Support
                 </h2>
                 <Image
                   width={20}
@@ -348,12 +350,12 @@ const CustomAISolutions = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    With your custom AI solution successfully developed and
+                    tested, we guide you through the deployment process. After
+                    implementation, we continue to provide support and
+                    maintenance to ensure your AI solution remains optimal and
+                    up-to-date.
                   </p>
                 </div>
               </CSSTransition>
@@ -363,8 +365,10 @@ const CustomAISolutions = () => {
       </MaxWidthWrapper>
 
       <LandingWork />
-      <AIFaq />
-      <LandingBlogs />
+      <CustomFaq />
+      <div className=" bg-zinc-50">
+        <LandingBlogs />
+      </div>
       <LandingFooter />
     </div>
   );

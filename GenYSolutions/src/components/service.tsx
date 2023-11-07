@@ -44,15 +44,9 @@ const Service = ({
             <div className="hidden md:block">
               <div className="flex flex-row items-center">
                 <p className="text-zinc-400">{sub1}</p>
-                <div
-                  id="dot"
-                  className="w-3 h-3 bg-zinc-400 rounded-full ml-4 mr-4"
-                />
+                <p className="ml-4 mr-4 text-zinc-400 text-lg">•</p>
                 <p className="text-zinc-400">{sub2}</p>
-                <div
-                  id="dot"
-                  className="w-3 h-3 bg-zinc-400 rounded-full ml-4 mr-4"
-                />
+                <p className="ml-4 mr-4 text-zinc-400 text-lg">•</p>
                 <p className="text-zinc-400">{sub3}</p>
               </div>
             </div>

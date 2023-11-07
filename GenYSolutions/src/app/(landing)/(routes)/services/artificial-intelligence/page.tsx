@@ -16,6 +16,7 @@ import LandingWork from "@/components/landing-work";
 import LandingFooter from "@/components/landing-footer";
 import LandingBlogs from "@/components/landing-blogs";
 import AIFaq from "@/components/ai-faq";
+import Link from "next/link";
 
 const ArtificialIntelligencePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -94,35 +95,40 @@ const ArtificialIntelligencePage = () => {
           muted
           className="absolute object-cover z-0 w-auto min-h-screen min-w-full md:max-w-none"
         >
-          <source src="/services_bg.mp4" type="video/mp4" />
+          <source src="/ai_banner.mp4" type="video/mp4" />
         </video>
 
-        <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
-          <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
-            <MoveDown className="arrow-icon-down" color="white" />
+        <Link href="#service">
+          <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
+            <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
+              <MoveDown className="arrow-icon-down" color="white" />
+            </div>
+            <p className="text-white hidden md:block">Scroll to Discover</p>
           </div>
-          <p className="text-white hidden md:block">Scroll to discover</p>
-        </div>
+        </Link>
       </MaxWidthWrapper>
 
       <div className="bg-white py-32 md:py-60 w-full flex flex-col items-center px-2.5 md:px-0">
-        <h2 className="text-black text-4xl lg:text-6xl w-full md:w-[58%] text-center">
-          People expect more of brands than ever before. They expect brands to
-          go beyond. WAC inspires brands and people to impact the world.
+        <h2
+          id="service"
+          className="text-black text-4xl lg:text-6xl w-full md:w-[58%] text-center font-medium mt-10"
+        >
+          Gen Y Solutions&apos; opening New Vistas of Possibilities through
+          Cutting-Edge Artificial Intelligence Solutions
         </h2>
         <div className="flex justify-center w-full mt-10 md:mt-20">
           <video
             autoPlay
             loop
             muted
-            className="w-full md:w-[80%] h-[400px] md:h-[900px] object-cover"
-            src="/service_video.mp4"
+            className="w-full md:w-[80%] h-[400px] md:h-[900px] object-cover rounded-[25px]"
+            src="/ai_video.mp4"
           />
         </div>
       </div>
       <MaxWidthWrapper className="bg-white py-10 md:py-20 flex flex-col items-start justify-center text-center">
         <div className="flex flex-row w-full items-center justify-between">
-          <h2 className="text-start text-black font-semibold text-5xl lg:text-7xl">
+          <h2 className="text-start text-black font-medium text-5xl lg:text-7xl">
             Our Process
           </h2>
           <Image
@@ -139,8 +145,8 @@ const ArtificialIntelligencePage = () => {
               autoPlay
               loop
               muted
-              className="w-full md:w-[500px] h-[400px] md:h-[350px] object-cover"
-              src="/service_video.mp4"
+              className="w-full md:w-[500px] h-[400px] md:h-[350px] object-cover rounded-[20px]"
+              src="/ai_process.mp4"
             />
           </div>
           <div className="flex flex-col justify-center w-full space-y-4 mt-12 md:mt-0">
@@ -152,7 +158,7 @@ const ArtificialIntelligencePage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  01. Why Gen Y Solutions
+                  01. Initial Consultation and Discovery
                 </h2>
                 <Image
                   width={20}
@@ -169,12 +175,11 @@ const ArtificialIntelligencePage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We begin with a comprehensive consultation where we listen
+                    to your needs and goals. Through in-depth discussions, we
+                    discover the specific AI solutions required to address your
+                    unique challenges or opportunities.
                   </p>
                 </div>
               </CSSTransition>
@@ -188,7 +193,7 @@ const ArtificialIntelligencePage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  02. How does it work?
+                  02. Customized AI Solution Design
                 </h2>
                 <Image
                   width={20}
@@ -205,12 +210,11 @@ const ArtificialIntelligencePage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    Our team of AI experts designs a customized solution
+                    tailored to your objectives. This includes selecting the
+                    most appropriate AI algorithms, data sources, and technology
+                    stack to ensure optimal results.
                   </p>
                 </div>
               </CSSTransition>
@@ -224,7 +228,7 @@ const ArtificialIntelligencePage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  03. Are the requests really unlimited?
+                  03. Proof of Concept (PoC) Development
                 </h2>
                 <Image
                   width={20}
@@ -241,12 +245,11 @@ const ArtificialIntelligencePage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    To test the feasibility and potential benefits of the
+                    proposed AI solution, we develop a PoC. This step allows you
+                    to visualize how the solution will work in practice and make
+                    informed decisions about its implementation.
                   </p>
                 </div>
               </CSSTransition>
@@ -260,7 +263,7 @@ const ArtificialIntelligencePage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  04. What is the turnaround time?
+                  04. Full-Scale Development and Integration
                 </h2>
                 <Image
                   width={20}
@@ -277,12 +280,11 @@ const ArtificialIntelligencePage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    Once the PoC is approved, we move forward with full-scale
+                    development, creating the AI system. This includes
+                    integration into your existing infrastructure, ensuring a
+                    seamless fit with your operations.
                   </p>
                 </div>
               </CSSTransition>
@@ -296,7 +298,7 @@ const ArtificialIntelligencePage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  05. What software do you use?
+                  05. Thorough Testing and Quality Assurance
                 </h2>
                 <Image
                   width={20}
@@ -313,12 +315,11 @@ const ArtificialIntelligencePage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    Our AI solution undergoes rigorous testing and quality
+                    assurance to verify its accuracy, security, and efficiency.
+                    We leave no stone unturned to ensure that the system meets
+                    the highest industry standards.
                   </p>
                 </div>
               </CSSTransition>
@@ -332,7 +333,7 @@ const ArtificialIntelligencePage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  06. Are refunds available?
+                  06. Deployment and Ongoing Support
                 </h2>
                 <Image
                   width={20}
@@ -349,12 +350,12 @@ const ArtificialIntelligencePage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    With your AI solution successfully developed and tested, we
+                    guide you through the deployment process. After
+                    implementation, we continue to provide support and
+                    maintenance to ensure your AI system remains optimal and
+                    up-to-date.
                   </p>
                 </div>
               </CSSTransition>
@@ -365,7 +366,9 @@ const ArtificialIntelligencePage = () => {
 
       <LandingWork />
       <AIFaq />
-      <LandingBlogs />
+      <div className=" bg-zinc-50">
+        <LandingBlogs />
+      </div>
       <LandingFooter />
     </div>
   );

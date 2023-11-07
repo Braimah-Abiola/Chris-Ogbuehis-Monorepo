@@ -31,7 +31,7 @@ const LandingIndustriesHero = () => {
           <source src="/hero_bg2.mp4" type="video/mp4" />
         </video>
 
-        <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5 z-10">
+        <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
           <Link href="#industries">
             <div className="flex flex-row items-center md:space-x-4">
               <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">

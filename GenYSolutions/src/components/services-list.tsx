@@ -34,8 +34,8 @@ const ServicesList = () => {
               autoPlay
               loop
               muted
-              className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover"
-              src="/service_video.mp4"
+              className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover rounded-[20px]"
+              src="/ai_banner.mp4"
             ></video>
           </div>
         </div>
@@ -47,8 +47,8 @@ const ServicesList = () => {
                 autoPlay
                 loop
                 muted
-                className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover"
-                src="/service_video.mp4"
+                className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover rounded-[20px]"
+                src="/openai.mp4"
               ></video>
             </div>
           </div>
@@ -79,8 +79,8 @@ const ServicesList = () => {
                 autoPlay
                 loop
                 muted
-                className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover"
-                src="/service_video.mp4"
+                className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover rounded-[20px]"
+                src="/openai.mp4"
               ></video>
             </div>
           </div>
@@ -99,9 +99,11 @@ const ServicesList = () => {
               Data Mining / Data Analytics Consultation
             </p>
             <div className="mt-12">
-              <Button variant="outline">
-                Explore AI-Driven Analytics <ArrowRight className="ml-2" />
-              </Button>
+              <Link href="/services/ai-driven-analytics">
+                <Button variant="outline">
+                  Explore AI-Driven Analytics <ArrowRight className="ml-2" />
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -110,8 +112,8 @@ const ServicesList = () => {
               autoPlay
               loop
               muted
-              className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover"
-              src="/service_video.mp4"
+              className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover rounded-[20px]"
+              src="/analytics_banner.mp4"
             ></video>
           </div>
         </div>
@@ -123,7 +125,7 @@ const ServicesList = () => {
                 autoPlay
                 loop
                 muted
-                className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover"
+                className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover rounded-[20px]"
                 src="/service_video.mp4"
               ></video>
             </div>
@@ -141,9 +143,11 @@ const ServicesList = () => {
               / AI Solution Maintenance and Support
             </p>
             <div className="mt-12">
-              <Button variant="outline">
-                Explore Custom AI Solutions <ArrowRight className="ml-2" />
-              </Button>
+              <Link href="/services/custom-ai-solutions">
+                <Button variant="outline">
+                  Explore Custom AI Solutions <ArrowRight className="ml-2" />
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -153,7 +157,7 @@ const ServicesList = () => {
                 autoPlay
                 loop
                 muted
-                className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover"
+                className="w-full md:w-[700px] h-[400px] md:h-[700px] object-cover rounded-[20px]"
                 src="/service_video.mp4"
               ></video>
             </div>

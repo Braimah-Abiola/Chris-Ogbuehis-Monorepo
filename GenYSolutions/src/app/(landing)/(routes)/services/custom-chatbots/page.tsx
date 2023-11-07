@@ -4,19 +4,20 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import LandingNav from "@/components/landing-nav";
 import Preloader from "@/components/preloader";
 
-import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 import { AnimatePresence } from "framer-motion";
 import { MoveDown } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 
-import Image from "next/image";
-import LandingWork from "@/components/landing-work";
-import LandingFooter from "@/components/landing-footer";
+import ChatbotFaq from "@/components/chatbot-faq";
 import LandingBlogs from "@/components/landing-blogs";
-import AIFaq from "@/components/ai-faq";
+import LandingFooter from "@/components/landing-footer";
+import LandingWork from "@/components/landing-work";
+import Image from "next/image";
+import Link from "next/link";
 
 const CustomChatbotsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -98,32 +99,37 @@ const CustomChatbotsPage = () => {
           <source src="/services_bg.mp4" type="video/mp4" />
         </video>
 
-        <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
-          <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
-            <MoveDown className="arrow-icon-down" color="white" />
+        <Link href="#service">
+          <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
+            <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
+              <MoveDown className="arrow-icon-down" color="white" />
+            </div>
+            <p className="text-white hidden md:block">Scroll to Discover</p>
           </div>
-          <p className="text-white hidden md:block">Scroll to discover</p>
-        </div>
+        </Link>
       </MaxWidthWrapper>
 
       <div className="bg-white py-32 md:py-60 w-full flex flex-col items-center px-2.5 md:px-0">
-        <h2 className="text-black text-4xl lg:text-6xl w-full md:w-[58%] text-center">
-          People expect more of brands than ever before. They expect brands to
-          go beyond. WAC inspires brands and people to impact the world.
+        <h2
+          id="service"
+          className="text-black text-4xl lg:text-6xl w-full md:w-[58%] text-center font-medium mt-10"
+        >
+          Transform Your Business and Enhance Customer Engagement with Advanced
+          Tailor-Made Custom Chatbots
         </h2>
         <div className="flex justify-center w-full mt-10 md:mt-20">
           <video
             autoPlay
             loop
             muted
-            className="w-full md:w-[80%] h-[400px] md:h-[900px] object-cover"
-            src="/service_video.mp4"
+            className="w-full md:w-[80%] h-[400px] md:h-[900px] object-cover rounded-[25px]"
+            src="/chatbot_banner.mp4"
           />
         </div>
       </div>
       <MaxWidthWrapper className="bg-white py-10 md:py-20 flex flex-col items-start justify-center text-center">
         <div className="flex flex-row w-full items-center justify-between">
-          <h2 className="text-start text-black font-semibold text-5xl lg:text-7xl">
+          <h2 className="text-start text-black font-medium text-5xl lg:text-7xl">
             Our Process
           </h2>
           <Image
@@ -140,8 +146,8 @@ const CustomChatbotsPage = () => {
               autoPlay
               loop
               muted
-              className="w-full md:w-[500px] h-[400px] md:h-[350px] object-cover"
-              src="/service_video.mp4"
+              className="w-full md:w-[500px] h-[400px] md:h-[350px] object-cover rounded-[20px]"
+              src="/chatbot_process.mp4"
             />
           </div>
           <div className="flex flex-col justify-center w-full space-y-4 mt-12 md:mt-0">
@@ -153,7 +159,7 @@ const CustomChatbotsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  01. Why Gen Y Solutions
+                  01. Initial Consultation and Requirements Gathering
                 </h2>
                 <Image
                   width={20}
@@ -170,12 +176,12 @@ const CustomChatbotsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We begin with an in-depth consultation to understand your
+                    business goals and chatbot requirements. During this phase,
+                    we gather insights into your target audience, preferred
+                    messaging platforms, and the specific tasks you want the
+                    chatbot to handle.
                   </p>
                 </div>
               </CSSTransition>
@@ -189,7 +195,7 @@ const CustomChatbotsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  02. How does it work?
+                  02. Conversational Design and Flow Mapping
                 </h2>
                 <Image
                   width={20}
@@ -206,12 +212,11 @@ const CustomChatbotsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    Our team designs a conversational flow that ensures a
+                    natural and engaging interaction between the chatbot and
+                    users. We map out the dialogues, user responses, and
+                    potential pathways to provide a seamless user experience.
                   </p>
                 </div>
               </CSSTransition>
@@ -225,7 +230,7 @@ const CustomChatbotsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  03. Are the requests really unlimited?
+                  03. Chatbot Development and Integration
                 </h2>
                 <Image
                   width={20}
@@ -242,12 +247,11 @@ const CustomChatbotsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We develop the chatbot using the latest technologies and AI
+                    algorithms. Whether you need a transactional chatbot,
+                    support chatbot, or survey and feedback chatbot, we build
+                    and integrate it into your chosen platforms.
                   </p>
                 </div>
               </CSSTransition>
@@ -261,7 +265,7 @@ const CustomChatbotsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  04. What is the turnaround time?
+                  04. AI-Powered Personalization and Continuous Learning
                 </h2>
                 <Image
                   width={20}
@@ -278,12 +282,11 @@ const CustomChatbotsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    To enhance user engagement, we implement AI-powered
+                    personalization that enables the chatbot to adapt to user
+                    preferences and behaviors. The chatbot continuously learns
+                    and improves its responses over time.
                   </p>
                 </div>
               </CSSTransition>
@@ -297,7 +300,7 @@ const CustomChatbotsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  05. What software do you use?
+                  05. Multi-Platform Deployment and Testing
                 </h2>
                 <Image
                   width={20}
@@ -314,12 +317,11 @@ const CustomChatbotsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We deploy the chatbot across multiple platforms, such as
+                    websites, messaging apps, and social media. Rigorous testing
+                    is conducted to ensure the chatbot functions flawlessly and
+                    delivers the intended results.
                   </p>
                 </div>
               </CSSTransition>
@@ -333,7 +335,7 @@ const CustomChatbotsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  06. Are refunds available?
+                  06. Ongoing Support and Analytics
                 </h2>
                 <Image
                   width={20}
@@ -350,12 +352,11 @@ const CustomChatbotsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We provide continuous support and maintenance to keep your
+                    chatbot running efficiently. Chatbot analytics are utilized
+                    to monitor performance and make necessary enhancements for
+                    an exceptional user experience.
                   </p>
                 </div>
               </CSSTransition>
@@ -365,8 +366,10 @@ const CustomChatbotsPage = () => {
       </MaxWidthWrapper>
 
       <LandingWork />
-      <AIFaq />
-      <LandingBlogs />
+      <ChatbotFaq />
+      <div className=" bg-zinc-50">
+        <LandingBlogs />
+      </div>
       <LandingFooter />
     </div>
   );

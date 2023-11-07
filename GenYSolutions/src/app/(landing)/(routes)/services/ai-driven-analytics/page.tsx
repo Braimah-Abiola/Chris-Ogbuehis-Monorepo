@@ -16,6 +16,8 @@ import LandingWork from "@/components/landing-work";
 import LandingFooter from "@/components/landing-footer";
 import LandingBlogs from "@/components/landing-blogs";
 import AIFaq from "@/components/ai-faq";
+import AnalyticsFaq from "@/components/analytics-faq";
+import Link from "next/link";
 
 const AIDrivenAnalyticsPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -94,35 +96,40 @@ const AIDrivenAnalyticsPage = () => {
           muted
           className="absolute object-cover z-0 w-auto min-h-screen min-w-full md:max-w-none"
         >
-          <source src="/services_bg.mp4" type="video/mp4" />
+          <source src="/analytics_banner.mp4" type="video/mp4" />
         </video>
 
-        <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
-          <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
-            <MoveDown className="arrow-icon-down" color="white" />
+        <Link href="#service">
+          <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5">
+            <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
+              <MoveDown className="arrow-icon-down" color="white" />
+            </div>
+            <p className="text-white hidden md:block">Scroll to Discover</p>
           </div>
-          <p className="text-white hidden md:block">Scroll to discover</p>
-        </div>
+        </Link>
       </MaxWidthWrapper>
 
       <div className="bg-white py-32 md:py-60 w-full flex flex-col items-center px-2.5 md:px-0">
-        <h2 className="text-black text-4xl lg:text-6xl w-full md:w-[58%] text-center">
-          People expect more of brands than ever before. They expect brands to
-          go beyond. WAC inspires brands and people to impact the world.
+        <h2
+          id="service"
+          className="text-black text-4xl lg:text-6xl w-full md:w-[58%] text-center font-medium mt-10"
+        >
+          Transform Data into Insights with Artificial Intelligence powered
+          Analytics to skyrocket your business.
         </h2>
         <div className="flex justify-center w-full mt-10 md:mt-20">
           <video
             autoPlay
             loop
             muted
-            className="w-full md:w-[80%] h-[400px] md:h-[900px] object-cover"
-            src="/service_video.mp4"
+            className="w-full md:w-[80%] h-[400px] md:h-[900px] object-cover rounded-[25px]"
+            src="/graph.mp4"
           />
         </div>
       </div>
       <MaxWidthWrapper className="bg-white py-10 md:py-20 flex flex-col items-start justify-center text-center">
         <div className="flex flex-row w-full items-center justify-between">
-          <h2 className="text-start text-black font-semibold text-5xl lg:text-7xl">
+          <h2 className="text-start text-black font-medium text-5xl lg:text-7xl">
             Our Process
           </h2>
           <Image
@@ -139,8 +146,8 @@ const AIDrivenAnalyticsPage = () => {
               autoPlay
               loop
               muted
-              className="w-full md:w-[500px] h-[400px] md:h-[350px] object-cover"
-              src="/service_video.mp4"
+              className="w-full md:w-[500px] h-[400px] md:h-[350px] object-cover rounded-[20px]"
+              src="/analytics_banner.mp4"
             />
           </div>
           <div className="flex flex-col justify-center w-full space-y-4 mt-12 md:mt-0">
@@ -152,7 +159,7 @@ const AIDrivenAnalyticsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  01. Why Gen Y Solutions
+                  01. Initial Assessment and Data Gathering
                 </h2>
                 <Image
                   width={20}
@@ -169,12 +176,11 @@ const AIDrivenAnalyticsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We begin with an initial assessment of your data sources and
+                    analytics requirements. Our team works closely with you to
+                    identify the specific insights you need and gather the
+                    necessary data.
                   </p>
                 </div>
               </CSSTransition>
@@ -188,7 +194,7 @@ const AIDrivenAnalyticsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  02. How does it work?
+                  02. Data Analysis and Visualization
                 </h2>
                 <Image
                   width={20}
@@ -205,12 +211,11 @@ const AIDrivenAnalyticsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We analyze the collected data using advanced data analytics
+                    tools and techniques. The results are presented through
+                    intuitive visualizations and reports that make complex data
+                    more accessible for decision-makers.
                   </p>
                 </div>
               </CSSTransition>
@@ -224,7 +229,7 @@ const AIDrivenAnalyticsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  03. Are the requests really unlimited?
+                  03. Predictive Modeling and Forecasting
                 </h2>
                 <Image
                   width={20}
@@ -241,12 +246,11 @@ const AIDrivenAnalyticsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We develop predictive models using machine learning and
+                    statistical algorithms. These models enable you to forecast
+                    trends, make data-driven predictions, and proactively plan
+                    for the future.
                   </p>
                 </div>
               </CSSTransition>
@@ -260,7 +264,7 @@ const AIDrivenAnalyticsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  04. What is the turnaround time?
+                  04. Real-Time Data Processing and Analytics
                 </h2>
                 <Image
                   width={20}
@@ -277,12 +281,11 @@ const AIDrivenAnalyticsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We set up real-time data processing systems that provide
+                    immediate insights. This is particularly useful for
+                    applications in finance, IoT, and industries where timely
+                    data is crucial.
                   </p>
                 </div>
               </CSSTransition>
@@ -296,7 +299,7 @@ const AIDrivenAnalyticsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  05. What software do you use?
+                  05. Custom Reporting Solutions and Business Intelligence
                 </h2>
                 <Image
                   width={20}
@@ -313,12 +316,11 @@ const AIDrivenAnalyticsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We offer custom reporting solutions that allow you to
+                    generate and share reports specific to your business needs.
+                    Our business intelligence tools empower you to make informed
+                    decisions.
                   </p>
                 </div>
               </CSSTransition>
@@ -332,7 +334,7 @@ const AIDrivenAnalyticsPage = () => {
             >
               <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
                 <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-                  06. Are refunds available?
+                  06. Data Integration and Ongoing Support
                 </h2>
                 <Image
                   width={20}
@@ -349,12 +351,11 @@ const AIDrivenAnalyticsPage = () => {
                 unmountOnExit
               >
                 <div className="answer-container md:ml-5 md:mr-20">
-                  <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                    Nova is an AI SaaS (Software as a Service) platform that
-                    allows users to create custom AI friends and personalities
-                    to chat with 24/7. It provides a unique and interactive way
-                    for users to engage with AI-powered companions tailored to
-                    their preferences.
+                  <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                    We ensure seamless data integration across your
+                    organization&apos;s systems. Our team provides ongoing
+                    support and maintenance to keep your analytics solutions
+                    running smoothly and up-to-date.
                   </p>
                 </div>
               </CSSTransition>
@@ -364,8 +365,10 @@ const AIDrivenAnalyticsPage = () => {
       </MaxWidthWrapper>
 
       <LandingWork />
-      <AIFaq />
-      <LandingBlogs />
+      <AnalyticsFaq />
+      <div className=" bg-zinc-50">
+        <LandingBlogs />
+      </div>
       <LandingFooter />
     </div>
   );

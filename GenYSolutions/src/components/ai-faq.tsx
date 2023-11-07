@@ -47,7 +47,7 @@ const AIFaq = () => {
         >
           <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-start text-[16px] md:text-[24px] font-medium">
-              What is Gen Y Solution&apos;s approach to AI development?
+              What industries can benefit from your AI services?
             </h2>
             <Image
               width={20}
@@ -64,11 +64,12 @@ const AIFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                Our AI services cater to a wide range of industries, including
+                healthcare, law, banking, real estate, retail, education,
+                manufacturing, transportation, logistics, energy, and media. We
+                tailor our AI solutions to meet the unique requirements of each
+                sector.
               </p>
             </div>
           </CSSTransition>
@@ -82,8 +83,7 @@ const AIFaq = () => {
         >
           <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-start text-[16px] md:text-[24px] font-medium">
-              How does Gen Y Solution assess the effectiveness of an AI
-              Solution?
+              How do you ensure data security and privacy in AI projects?
             </h2>
             <Image
               width={20}
@@ -100,11 +100,12 @@ const AIFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                Data security and privacy are paramount in our AI projects. We
+                implement robust security measures, including encryption and
+                access controls, to safeguard your data. Our solutions comply
+                with industry-specific regulations to protect sensitive
+                information.
               </p>
             </div>
           </CSSTransition>
@@ -118,7 +119,8 @@ const AIFaq = () => {
         >
           <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-              Are the requests really unlimited?
+              What kind of AI models do you develop, and can they adapt over
+              time?
             </h2>
             <Image
               width={20}
@@ -135,11 +137,11 @@ const AIFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                We develop various AI models, such as machine learning, natural
+                language processing, and computer vision. These models are
+                designed to adapt over time through continuous learning,
+                ensuring they remain relevant and effective.
               </p>
             </div>
           </CSSTransition>
@@ -153,7 +155,8 @@ const AIFaq = () => {
         >
           <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-              What is the turnaround time?
+              Can you integrate AI solutions with our existing software and
+              systems?
             </h2>
             <Image
               width={20}
@@ -170,11 +173,11 @@ const AIFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                Yes, we specialize in seamlessly integrating AI solutions with
+                your existing software and systems. Whether it&apos;s ERP, CRM,
+                or other proprietary software, we ensure a smooth and efficient
+                integration process.
               </p>
             </div>
           </CSSTransition>
@@ -188,7 +191,7 @@ const AIFaq = () => {
         >
           <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-              What software do you use?
+              What is the typical timeline for developing a custom AI solution?
             </h2>
             <Image
               width={20}
@@ -205,11 +208,11 @@ const AIFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                The timeline varies depending on the complexity of the project.
+                During the project planning phase, we provide an estimated
+                timeline based on your specific requirements. We are committed
+                to delivering timely solutions without compromising quality.
               </p>
             </div>
           </CSSTransition>
@@ -223,7 +226,8 @@ const AIFaq = () => {
         >
           <div className="flex flex-row justify-between cursor-pointer mx-5 md:mx-10">
             <h2 className="text-black text-[16px] md:text-[24px] font-medium">
-              Are refunds available?
+              Do you offer post-implementation support and maintenance for AI
+              solutions?
             </h2>
             <Image
               width={20}
@@ -240,11 +244,11 @@ const AIFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                Yes, we provide post-implementation support and maintenance to
+                keep your AI solution running smoothly. Our dedicated team is
+                available to address any issues, updates, or enhancements needed
+                to ensure the continued success of your AI system.
               </p>
             </div>
           </CSSTransition>

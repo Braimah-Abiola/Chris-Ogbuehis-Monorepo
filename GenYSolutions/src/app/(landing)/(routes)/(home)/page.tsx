@@ -39,7 +39,9 @@ export default function Home() {
       <LandingServices />
       <LandingClients />
       <LandingFaq />
-      <LandingBlogs />
+      <div className=" bg-zinc-50">
+        <LandingBlogs />
+      </div>
       <LandingFooter />
     </div>
   );
