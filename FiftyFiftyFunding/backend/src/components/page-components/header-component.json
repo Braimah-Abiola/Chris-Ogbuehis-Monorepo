@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_page_components_header_components",
+  "info": {
+    "displayName": "HeaderComponent"
+  },
+  "options": {},
+  "attributes": {
+    "TextBlock": {
+      "type": "text"
+    }
+  }
+}
