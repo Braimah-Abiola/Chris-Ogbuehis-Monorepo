@@ -32,6 +32,9 @@ export const services = [
     title: "Artificial Intelligence",
     src: "c2.jpg",
     color: "#000000",
+    sub1: "Machine Learning",
+    sub2: "Reinforcement Learning",
+    sub3: "Computer Vision",
   },
   {
     href: "/services/custom-chatbots",
@@ -39,6 +42,9 @@ export const services = [
     title: "Custom Chatbots",
     src: "funny.jpg",
     color: "#8C8C8C",
+    sub1: "Conversational",
+    sub2: "Multi-Platform Integration",
+    sub3: "AI-Powered Personalization",
   },
   {
     href: "/services/ai-driven-analytics",
@@ -46,6 +52,9 @@ export const services = [
     title: "AI-Driven Analytics",
     src: "maven.jpg",
     color: "#EFE8D3",
+    sub1: "Predictive Modeling",
+    sub2: "Reporting Solutions",
+    sub3: "Real-Time Data Processing",
   },
   {
     href: "/services/custom-ai-solutions",
@@ -53,6 +62,9 @@ export const services = [
     title: "Custom AI Solutions",
     src: "panda.jpg",
     color: "#499eff",
+    sub1: "AI Consultation",
+    sub2: "Bespoke AI Development",
+    sub3: "AI Integration Services",
   },
 ];
 

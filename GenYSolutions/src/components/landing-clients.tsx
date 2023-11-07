@@ -10,7 +10,7 @@ const LandingClients = () => {
           <br />
           trust Gen Y Solutions
         </h2>
-        <p className="text-white text-start">
+        <p className="text-white text-start text-lg">
           We are proud to be the trusted custom AI software provider
           <br className="hidden md:block" /> for companies that strive for
           excellence.

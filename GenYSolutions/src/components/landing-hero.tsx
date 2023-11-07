@@ -11,7 +11,7 @@ const LandingHero = () => {
     <MaxWidthWrapper className="flex flex-col items-center justify-center text-center h-screen">
       <div className="z-10 items-center justify-center flex flex-col -mt-10 md:-mt-0">
         <MaskText />
-        <p className=" mt-2 md:mt-5 max-w-prose text-lg text-zinc-400 text-center">
+        <p className="mt-2 md:mt-5 max-w-prose text-lg text-zinc-400 text-center">
           Revolutionizing Industries, One Custom Innovation at a Time.
         </p>
 
@@ -35,7 +35,7 @@ const LandingHero = () => {
             <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
               <MoveDown className="arrow-icon-down" color="white" />
             </div>
-            <p className="text-white hidden md:block">Scroll to discover</p>
+            <p className="text-white hidden md:block">Scroll to Discover</p>
           </div>
         </Link>
       </div>

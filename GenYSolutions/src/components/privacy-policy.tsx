@@ -1,5 +1,6 @@
 import { MoveDown } from "lucide-react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import Link from "next/link";
 
 const PrivacyPolicy = () => {
   return (
@@ -24,31 +25,50 @@ const PrivacyPolicy = () => {
 
         <div className="border border-black/10 w-full my-5 md:my-10" />
 
-        <div className="flex flex-row items-center space-x-5 mt-6 md:mt-12 cursor-pointer">
-          <div className="flex items-center justify-center border border-black rounded-full h-16 w-10">
-            <MoveDown className="arrow-icon-down" color="black" />
+        <Link href="#policystart">
+          <div className="flex flex-row items-center space-x-5 mt-6 md:mt-12 cursor-pointer">
+            <div className="flex items-center justify-center border border-black rounded-full h-16 w-10">
+              <MoveDown className="arrow-icon-down" color="black" />
+            </div>
+            <p className="text-black">Scroll to Policy</p>
           </div>
-          <p className="text-black">Scroll to Policy</p>
-        </div>
+        </Link>
       </MaxWidthWrapper>
 
-      <MaxWidthWrapper className="flex flex-col items-start text-start pt-[8rem] md:pt-[15rem] md:pb-[16rem]">
-        <div className="flex flex-col md:flex-row w-full">
+      <MaxWidthWrapper className="flex flex-col items-start text-start pt-[5rem] md:pt-[12rem] md:pb-[16rem]">
+        <div
+          id="policystart"
+          className="flex flex-col md:flex-row w-full pt-[3rem]"
+        >
           <div className="flex flex-col w-full md:w-[35%] font-medium text-lg gap-4">
-            <h4 className=" text-lg md:text-xl md:text-lg md:text-xl">Introduction</h4>
-            <h4 className=" text-lg md:text-xl md:text-lg md:text-xl">Information We Collect</h4>
-            <h4 className=" text-lg md:text-xl md:text-lg md:text-xl">How We Use Your Information</h4>
-            <h4 className=" text-lg md:text-xl md:text-lg md:text-xl">Data Security</h4>
-            <h4 className=" text-lg md:text-xl md:text-lg md:text-xl">Sharing Your Information</h4>
-            <h4 className=" text-lg md:text-xl md:text-lg md:text-xl">
+            <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+              Introduction
+            </h4>
+            <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+              Information We Collect
+            </h4>
+            <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+              How We Use Your Information
+            </h4>
+            <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+              Data Security
+            </h4>
+            <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+              Sharing Your Information
+            </h4>
+            <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
               Changes to This Privacy Policy
             </h4>
-            <h4 className=" text-lg md:text-xl md:text-lg md:text-xl">Contact Us</h4>
+            <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+              Contact Us
+            </h4>
           </div>
 
           <div className="flex flex-col w-full mt-20 mb-32 md:mt-0 md:mb-0">
             <div className="flex flex-col space-y-4">
-              <h2 className="text-3xl md:text-4xl text-black font-medium">Introduction</h2>
+              <h2 className="text-3xl md:text-4xl text-black font-medium">
+                Introduction
+              </h2>
               <p className="text-lg md:text-xl text-black/70">
                 Welcome to Gen Y Solutions. We are committed to protecting your
                 privacy and safeguarding your personal information. This Privacy
@@ -123,7 +143,9 @@ const PrivacyPolicy = () => {
             </div>
 
             <div className="flex flex-col space-y-4 mt-12">
-              <h2 className="text-3xl md:text-4xl text-black font-medium">Data Security</h2>
+              <h2 className="text-3xl md:text-4xl text-black font-medium">
+                Data Security
+              </h2>
               <p className="text-lg md:text-xl text-black/70">
                 We are committed to protecting your personal information. We
                 employ industry-standard security measures to safeguard your
@@ -169,7 +191,9 @@ const PrivacyPolicy = () => {
             </div>
 
             <div className="flex flex-col space-y-4 mt-12">
-              <h2 className="text-3xl md:text-4xl text-black font-medium">Contact Us</h2>
+              <h2 className="text-3xl md:text-4xl text-black font-medium">
+                Contact Us
+              </h2>
               <p className="text-lg md:text-xl text-black/70">
                 If you have any questions, concerns, or requests related to your
                 personal information or this Privacy Policy, please contact us

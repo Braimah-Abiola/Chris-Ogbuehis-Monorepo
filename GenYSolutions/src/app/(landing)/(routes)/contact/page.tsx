@@ -27,8 +27,10 @@ const ContactPage = () => {
       </AnimatePresence>
       <LandingNavWhite />
       <LandingContactHero />
-      <ContactForm />
-      <LandingFooter/>
+      <div id="form">
+        <ContactForm />
+      </div>
+      <LandingFooter />
     </div>
   );
 };

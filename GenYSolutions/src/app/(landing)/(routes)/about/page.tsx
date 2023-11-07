@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import LandingTeam from "@/components/landing-team";
 import LandingFooter from "@/components/landing-footer";
 import Recognition from "@/components/recognition";
+import LandingBlogs from "@/components/landing-blogs";
 
 const AboutPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -30,11 +31,12 @@ const AboutPage = () => {
 
       <LandingNavWhite />
       <LandingAboutHero />
-      <div className="md:my-40">
+      <div id="about" className="md:my-40">
         <LandingAboutWhite />
       </div>
       <LandingTeam />
       <Recognition />
+      <LandingBlogs />
       <LandingFooter />
     </div>
   );

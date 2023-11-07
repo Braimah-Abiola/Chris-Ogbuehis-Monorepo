@@ -33,7 +33,9 @@ const MenuLink = ({ data, isActive, setSelectedIndicator }: MenuLinkProps) => {
         className=""
       ></motion.div>
       <Link href={href}>
-        <span className=" font-medium">{title}</span>
+        <span className="text-white hover:text-primary transition-colors font-medium">
+          {title}
+        </span>
       </Link>
     </motion.div>
   );

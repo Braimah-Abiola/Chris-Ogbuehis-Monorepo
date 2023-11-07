@@ -1,5 +1,6 @@
 import { MoveDown } from "lucide-react";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import Link from "next/link";
 
 const WorkHero = () => {
   return (
@@ -17,18 +18,21 @@ const WorkHero = () => {
           Previous Projects
         </h1>
         <p className="mt-2 md:mt-5 max-w-full text-start text-lg text-black uppercase hidden md:block">
-          ALL PREVIOUS<br className="hidden md:block" /> PROJECTS
+          ALL PREVIOUS
+          <br className="hidden md:block" /> PROJECTS
         </p>
       </div>
 
       <div className="border border-black/10 w-full my-5 md:my-10" />
 
-      <div className="flex flex-row items-center space-x-5 mt-6 md:mt-12 cursor-pointer">
-        <div className="flex items-center justify-center border border-black rounded-full h-16 w-10">
-          <MoveDown className="arrow-icon-down" color="black" />
+      <Link href="#works">
+        <div className="flex flex-row items-center space-x-5 mt-6 md:mt-12 cursor-pointer">
+          <div className="flex items-center justify-center border border-black rounded-full h-16 w-10">
+            <MoveDown className="arrow-icon-down" color="black" />
+          </div>
+          <p className="text-black">Scroll to Works</p>
         </div>
-        <p className="text-black">Scroll to Policy</p>
-      </div>
+      </Link>
     </MaxWidthWrapper>
   );
 };

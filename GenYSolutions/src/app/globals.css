@@ -634,7 +634,8 @@ body {
 .slides li div {
   height: 815px;
   width: 1055px;
-  background-size: contain;
+  background-size: cover;
+  border-radius: 30px;
   background-position: center top;
   background-repeat: no-repeat;
   -webkit-user-select: none;
@@ -756,6 +757,10 @@ body {
   transform: translateX(-20px);
 }
 
+.project:hover #dot {
+  transform: translateX(-20px);
+}
+
 .project:hover #arrow {
   transform: translateX(20px);
   transition: all 0.4s;
@@ -771,7 +776,7 @@ body {
 
 .project p {
   font-size: 24px;
-  color: white;
+  color: rgb(201, 201, 201);
   transition: all 0.4s;
   font-weight: 300;
 }
@@ -923,7 +928,7 @@ body {
 
   .project p {
     font-size: 14px;
-    color: rgb(192, 192, 192);
+    color: rgb(155, 155, 155);
     transition: all 0.4s;
     font-weight: 300;
     text-align: start;
@@ -941,6 +946,10 @@ body {
     transform: translateX(0px);
   }
 
+  .project:hover #dot {
+    transform: translateX(0px);
+  }
+  
   .project:hover #arrow {
     transform: translateX(0px);
     transition: all 0.4s;

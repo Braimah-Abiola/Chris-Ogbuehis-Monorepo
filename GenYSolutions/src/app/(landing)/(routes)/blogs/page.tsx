@@ -42,14 +42,16 @@ const BlogsPage = () => {
 
         <div className="border border-black/10 w-full my-5 md:my-10" />
 
-        <div className="flex flex-row items-center space-x-5 mt-6 md:mt-12">
-          <div className="flex items-center justify-center border border-black rounded-full h-16 w-10">
-            <MoveDown className="arrow-icon-down" color="black" />
+        <Link href="#blogs">
+          <div className="flex flex-row items-center space-x-5 mt-6 md:mt-12">
+            <div className="flex items-center justify-center border border-black rounded-full h-16 w-10">
+              <MoveDown className="arrow-icon-down" color="black" />
+            </div>
+            <p className="text-black">Scroll to Blogs</p>
           </div>
-          <p className="text-black">Scroll to discover</p>
-        </div>
+        </Link>
 
-        <div className="w-full flex flex-col md:flex-row space-y-5 md:space-y-0 justify-between pt-20 pb-5 md:pt-32 md:pb-20">
+        <div id="blogs" className="w-full flex flex-col md:flex-row space-y-5 md:space-y-0 justify-between pt-20 pb-5 md:pt-32 md:pb-20">
           <Link href="/blog">
             <div className="w-full md:w-[370px] h-[500px] rounded-[15px] border overflow-hidden flex flex-col justify-between hover:border-black/40 hover:text-black transition-all">
               <div className="relative w-full md:w-full object-cover h-[280px] md:h-[280px]">

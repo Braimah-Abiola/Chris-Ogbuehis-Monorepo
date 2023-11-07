@@ -30,7 +30,7 @@ const ContactForm: React.FC = () => {
     privacy: false,
     terms: false,
   });
-  
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!userInfo.userName.trim()) {
@@ -136,7 +136,7 @@ const ContactForm: React.FC = () => {
                   />
                 </div>
                 {error && !userInfo.userName.trim() && (
-                  <span className="text-red-700 text-[12px] flex gap-1 mt-2 items-center">
+                  <span className="text-red-700 text-[12px] md:text-[15px] flex gap-1 mt-2 items-center">
                     <BiErrorCircle size={16} />
                     This field is required
                   </span>
@@ -164,7 +164,7 @@ const ContactForm: React.FC = () => {
                   />
                 </div>
                 {error && !userInfo.userEmail.trim() && (
-                  <span className="text-red-700 text-[12px] flex gap-1 mt-2 items-center">
+                  <span className="text-red-700 text-[12px] md:text-[15px] flex gap-1 mt-2 items-center">
                     <BiErrorCircle size={16} />
                     This field is required
                   </span>
@@ -227,7 +227,7 @@ const ContactForm: React.FC = () => {
                 />
               </div>
               {error && !userInfo.projectDetails.trim() && (
-                <span className="text-red-700 text-[12px] flex gap-1 mt-2 items-center">
+                <span className="text-red-700 text-[12px] md:text-[15px] flex gap-1 mt-2 items-center">
                   <BiErrorCircle size={16} />
                   This field is required
                 </span>

@@ -30,53 +30,63 @@ const TermsAndConditions = () => {
             <div className="flex items-center justify-center border border-black rounded-full h-16 w-10">
               <MoveDown className="arrow-icon-down" color="black" />
             </div>
-            <p className="text-black">Scroll to Policy</p>
+            <p className="text-black">Scroll to Terms & Conditions</p>
           </div>
         </Link>
       </MaxWidthWrapper>
 
-      <MaxWidthWrapper className="flex flex-col items-start text-start pt-[5rem] md:pt-[15rem] md:pb-[16rem]">
-        <div className="flex flex-col md:flex-row w-full">
+      <MaxWidthWrapper className="flex flex-col items-start text-start pt-[5rem] md:pt-[12rem] md:pb-[16rem]">
+        <div id="policy" className="flex flex-col md:flex-row w-full pt-[3rem]">
           <div className="flex flex-col w-full md:w-[35%] font-medium text-lg gap-4">
             <Link href="#policy">
-              <h4 className=" text-xl md:text-xl">1. Acceptance of Terms</h4>
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+                1. Acceptance of Terms
+              </h4>
             </Link>
             <Link href="#2">
-              <h4 className=" text-xl md:text-xl">2. Use of the Website</h4>
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+                2. Use of the Website
+              </h4>
             </Link>
             <Link href="#3">
-              <h4 className=" text-xl md:text-xl">3. Intellectual Property</h4>
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+                3. Intellectual Property
+              </h4>
             </Link>
             <Link href="#4">
-              <h4 className=" text-xl md:text-xl">4. Privacy Policy</h4>
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+                4. Privacy Policy
+              </h4>
             </Link>
             <Link href="#5">
-              <h4 className=" text-xl md:text-xl">
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
                 5. Links to Third-Party Websites
               </h4>
             </Link>
             <Link href="#6">
-              <h4 className=" text-xl md:text-xl">
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
                 6. Disclaimer of Warranties
               </h4>
             </Link>
             <Link href="#7">
-              <h4 className=" text-xl md:text-xl">
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
                 7. Limitation of Liability
               </h4>
             </Link>
             <Link href="#8">
-              <h4 className=" text-xl md:text-xl">
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
                 8. Changes to Terms and Conditions
               </h4>
             </Link>
             <Link href="#9">
-              <h4 className=" text-xl md:text-xl">9. Contact Us</h4>
+              <h4 className="text-black hover:text-primary transition-all text-lg md:text-xl cursor-pointer">
+                9. Contact Us
+              </h4>
             </Link>
           </div>
 
           <div className="flex flex-col w-full mt-20 mb-32 md:mt-0 md:mb-0">
-            <div id="policy" className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4">
               <h2 className="text-3xl md:text-4xl text-black font-medium">
                 1. Acceptance of Terms
               </h2>

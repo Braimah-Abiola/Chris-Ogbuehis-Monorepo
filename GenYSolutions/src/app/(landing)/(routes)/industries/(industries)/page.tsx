@@ -30,7 +30,7 @@ const Industries = () => {
 
       <LandingNav />
       <LandingIndustriesHero />
-      <div>
+      <div id="industries">
         <LandingIndustries />
       </div>
       <LandingBlogs />

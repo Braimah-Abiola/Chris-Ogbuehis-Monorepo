@@ -14,15 +14,15 @@ const ServicesList = () => {
               Artificial <br className="hidden md:block" /> Intelligence
             </h2>
             <p className="mt-6 text-lg lg:text-2xl w-full md:w-[500px] text-black/50">
-              UI/UX Design /Web Experience /Mobile Experience /Commerce
-              Experience /Human Machine Interface (HMI) /Applications and
-              Dashboards /Wearable App Design /Cross-Platform Experience Design
-              /Design Support and Maintenance
+              Machine Learning Development / Natural Language Processing (NLP) /
+              Computer Vision / Reinforcement Learning / Predictive Modeling /
+              AI Consultation / AI Integration Services / Proof of Concept (PoC)
+              Development
             </p>
             <div className="mt-8 md:mt-12">
               <Link href="/services/artificial-intelligence">
                 <Button variant="outline">
-                  Explore Artificial Intelligence{" "}
+                  Explore Artificial Intelligence
                   <ArrowRight className="ml-2" />
                 </Button>
               </Link>
@@ -59,10 +59,10 @@ const ServicesList = () => {
               Custom <br className="hidden md:block" /> Chatbots
             </h2>
             <p className="mt-6 text-lg lg:text-2xl w-full md:w-[500px] text-black/50">
-              UI/UX Design /Web Experience /Mobile Experience /Commerce
-              Experience /Human Machine Interface (HMI) /Applications and
-              Dashboards /Wearable App Design /Cross-Platform Experience Design
-              /Design Support and Maintenance
+              Conversational Design / Multi-Platform Integration / AI-Powered
+              Personalization / Continuous Learning / Transactional Chatbots /
+              Support Chatbots / Survey and Feedback Chatbots / Chatbot
+              Analytics
             </p>
             <div className="mt-12">
               <Link href="/services/custom-chatbots">
@@ -93,10 +93,10 @@ const ServicesList = () => {
               AI-Driven <br className="hidden md:block" /> Analytics
             </h2>
             <p className="mt-6 text-lg lg:text-2xl w-full md:w-[500px] text-black/50">
-              UI/UX Design /Web Experience /Mobile Experience /Commerce
-              Experience /Human Machine Interface (HMI) /Applications and
-              Dashboards /Wearable App Design /Cross-Platform Experience Design
-              /Design Support and Maintenance
+              Data Analysis and Visualization / Predictive Modeling / Real-Time
+              Data Processing / Custom Reporting Solutions / Business
+              Intelligence Solutions / Data Integration Services / AI-Powered
+              Data Mining / Data Analytics Consultation
             </p>
             <div className="mt-12">
               <Button variant="outline">
@@ -135,10 +135,10 @@ const ServicesList = () => {
               Custom AI <br className="hidden md:block" /> Solutions
             </h2>
             <p className="mt-6 text-lg lg:text-2xl w-full md:w-[500px] text-black/50">
-              UI/UX Design /Web Experience /Mobile Experience /Commerce
-              Experience /Human Machine Interface (HMI) /Applications and
-              Dashboards /Wearable App Design /Cross-Platform Experience Design
-              /Design Support and Maintenance
+              AI Consultation / Bespoke AI Development / Proof of Concept (PoC)
+              Development / AI Integration Services / Custom AI Model
+              Development / AI Strategy and Planning / AI Prototype Development
+              / AI Solution Maintenance and Support
             </p>
             <div className="mt-12">
               <Button variant="outline">
@@ -166,37 +166,40 @@ const ServicesList = () => {
           Our Impact
         </h3>
 
-        <p className="text-center text-lg lg:text-2xl mt-8 max-w-5xl">
-          Every innovation that happens here is out of a quest to get better at
-          what we are already doing. We deliver ideas that make a difference,
-          create experiences that transform lives and build ecosystems that
-          foster progress.
+        <p className="text-center text-lg lg:text-2xl mt-8 max-w-5xl text-black/80">
+          Each innovation that originates within our organization stems from our
+          unwavering commitment to continuous improvement. We bring forth
+          concepts that drive meaningful change, craft experiences that have a
+          profound impact on individuals, and construct environments that
+          facilitate advancement.
         </p>
 
-        <div className="flex flex-col md:flex-row max-w-6xl w-fit md:w-full md:justify-between mt-20">
-          <div className="flex flex-col space-y-5 items-center md:items-start justify-start">
-            <h4 className="text-5xl font-medium text-black">600+</h4>
-            <p className="text-black/80 font-normal text-center md:text-start text-xl">
+        <div className="flex flex-col md:flex-row max-w-6xl w-fit md:w-full md:justify-between mt-10 md:mt-20">
+          <div className="flex flex-col space-y-5 items-center md:items-center justify-start mt-12 md:mt-0">
+            <h4 className="text-5xl font-medium text-black">210+</h4>
+            <p className="text-black/80 font-normal text-center md:text-center text-lg lg:text-xl">
               Projects launched successfully <br /> across the globe
             </p>
           </div>
-          <div className="flex flex-col space-y-5 items-center md:items-start justify-start mt-12 md:mt-0">
-            <h4 className="text-5xl font-medium text-black">600+</h4>
-            <p className="text-black/80 font-normal text-center md:text-start text-xl">
-              Projects launched successfully <br /> across the globe
+          <div className="flex flex-col space-y-5 items-center md:items-center justify-start mt-12 md:mt-0">
+            <h4 className="text-5xl font-medium text-black">10M</h4>
+            <p className="text-black/80 font-normal text-center md:text-center text-lg lg:text-xl">
+              Daily customer engagement <br /> throughout our projects
             </p>
           </div>
-          <div className="flex flex-col space-y-5 items-center md:items-start justify-start mt-12 md:mt-0">
-            <h4 className="text-5xl font-medium text-black">600+</h4>
-            <p className="text-black/80 font-normal text-center md:text-start text-xl">
-              Projects launched successfully <br /> across the globe
+          <div className="flex flex-col space-y-5 items-center md:items-center justify-start mt-12 md:mt-0">
+            <h4 className="text-5xl font-medium text-black">60+</h4>
+            <p className="text-black/80 font-normal text-center md:text-center text-lg lg:text-xl">
+              Digital transformation stories <br /> that made a difference
             </p>
           </div>
         </div>
 
-        <Button className="mt-12 md:mt-24" variant="secondary">
-          Our Previous Projects <ArrowRight className="ml-4" />
-        </Button>
+        <Link href="/works">
+          <Button className="mt-12 md:mt-24" variant="secondary">
+            Our Previous Projects <ArrowRight className="ml-4" />
+          </Button>
+        </Link>
       </MaxWidthWrapper>
     </div>
   );

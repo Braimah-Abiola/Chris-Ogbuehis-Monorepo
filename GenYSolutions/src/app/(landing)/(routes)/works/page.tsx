@@ -28,7 +28,9 @@ const WorksPage = () => {
 
       <LandingNavWhite />
       <WorkHero />
-      <WorkGallery />
+      <div id="works">
+        <WorkGallery />
+      </div>
       <LandingFooter />
     </div>
   );

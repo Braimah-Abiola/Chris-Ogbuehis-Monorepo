@@ -10,35 +10,26 @@ const LandingWork = () => {
   return (
     <div>
       <MaxWidthWrapper className="pt-32 pb-20 md:pt-60 md:pb-10 flex flex-col items-start justify-center text-center">
-        <div className="flex flex-col md:flex-row w-full items-start md:space-x-40">
+        <div className="flex flex-col md:flex-row w-full items-start justify-between">
           <div className="flex flex-col items-start">
             <h2 className="text-start font-semibold text-5xl lg:text-7xl">
               Our Work <br className="hidden md:block" /> & Case Studies
             </h2>
             <div className="flex flex-row items-center justify-center mt-5 space-x-3">
-              <div className="w-3 h-3 rounded-full bg-black" />
-              <p className="text-black sm:text-lg">
+              <div className="w-3 h-3 rounded-full bg-zinc-600" />
+              <p className="text-zinc-600 sm:text-lg">
                 Browse our selected projects below
               </p>
             </div>
           </div>
 
           <div className="flex flex-col items-start justify-center md:px-10 mt-10 md:mt-0">
-            <p className="text-black sm:text-lg">Learn more about us</p>
-            <Button variant="line" size="line">
-              ABOUT GEN Y SOLUTIONS
-              <ArrowUpRight className="ml-3" color="black" />
-            </Button>
-          </div>
-
-          <div className="flex flex-col items-start justify-center md:px-10">
-            <p className="mb-4 font-medium text-[18px] mt-8 md:mt-0">Areas</p>
-            <div className="space-y-2 items-start flex flex-col">
-              <p className="font-normal">Artificial Intelligence</p>
-              <p className="font-normal">Custom Chatbots</p>
-              <p className="font-normal">AI Driven Analytics</p>
-              <p className="font-normal">Custom AI Solutions</p>
-            </div>
+            <Link href="/about">
+              <Button className="mt-0" variant="outline">
+                About Gen Y Solutions
+                <ArrowUpRight className="ml-3" color="black" />
+              </Button>
+            </Link>
           </div>
         </div>
       </MaxWidthWrapper>
@@ -169,17 +160,19 @@ const LandingWork = () => {
         </div>
       </MaxWidthWrapper>
       <div className="hidden md:block">
-        <div className="flex w-full items-center justify-center mb-28 md:mb-40 mt-40">
-          <div className="cursor-pointer circular-button-black">
-            <Image
-              width={185}
-              height={185}
-              src="/allprojects.png"
-              alt="View all projects"
-            />
-            <ArrowUpRight id="arrow" width={34} height={34} color="black" />
+        <Link href="/works">
+          <div className="flex w-full items-center justify-center mb-28 md:mb-40 mt-40">
+            <div className="cursor-pointer circular-button-black">
+              <Image
+                width={185}
+                height={185}
+                src="/allprojects.png"
+                alt="View all projects"
+              />
+              <ArrowUpRight id="arrow" width={34} height={34} color="black" />
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
 
       <div className="md:hidden mt-20">

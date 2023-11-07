@@ -15,26 +15,26 @@ const LandingServices = () => {
     <MaxWidthWrapper className="bg-[#1A1D28] py-40 md:py-60 flex flex-col items-start justify-center text-center">
       <MaskText />
       <div className="flex flex-row w-full items-start space-x-20 mt-20">
-        <p className="text-white uppercase max-w-[19ch] text-left">
+        <p className="text-white uppercase max-w-[19ch] text-left text-lg">
           Solving complex complems using ai at race car speed
         </p>
-        <p className="text-white">EST. 2023</p>
-        <p className="text-white max-w-[110ch] text-start hidden md:block">
-          We cater to the creative needs of the broadest range of clients.
-          Whether you are a development agency looking to outsource design work,
-          a company in search of a Product Designer or Product Team, a marketing
-          agency that needs a landing page, a startup that wants to launch an
-          app, or an enterprise that plans to rebrand or redesign its website,
-          we welcome any challenge with our arms wide open
+        <p className="text-zinc-400 text-lg">EST. 2013</p>
+        <p className="text-white max-w-[100ch] text-lg text-start hidden md:block">
+          At Gen Y Solutions, we understand that your AI development needs are
+          as diverse and unique as your business itself. That&apos;s why we take
+          pride in offering you our top-notch Software Engineering Talent – a
+          team dedicated to bringing your AI dreams to life. Our commitment to
+          innovation, precision, and unwavering quality ensures that every
+          aspect of your project is not just met but exceeded.
         </p>
       </div>
       <p className="text-white max-w-full w-full text-start md:hidden mt-6 text-lg">
-        We cater to the creative needs of the broadest range of clients. Whether
-        you are a development agency looking to outsource design work, a company
-        in search of a Product Designer or Product Team, a marketing agency that
-        needs a landing page, a startup that wants to launch an app, or an
-        enterprise that plans to rebrand or redesign its website, we welcome any
-        challenge with our arms wide open
+        At Gen Y Solutions, we understand that your AI development needs are as
+        diverse and unique as your business itself. That&apos;s why we take
+        pride in offering you our top-notch Software Engineering Talent – a team
+        dedicated to bringing your AI dreams to life. Our commitment to
+        innovation, precision, and unwavering quality ensures that every aspect
+        of your project is not just met but exceeded.
       </p>
 
       <div className="servicesMain mt-20 md:mt-32 md:ml-60">
@@ -45,6 +45,9 @@ const LandingServices = () => {
                 href={service.href}
                 index={index}
                 title={service.title}
+                sub1={service.sub1}
+                sub2={service.sub2}
+                sub3={service.sub3}
                 number={service.number}
                 setModal={setModal}
                 key={index}

@@ -4,6 +4,7 @@ import MaxWidthWrapper from "../MaxWidthWrapper";
 
 import { MoveDown } from "lucide-react";
 import { Button } from "./button";
+import Link from "next/link";
 
 const LandingIndustriesHero = () => {
   return (
@@ -19,7 +20,7 @@ const LandingIndustriesHero = () => {
           <Button className="mt-10">Start Today</Button>
         </div>
 
-        <div className="absolute bg-black/10 z-[3] w-screen h-screen md:h-[114vh]"/>
+        <div className="absolute bg-black/10 z-[3] w-screen h-screen md:h-[114vh]" />
 
         <video
           autoPlay
@@ -30,11 +31,15 @@ const LandingIndustriesHero = () => {
           <source src="/hero_bg2.mp4" type="video/mp4" />
         </video>
 
-        <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-14 md:left-0 absolute flex flex-row items-center space-x-5 z-[4]">
-          <div className="flex items-center justify-center border border-white rounded-full h-16 w-10">
-            <MoveDown className="arrow-icon-down" color="white" />
-          </div>
-          <p className="text-white hidden md:block">Scroll to discover</p>
+        <div className="mx-auto w-fit max-w-fit px-5 md:px-20 bottom-5 md:bottom-14 md:left-0 absolute flex flex-row items-center space-x-5 z-10">
+          <Link href="#industries">
+            <div className="flex flex-row items-center md:space-x-4">
+              <div className="flex items-center justify-center border-2 border-white rounded-full h-16 w-10">
+                <MoveDown className="arrow-icon-down" color="white" />
+              </div>
+              <p className="text-white hidden md:block">Scroll to Industries</p>
+            </div>
+          </Link>
         </div>
       </MaxWidthWrapper>
     </div>

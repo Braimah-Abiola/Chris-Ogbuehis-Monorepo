@@ -9,19 +9,19 @@ export const IMAGES = [
   },
   {
     id: 2,
-    imageSrc: "about1.png",
+    imageSrc: "about3.jpg",
   },
   {
     id: 3,
-    imageSrc: "about2.png",
+    imageSrc: "about4.jpg",
   },
   {
     id: 4,
-    imageSrc: "about1.png",
+    imageSrc: "about5.jpg",
   },
   {
     id: 5,
-    imageSrc: "about2.png",
+    imageSrc: "about6.jpg",
   },
 ];
 

@@ -26,7 +26,9 @@ const ServicesPage = () => {
       </AnimatePresence>
       <LandingNav />
       <LandingServicesHero />
-      <ServicesList />
+      <div id="serviceslist">
+        <ServicesList />
+      </div>
       <LandingFooter />
     </div>
   );

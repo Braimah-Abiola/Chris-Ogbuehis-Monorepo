@@ -64,11 +64,17 @@ const LandingFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                At Gen Y Solutions, we stand out as a pioneering software
+                development firm with a strong focus on integrating Artificial
+                Intelligence (AI) into cutting-edge solutions. We offer a
+                diverse range of services and boast top-tier software
+                engineering talent that is committed to innovation, precision,
+                and quality. Our tailored solutions cater to a wide array of
+                industries, ensuring your unique requirements are met with
+                excellence. With our team&apos;s expertise in AI and software
+                development, we are dedicated to providing you with the most
+                advanced, customized, and reliable solutions in the market.
               </p>
             </div>
           </CSSTransition>
@@ -99,11 +105,17 @@ const LandingFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                Working with Gen Y Solutions is a straightforward process.
+                First, you get in touch with us to discuss your project
+                requirements. Our team will then work closely with you to
+                understand your specific needs and objectives. We will create a
+                project plan and provide a quote. Once the project begins, our
+                team will develop, test, and refine the software or AI solution
+                based on your requirements. Throughout the project, we maintain
+                open communication to keep you informed about the progress.
+                After successful development, we provide support and maintenance
+                to ensure your software or AI solution functions smoothly.
               </p>
             </div>
           </CSSTransition>
@@ -134,11 +146,14 @@ const LandingFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                Yes, we offer a flexible and customer-centric approach. While we
+                don&apos;t place strict limitations on the number of requests,
+                we do prioritize efficient and productive use of our resources.
+                We encourage open communication with our clients to ensure that
+                your requests are aligned with the project&apos;s scope and
+                objectives. We work closely with you to make sure your needs are
+                met while maintaining project efficiency.
               </p>
             </div>
           </CSSTransition>
@@ -169,11 +184,14 @@ const LandingFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                The turnaround time for a project can vary significantly
+                depending on its complexity, size, and specific requirements.
+                During the project planning phase, we provide you with an
+                estimated timeline, taking into account your project&apos;s
+                unique characteristics. We are committed to delivering
+                high-quality solutions in a timely manner and ensure that you
+                are kept informed of progress throughout the project.
               </p>
             </div>
           </CSSTransition>
@@ -204,11 +222,14 @@ const LandingFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                We employ a wide range of software and technologies in our
+                projects. Our choice of software and tools depends on the
+                specific requirements of each project. We are proficient in
+                using the latest programming languages, frameworks, and AI
+                technologies to ensure the development of robust and efficient
+                solutions. Our software selection is always tailored to best
+                meet the unique needs of your project.
               </p>
             </div>
           </CSSTransition>
@@ -239,11 +260,16 @@ const LandingFaq = () => {
             unmountOnExit
           >
             <div className="answer-container md:ml-5 md:mr-20">
-              <p className="text-[#9B9CA1] font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
-                Nova is an AI SaaS (Software as a Service) platform that allows
-                users to create custom AI friends and personalities to chat with
-                24/7. It provides a unique and interactive way for users to
-                engage with AI-powered companions tailored to their preferences.
+              <p className="text-zinc-400 font-normal text-start text-[16px] md:text-[18px] mt-2 w-full px-5">
+                Our commitment to quality and customer satisfaction is
+                unwavering. If you are not satisfied with the final product or
+                service, we will work diligently to address your concerns and
+                make necessary revisions to meet your expectations. While we do
+                not provide refunds as a standard policy, we are dedicated to
+                ensuring your project&apos;s success and your satisfaction throughout
+                the development process. Open communication with our team
+                ensures that any issues are addressed promptly and effectively.
+                Your success is our priority.
               </p>
             </div>
           </CSSTransition>

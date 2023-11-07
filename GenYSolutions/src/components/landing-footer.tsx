@@ -89,14 +89,14 @@ const LandingFooter = () => {
 
             <div className="flex flex-col mt-10">
               <h4 className="text-white sm:text-lg text-start">Other</h4>
-              <Link href="/our-clients">
-                <p className="text-zinc-400 sm:text-lg text-start mt-4">
-                  Our Clients
+              <Link href="/blogs">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-4">
+                  Blog
                 </p>
               </Link>
-              <Link href="/blogs">
-                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                  Blog
+              <Link href="/our-clients">
+                <p className="text-zinc-400 sm:text-lg text-start mt-2">
+                  Our Clients
                 </p>
               </Link>
               <Link href="/partnerships">
@@ -211,14 +211,14 @@ const LandingFooter = () => {
 
             <div className="flex flex-col">
               <h4 className="text-white sm:text-lg text-start">Other</h4>
-              <Link href="/our-clients">
-                <p className="text-zinc-400 hover:text-white sm:text-lg text-start mt-4">
-                  Our Clients
+              <Link href="/blogs">
+                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-4">
+                  Blog
                 </p>
               </Link>
-              <Link href="/blogs">
-                <p className="text-zinc-400 hover:text-white transition-colors sm:text-lg text-start mt-2">
-                  Blog
+              <Link href="/our-clients">
+                <p className="text-zinc-400 hover:text-white sm:text-lg text-start mt-2">
+                  Our Clients
                 </p>
               </Link>
               <Link href="/partnerships">
