@@ -4,7 +4,8 @@
   "info": {
     "singularName": "film",
     "pluralName": "films",
-    "displayName": "film"
+    "displayName": "film",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true

@@ -683,6 +683,7 @@ export interface ApiFilmFilm extends Schema.CollectionType {
     singularName: 'film';
     pluralName: 'films';
     displayName: 'film';
+    description: '';
   };
   options: {
     draftAndPublish: true;

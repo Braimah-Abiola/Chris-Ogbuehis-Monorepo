@@ -9,12 +9,12 @@ import Footer from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
 
-export default function Home({ headerData }) {
+export default function Home() {
   return (
     <div>
       <div className={styles.bgContainer}>
         <Navbar/>
-        <Header data={headerData}/>
+        <Header/>
       </div>
       <OurGoal />
       <Team />
@@ -22,16 +22,4 @@ export default function Home({ headerData }) {
       <Footer />
     </div>
   );
-}
-
-export async function getStaticProps() {
-  const res = await axios.get('http://localhost:1337/api/home-page');
-  const headerData = res.data.data.attributes; // Adjust this line based on your Strapi API response
-
-  return {
-    props: {
-      headerData,
-    },
-    revalidate: 10,
-  };
 }
